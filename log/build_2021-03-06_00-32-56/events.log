@@ -1,0 +1,214 @@
+[0.000000] (-) TimerEvent: {}
+[0.001272] (dev_test_tools) JobQueued: {'identifier': 'dev_test_tools', 'dependencies': OrderedDict()}
+[0.001600] (rplidar_ros) JobQueued: {'identifier': 'rplidar_ros', 'dependencies': OrderedDict()}
+[0.002355] (dev_test_tools) JobStarted: {'identifier': 'dev_test_tools'}
+[0.071273] (rplidar_ros) JobStarted: {'identifier': 'rplidar_ros'}
+[0.101436] (-) TimerEvent: {}
+[0.203481] (-) TimerEvent: {}
+[0.304526] (-) TimerEvent: {}
+[0.405371] (-) TimerEvent: {}
+[0.506157] (-) TimerEvent: {}
+[0.606863] (-) TimerEvent: {}
+[0.707571] (-) TimerEvent: {}
+[0.808260] (-) TimerEvent: {}
+[0.908915] (-) TimerEvent: {}
+[1.009567] (-) TimerEvent: {}
+[1.110323] (-) TimerEvent: {}
+[1.211170] (-) TimerEvent: {}
+[1.313985] (-) TimerEvent: {}
+[1.345219] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'cmake'}
+[1.354914] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/mako_ws/mako_robot/src/rplidar_ros2', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/mako_ws/mako_robot/install/rplidar_ros'], 'cwd': '/home/ubuntu/mako_ws/mako_robot/build/rplidar_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2245'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/lidar_test/install/rplidar_ros/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/mako_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2058'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3865'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ubuntu/lidar_test/install:/home/ubuntu/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '9:68275'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2317,unix/ubuntu:/tmp/.ICE-unix/2317'), ('INVOCATION_ID', '8b212772a6634aefb14fdf8bf898e424'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/lidar_test/install/rplidar_ros:/home/ubuntu/ros2_ws/install/test_pkg:/home/ubuntu/ros2_ws/install/mako_pkg-cpp_test-pkg:/home/ubuntu/ros2_ws/install/mako_cppPKG_test_pkg:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:ca72a3c9-beed-44c4-a7a3-4c3e231b189d'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/mako_ws/mako_robot/build/rplidar_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/lidar_test/install/rplidar_ros:/home/ubuntu/ros2_ws/install/test_pkg:/home/ubuntu/ros2_ws/install/mako_pkg-cpp_test-pkg:/home/ubuntu/ros2_ws/install/mako_cppPKG_test_pkg:/opt/ros/foxy')]), 'shell': False}
+[1.394491] (dev_test_tools) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--prefix', '/home/ubuntu/mako_ws/mako_robot/install/dev_test_tools', '--editable', '--build-directory', '/home/ubuntu/mako_ws/mako_robot/build/dev_test_tools/build', '--no-deps', 'install_data', '--install-dir', '/home/ubuntu/mako_ws/mako_robot/install/dev_test_tools'], 'cwd': '/home/ubuntu/mako_ws/mako_robot/build/dev_test_tools', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_AGENT_PID': '2245', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/lidar_test/install/rplidar_ros/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/mako_ws', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2058', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3865', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/ubuntu/lidar_test/install:/home/ubuntu/ros2_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'ubuntu', 'JOURNAL_STREAM': '9:68275', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ubuntu', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/2317,unix/ubuntu:/tmp/.ICE-unix/2317', 'INVOCATION_ID': '8b212772a6634aefb14fdf8bf898e424', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ubuntu/lidar_test/install/rplidar_ros:/home/ubuntu/ros2_ws/install/test_pkg:/home/ubuntu/ros2_ws/install/mako_pkg-cpp_test-pkg:/home/ubuntu/ros2_ws/install/mako_cppPKG_test_pkg:/opt/ros/foxy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:ca72a3c9-beed-44c4-a7a3-4c3e231b189d', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ubuntu/mako_ws/mako_robot/build/dev_test_tools', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/mako_ws/mako_robot/install/dev_test_tools/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/ubuntu/lidar_test/install/rplidar_ros:/home/ubuntu/ros2_ws/install/test_pkg:/home/ubuntu/ros2_ws/install/mako_pkg-cpp_test-pkg:/home/ubuntu/ros2_ws/install/mako_cppPKG_test_pkg'}, 'shell': False}
+[1.414319] (-) TimerEvent: {}
+[1.439080] (rplidar_ros) StdoutLine: {'line': b'-- Found ament_cmake_auto: 0.9.8 (/opt/ros/foxy/share/ament_cmake_auto/cmake)\n'}
+[1.514511] (-) TimerEvent: {}
+[1.577190] (rplidar_ros) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.614857] (-) TimerEvent: {}
+[1.716297] (-) TimerEvent: {}
+[1.817109] (-) TimerEvent: {}
+[1.917961] (-) TimerEvent: {}
+[2.018774] (-) TimerEvent: {}
+[2.119570] (-) TimerEvent: {}
+[2.220294] (-) TimerEvent: {}
+[2.321028] (-) TimerEvent: {}
+[2.421975] (-) TimerEvent: {}
+[2.523117] (-) TimerEvent: {}
+[2.623956] (-) TimerEvent: {}
+[2.682702] (rplidar_ros) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.724290] (-) TimerEvent: {}
+[2.738483] (rplidar_ros) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.1 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[2.803166] (dev_test_tools) StdoutLine: {'line': b'running develop\n'}
+[2.824419] (-) TimerEvent: {}
+[2.925190] (-) TimerEvent: {}
+[3.026020] (-) TimerEvent: {}
+[3.127233] (-) TimerEvent: {}
+[3.227998] (-) TimerEvent: {}
+[3.318507] (rplidar_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.328160] (-) TimerEvent: {}
+[3.338257] (rplidar_ros) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[3.428341] (-) TimerEvent: {}
+[3.529082] (-) TimerEvent: {}
+[3.629774] (-) TimerEvent: {}
+[3.680548] (dev_test_tools) StdoutLine: {'line': b'running egg_info\n'}
+[3.681265] (dev_test_tools) StdoutLine: {'line': b'writing dev_test_tools.egg-info/PKG-INFO\n'}
+[3.682133] (dev_test_tools) StdoutLine: {'line': b'writing dependency_links to dev_test_tools.egg-info/dependency_links.txt\n'}
+[3.683250] (dev_test_tools) StdoutLine: {'line': b'writing entry points to dev_test_tools.egg-info/entry_points.txt\n'}
+[3.690839] (dev_test_tools) StdoutLine: {'line': b'writing requirements to dev_test_tools.egg-info/requires.txt\n'}
+[3.691618] (dev_test_tools) StdoutLine: {'line': b'writing top-level names to dev_test_tools.egg-info/top_level.txt\n'}
+[3.729927] (-) TimerEvent: {}
+[3.830501] (dev_test_tools) StdoutLine: {'line': b"reading manifest file 'dev_test_tools.egg-info/SOURCES.txt'\n"}
+[3.831215] (-) TimerEvent: {}
+[3.835872] (dev_test_tools) StdoutLine: {'line': b"writing manifest file 'dev_test_tools.egg-info/SOURCES.txt'\n"}
+[3.931391] (-) TimerEvent: {}
+[4.032693] (-) TimerEvent: {}
+[4.107949] (dev_test_tools) StdoutLine: {'line': b'running build_ext\n'}
+[4.112145] (dev_test_tools) StdoutLine: {'line': b'Creating /home/ubuntu/mako_ws/mako_robot/install/dev_test_tools/lib/python3.8/site-packages/site.py\n'}
+[4.120603] (dev_test_tools) StdoutLine: {'line': b'Creating /home/ubuntu/mako_ws/mako_robot/install/dev_test_tools/lib/python3.8/site-packages/dev-test-tools.egg-link (link to .)\n'}
+[4.125027] (dev_test_tools) StdoutLine: {'line': b'Installing lidarTestNode script to /home/ubuntu/mako_ws/mako_robot/install/dev_test_tools/lib/dev_test_tools\n'}
+[4.126386] (dev_test_tools) StdoutLine: {'line': b'\n'}
+[4.127270] (dev_test_tools) StdoutLine: {'line': b'Installed /home/ubuntu/mako_ws/mako_robot/build/dev_test_tools\n'}
+[4.127862] (dev_test_tools) StdoutLine: {'line': b'running install_data\n'}
+[4.133054] (-) TimerEvent: {}
+[4.236559] (-) TimerEvent: {}
+[4.272016] (dev_test_tools) CommandEnded: {'returncode': 0}
+[4.336823] (-) TimerEvent: {}
+[4.351719] (dev_test_tools) JobEnded: {'identifier': 'dev_test_tools', 'rc': 0}
+[4.437046] (-) TimerEvent: {}
+[4.536430] (rplidar_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.537139] (-) TimerEvent: {}
+[4.637886] (-) TimerEvent: {}
+[4.738708] (-) TimerEvent: {}
+[4.766851] (rplidar_ros) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.2 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[4.773490] (rplidar_ros) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.838918] (-) TimerEvent: {}
+[4.939892] (-) TimerEvent: {}
+[5.041045] (-) TimerEvent: {}
+[5.141901] (-) TimerEvent: {}
+[5.242759] (-) TimerEvent: {}
+[5.344438] (-) TimerEvent: {}
+[5.445390] (-) TimerEvent: {}
+[5.546219] (-) TimerEvent: {}
+[5.647047] (-) TimerEvent: {}
+[5.747783] (-) TimerEvent: {}
+[5.848487] (-) TimerEvent: {}
+[5.949181] (-) TimerEvent: {}
+[6.049893] (-) TimerEvent: {}
+[6.150603] (-) TimerEvent: {}
+[6.251380] (-) TimerEvent: {}
+[6.332627] (rplidar_ros) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.351607] (-) TimerEvent: {}
+[6.452289] (-) TimerEvent: {}
+[6.469252] (rplidar_ros) StdoutLine: {'line': b'-- Generating done\n'}
+[6.478611] (rplidar_ros) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/mako_ws/mako_robot/build/rplidar_ros\n'}
+[6.517297] (rplidar_ros) CommandEnded: {'returncode': 0}
+[6.519616] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'build'}
+[6.522309] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/mako_ws/mako_robot/build/rplidar_ros', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/mako_ws/mako_robot/build/rplidar_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2245'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/lidar_test/install/rplidar_ros/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/mako_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2058'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3865'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ubuntu/lidar_test/install:/home/ubuntu/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '9:68275'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2317,unix/ubuntu:/tmp/.ICE-unix/2317'), ('INVOCATION_ID', '8b212772a6634aefb14fdf8bf898e424'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/lidar_test/install/rplidar_ros:/home/ubuntu/ros2_ws/install/test_pkg:/home/ubuntu/ros2_ws/install/mako_pkg-cpp_test-pkg:/home/ubuntu/ros2_ws/install/mako_cppPKG_test_pkg:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:ca72a3c9-beed-44c4-a7a3-4c3e231b189d'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/mako_ws/mako_robot/build/rplidar_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/lidar_test/install/rplidar_ros:/home/ubuntu/ros2_ws/install/test_pkg:/home/ubuntu/ros2_ws/install/mako_pkg-cpp_test-pkg:/home/ubuntu/ros2_ws/install/mako_cppPKG_test_pkg:/opt/ros/foxy')]), 'shell': False}
+[6.552558] (-) TimerEvent: {}
+[6.653382] (-) TimerEvent: {}
+[6.754224] (-) TimerEvent: {}
+[6.855442] (-) TimerEvent: {}
+[6.890680] (rplidar_ros) StdoutLine: {'line': b'[  5%] \x1b[32m\x1b[1mLinking CXX executable rplidarNodeClient\x1b[0m\n'}
+[6.897809] (rplidar_ros) StdoutLine: {'line': b'[ 11%] \x1b[32m\x1b[1mLinking CXX executable rplidarNode\x1b[0m\n'}
+[6.902912] (rplidar_ros) StdoutLine: {'line': b'[ 16%] \x1b[32m\x1b[1mLinking CXX shared library librplidar_composition_node.so\x1b[0m\n'}
+[6.955630] (-) TimerEvent: {}
+[7.060330] (-) TimerEvent: {}
+[7.164195] (-) TimerEvent: {}
+[7.266581] (-) TimerEvent: {}
+[7.369721] (-) TimerEvent: {}
+[7.471909] (-) TimerEvent: {}
+[7.575432] (-) TimerEvent: {}
+[7.678376] (-) TimerEvent: {}
+[7.780174] (-) TimerEvent: {}
+[7.895395] (-) TimerEvent: {}
+[7.997700] (-) TimerEvent: {}
+[8.099562] (-) TimerEvent: {}
+[8.215304] (-) TimerEvent: {}
+[8.316907] (-) TimerEvent: {}
+[8.418154] (-) TimerEvent: {}
+[8.519312] (-) TimerEvent: {}
+[8.622946] (-) TimerEvent: {}
+[8.725404] (-) TimerEvent: {}
+[8.813527] (rplidar_ros) StdoutLine: {'line': b'[ 50%] Built target rplidar_composition_node\n'}
+[8.825899] (-) TimerEvent: {}
+[8.838023] (rplidar_ros) StdoutLine: {'line': b'[ 83%] Built target rplidarNode\n'}
+[8.926094] (-) TimerEvent: {}
+[9.026852] (-) TimerEvent: {}
+[9.041404] (rplidar_ros) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking CXX executable rplidar_composition\x1b[0m\n'}
+[9.079652] (rplidar_ros) StdoutLine: {'line': b'[ 94%] Built target rplidarNodeClient\n'}
+[9.127202] (-) TimerEvent: {}
+[9.228217] (-) TimerEvent: {}
+[9.329221] (-) TimerEvent: {}
+[9.430368] (-) TimerEvent: {}
+[9.531696] (-) TimerEvent: {}
+[9.633847] (-) TimerEvent: {}
+[9.736283] (-) TimerEvent: {}
+[9.837233] (-) TimerEvent: {}
+[9.912951] (rplidar_ros) StdoutLine: {'line': b'[100%] Built target rplidar_composition\n'}
+[9.937440] (-) TimerEvent: {}
+[9.958519] (rplidar_ros) CommandEnded: {'returncode': 0}
+[10.037795] (-) TimerEvent: {}
+[10.139573] (-) TimerEvent: {}
+[10.240695] (-) TimerEvent: {}
+[10.260645] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'install'}
+[10.311792] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/mako_ws/mako_robot/build/rplidar_ros'], 'cwd': '/home/ubuntu/mako_ws/mako_robot/build/rplidar_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2245'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/lidar_test/install/rplidar_ros/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/mako_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2058'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3865'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ubuntu/lidar_test/install:/home/ubuntu/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '9:68275'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2317,unix/ubuntu:/tmp/.ICE-unix/2317'), ('INVOCATION_ID', '8b212772a6634aefb14fdf8bf898e424'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/lidar_test/install/rplidar_ros:/home/ubuntu/ros2_ws/install/test_pkg:/home/ubuntu/ros2_ws/install/mako_pkg-cpp_test-pkg:/home/ubuntu/ros2_ws/install/mako_cppPKG_test_pkg:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:ca72a3c9-beed-44c4-a7a3-4c3e231b189d'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/mako_ws/mako_robot/build/rplidar_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/lidar_test/install/rplidar_ros:/home/ubuntu/ros2_ws/install/test_pkg:/home/ubuntu/ros2_ws/install/mako_pkg-cpp_test-pkg:/home/ubuntu/ros2_ws/install/mako_cppPKG_test_pkg:/opt/ros/foxy')]), 'shell': False}
+[10.340979] (-) TimerEvent: {}
+[10.358364] (rplidar_ros) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.360193] (rplidar_ros) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[10.362004] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/lib/rplidar_ros/rplidarNode\n'}
+[10.405137] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/lib/rplidar_ros/rplidarNodeClient\n'}
+[10.441154] (-) TimerEvent: {}
+[10.442921] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/lib/rplidar_ros/rplidar_composition\n'}
+[10.489202] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar.launch.py\n'}
+[10.528059] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a3.launch.py\n'}
+[10.541351] (-) TimerEvent: {}
+[10.566066] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1.launch.py\n'}
+[10.609713] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_tcp.launch.py\n'}
+[10.641587] (-) TimerEvent: {}
+[10.647943] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/launch/test_rplidar.launch.py\n'}
+[10.691204] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/launch/test_rplidar_a3.launch.py\n'}
+[10.726832] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar.launch.py\n'}
+[10.741802] (-) TimerEvent: {}
+[10.765086] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a3.launch.py\n'}
+[10.808462] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1.launch.py\n'}
+[10.842027] (-) TimerEvent: {}
+[10.847604] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_tcp.launch.py\n'}
+[10.895599] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/rviz/rplidar.rviz\n'}
+[10.933527] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/lib/librplidar_composition_node.so\n'}
+[10.942249] (-) TimerEvent: {}
+[10.972658] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/include/rplidar_node.hpp\n'}
+[11.016980] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/include/visibility.h\n'}
+[11.042470] (-) TimerEvent: {}
+[11.058285] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/lib/rplidar_ros/rplidarNode\n'}
+[11.059640] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/lib/rplidar_ros/rplidarNodeClient\n'}
+[11.061034] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/lib/rplidar_ros/rplidar_composition\n'}
+[11.062105] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/ament_index/resource_index/package_run_dependencies/rplidar_ros\n'}
+[11.106205] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/ament_index/resource_index/parent_prefix_path/rplidar_ros\n'}
+[11.142691] (-) TimerEvent: {}
+[11.149121] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.sh\n'}
+[11.191992] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.dsv\n'}
+[11.228370] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/environment/path.sh\n'}
+[11.242918] (-) TimerEvent: {}
+[11.266891] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/environment/path.dsv\n'}
+[11.310723] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/local_setup.bash\n'}
+[11.343160] (-) TimerEvent: {}
+[11.348905] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/local_setup.sh\n'}
+[11.392170] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/local_setup.zsh\n'}
+[11.428247] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/local_setup.dsv\n'}
+[11.443378] (-) TimerEvent: {}
+[11.469626] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/package.dsv\n'}
+[11.515352] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/ament_index/resource_index/packages/rplidar_ros\n'}
+[11.543578] (-) TimerEvent: {}
+[11.554129] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[11.602055] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[11.640670] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig.cmake\n'}
+[11.643844] (-) TimerEvent: {}
+[11.677232] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig-version.cmake\n'}
+[11.719612] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/package.xml\n'}
+[11.744093] (-) TimerEvent: {}
+[11.762818] (rplidar_ros) CommandEnded: {'returncode': 0}
+[11.844395] (-) TimerEvent: {}
+[11.945495] (-) TimerEvent: {}
+[12.046812] (-) TimerEvent: {}
+[12.148191] (-) TimerEvent: {}
+[12.180532] (rplidar_ros) JobEnded: {'identifier': 'rplidar_ros', 'rc': 0}
+[12.190580] (-) EventReactorShutdown: {}

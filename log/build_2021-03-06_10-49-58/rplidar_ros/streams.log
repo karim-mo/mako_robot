@@ -1,0 +1,47 @@
+[1.284s] Invoking command in '/home/ubuntu/mako_ws/mako_robot/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/mako_ws/mako_robot/install/dev_test_tools:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/mako_ws/mako_robot/build/rplidar_ros -- -j4 -l4
+[2.036s] [ 11%] Built target rplidarNodeClient
+[2.040s] [ 50%] Built target rplidarNode
+[2.047s] [ 88%] Built target rplidar_composition_node
+[2.271s] [100%] Built target rplidar_composition
+[2.318s] Invoked command in '/home/ubuntu/mako_ws/mako_robot/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/mako_ws/mako_robot/install/dev_test_tools:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/mako_ws/mako_robot/build/rplidar_ros -- -j4 -l4
+[2.660s] Invoking command in '/home/ubuntu/mako_ws/mako_robot/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/mako_ws/mako_robot/install/dev_test_tools:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/mako_ws/mako_robot/build/rplidar_ros
+[2.710s] -- Install configuration: ""
+[2.713s] -- Execute custom install script
+[2.717s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/lib/rplidar_ros/rplidarNode
+[2.720s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/lib/rplidar_ros/rplidarNodeClient
+[2.723s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/lib/rplidar_ros/rplidar_composition
+[2.729s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar.launch.py
+[2.731s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a3.launch.py
+[2.733s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1.launch.py
+[2.735s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_tcp.launch.py
+[2.738s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/launch/test_rplidar.launch.py
+[2.739s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/launch/test_rplidar_a3.launch.py
+[2.741s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar.launch.py
+[2.743s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a3.launch.py
+[2.751s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1.launch.py
+[2.752s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_tcp.launch.py
+[2.755s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/rviz/rplidar.rviz
+[2.761s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/lib/librplidar_composition_node.so
+[2.765s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/include/rplidar_node.hpp
+[2.768s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/include/visibility.h
+[2.774s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/lib/rplidar_ros/rplidarNode
+[2.775s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/lib/rplidar_ros/rplidarNodeClient
+[2.777s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/lib/rplidar_ros/rplidar_composition
+[2.784s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/ament_index/resource_index/package_run_dependencies/rplidar_ros
+[2.787s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/ament_index/resource_index/parent_prefix_path/rplidar_ros
+[2.790s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.sh
+[2.793s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.dsv
+[2.796s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/environment/path.sh
+[2.798s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/environment/path.dsv
+[2.800s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/local_setup.bash
+[2.802s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/local_setup.sh
+[2.805s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/local_setup.zsh
+[2.806s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/local_setup.dsv
+[2.809s] -- Symlinking: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/package.dsv
+[2.855s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/ament_index/resource_index/packages/rplidar_ros
+[2.859s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.873s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.874s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig.cmake
+[2.875s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig-version.cmake
+[2.875s] -- Up-to-date symlink: /home/ubuntu/mako_ws/mako_robot/install/rplidar_ros/share/rplidar_ros/package.xml
+[2.884s] Invoked command in '/home/ubuntu/mako_ws/mako_robot/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/mako_ws/mako_robot/install/dev_test_tools:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/mako_ws/mako_robot/build/rplidar_ros

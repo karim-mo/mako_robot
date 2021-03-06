@@ -1,0 +1,25 @@
+[1.379s] Invoking command in '/home/ubuntu/mako_ws/mako_robot/src/dev_test_tools': PYTHONPATH=/home/ubuntu/mako_ws/mako_robot/install/dev_test_tools/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/dev_test_tools build --build-base /home/ubuntu/mako_ws/mako_robot/build/dev_test_tools/build install --prefix /home/ubuntu/mako_ws/mako_robot/install/dev_test_tools --record /home/ubuntu/mako_ws/mako_robot/build/dev_test_tools/install.log --single-version-externally-managed
+[2.717s] running egg_info
+[2.720s] writing ../../build/dev_test_tools/dev_test_tools.egg-info/PKG-INFO
+[2.721s] writing dependency_links to ../../build/dev_test_tools/dev_test_tools.egg-info/dependency_links.txt
+[2.722s] writing entry points to ../../build/dev_test_tools/dev_test_tools.egg-info/entry_points.txt
+[2.723s] writing requirements to ../../build/dev_test_tools/dev_test_tools.egg-info/requires.txt
+[2.724s] writing top-level names to ../../build/dev_test_tools/dev_test_tools.egg-info/top_level.txt
+[2.893s] reading manifest file '../../build/dev_test_tools/dev_test_tools.egg-info/SOURCES.txt'
+[2.898s] writing manifest file '../../build/dev_test_tools/dev_test_tools.egg-info/SOURCES.txt'
+[2.898s] running build
+[2.899s] running build_py
+[2.899s] copying dev_test_tools/lidar_test.py -> /home/ubuntu/mako_ws/mako_robot/build/dev_test_tools/build/lib/dev_test_tools
+[2.901s] running install
+[2.904s] running install_lib
+[2.914s] copying /home/ubuntu/mako_ws/mako_robot/build/dev_test_tools/build/lib/dev_test_tools/lidar_test.py -> /home/ubuntu/mako_ws/mako_robot/install/dev_test_tools/lib/python3.8/site-packages/dev_test_tools
+[2.916s] byte-compiling /home/ubuntu/mako_ws/mako_robot/install/dev_test_tools/lib/python3.8/site-packages/dev_test_tools/lidar_test.py to lidar_test.cpython-38.pyc
+[2.923s] running install_data
+[2.930s] copying package.xml -> /home/ubuntu/mako_ws/mako_robot/install/dev_test_tools/share/dev_test_tools
+[2.931s] running install_egg_info
+[2.937s] removing '/home/ubuntu/mako_ws/mako_robot/install/dev_test_tools/lib/python3.8/site-packages/dev_test_tools-0.0.0-py3.8.egg-info' (and everything under it)
+[2.939s] Copying ../../build/dev_test_tools/dev_test_tools.egg-info to /home/ubuntu/mako_ws/mako_robot/install/dev_test_tools/lib/python3.8/site-packages/dev_test_tools-0.0.0-py3.8.egg-info
+[2.945s] running install_scripts
+[3.047s] Installing lidarTestNode script to /home/ubuntu/mako_ws/mako_robot/install/dev_test_tools/lib/dev_test_tools
+[3.049s] writing list of installed files to '/home/ubuntu/mako_ws/mako_robot/build/dev_test_tools/install.log'
+[3.180s] Invoked command in '/home/ubuntu/mako_ws/mako_robot/src/dev_test_tools' returned '0': PYTHONPATH=/home/ubuntu/mako_ws/mako_robot/install/dev_test_tools/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/dev_test_tools build --build-base /home/ubuntu/mako_ws/mako_robot/build/dev_test_tools/build install --prefix /home/ubuntu/mako_ws/mako_robot/install/dev_test_tools --record /home/ubuntu/mako_ws/mako_robot/build/dev_test_tools/install.log --single-version-externally-managed

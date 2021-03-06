@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/dev_test_tools/dev_test_tools.egg-info
+writing ../../build/dev_test_tools/dev_test_tools.egg-info/PKG-INFO
+writing dependency_links to ../../build/dev_test_tools/dev_test_tools.egg-info/dependency_links.txt
+writing entry points to ../../build/dev_test_tools/dev_test_tools.egg-info/entry_points.txt
+writing requirements to ../../build/dev_test_tools/dev_test_tools.egg-info/requires.txt
+writing top-level names to ../../build/dev_test_tools/dev_test_tools.egg-info/top_level.txt
+writing manifest file '../../build/dev_test_tools/dev_test_tools.egg-info/SOURCES.txt'
+reading manifest file '../../build/dev_test_tools/dev_test_tools.egg-info/SOURCES.txt'
+writing manifest file '../../build/dev_test_tools/dev_test_tools.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ubuntu/mako_ws/mako_robot/build/dev_test_tools/build
+creating /home/ubuntu/mako_ws/mako_robot/build/dev_test_tools/build/lib
+creating /home/ubuntu/mako_ws/mako_robot/build/dev_test_tools/build/lib/dev_test_tools
+copying dev_test_tools/__init__.py -> /home/ubuntu/mako_ws/mako_robot/build/dev_test_tools/build/lib/dev_test_tools
+running install
+running install_lib
+creating /home/ubuntu/mako_ws/mako_robot/install/dev_test_tools/lib/python3.8/site-packages/dev_test_tools
+copying /home/ubuntu/mako_ws/mako_robot/build/dev_test_tools/build/lib/dev_test_tools/__init__.py -> /home/ubuntu/mako_ws/mako_robot/install/dev_test_tools/lib/python3.8/site-packages/dev_test_tools
+byte-compiling /home/ubuntu/mako_ws/mako_robot/install/dev_test_tools/lib/python3.8/site-packages/dev_test_tools/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /home/ubuntu/mako_ws/mako_robot/install/dev_test_tools/share/ament_index
+creating /home/ubuntu/mako_ws/mako_robot/install/dev_test_tools/share/ament_index/resource_index
+creating /home/ubuntu/mako_ws/mako_robot/install/dev_test_tools/share/ament_index/resource_index/packages
+copying resource/dev_test_tools -> /home/ubuntu/mako_ws/mako_robot/install/dev_test_tools/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/mako_ws/mako_robot/install/dev_test_tools/share/dev_test_tools
+running install_egg_info
+Copying ../../build/dev_test_tools/dev_test_tools.egg-info to /home/ubuntu/mako_ws/mako_robot/install/dev_test_tools/lib/python3.8/site-packages/dev_test_tools-0.0.0-py3.8.egg-info
+running install_scripts
+writing list of installed files to '/home/ubuntu/mako_ws/mako_robot/build/dev_test_tools/install.log'

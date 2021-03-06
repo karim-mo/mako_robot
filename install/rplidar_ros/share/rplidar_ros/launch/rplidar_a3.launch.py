@@ -1,0 +1,1 @@
+/home/ubuntu/mako_ws/mako_robot/src/rplidar_ros2/launch/rplidar_a3.launch.py
