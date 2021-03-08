@@ -12,9 +12,9 @@ running install
 running install_lib
 running install_data
 running install_egg_info
-removing '/home/karim/mako_robot/mako_ws/install/dev_test_tools/lib/python3.8/site-packages/dev_test_tools-0.0.0-py3.8.egg-info' (and everything under it)
-Copying ../../build/dev_test_tools/dev_test_tools.egg-info to /home/karim/mako_robot/mako_ws/install/dev_test_tools/lib/python3.8/site-packages/dev_test_tools-0.0.0-py3.8.egg-info
+removing '/home/ubuntu/mako_robot/mako_ws/install/dev_test_tools/lib/python3.8/site-packages/dev_test_tools-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/dev_test_tools/dev_test_tools.egg-info to /home/ubuntu/mako_robot/mako_ws/install/dev_test_tools/lib/python3.8/site-packages/dev_test_tools-0.0.0-py3.8.egg-info
 running install_scripts
-Installing camTestNode script to /home/karim/mako_robot/mako_ws/install/dev_test_tools/lib/dev_test_tools
-Installing lidarTestNode script to /home/karim/mako_robot/mako_ws/install/dev_test_tools/lib/dev_test_tools
-writing list of installed files to '/home/karim/mako_robot/mako_ws/build/dev_test_tools/install.log'
+Installing camTestNode script to /home/ubuntu/mako_robot/mako_ws/install/dev_test_tools/lib/dev_test_tools
+Installing lidarTestNode script to /home/ubuntu/mako_robot/mako_ws/install/dev_test_tools/lib/dev_test_tools
+writing list of installed files to '/home/ubuntu/mako_robot/mako_ws/build/dev_test_tools/install.log'
