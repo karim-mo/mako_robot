@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ubuntu/mako_ws/mako_robot/build/rplidar_ros/rplidarNode" "/home/ubuntu/mako_ws/mako_robot/build/rplidar_ros/rplidarNodeClient" "/home/ubuntu/mako_ws/mako_robot/build/rplidar_ros/rplidar_composition" "TARGETS" "rplidarNode" "rplidarNodeClient" "rplidar_composition" "DESTINATION" "lib/rplidar_ros")

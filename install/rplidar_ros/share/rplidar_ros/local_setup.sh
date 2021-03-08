@@ -1,1 +1,0 @@
-/home/ubuntu/mako_ws/mako_robot/build/rplidar_ros/ament_cmake_environment_hooks/local_setup.sh

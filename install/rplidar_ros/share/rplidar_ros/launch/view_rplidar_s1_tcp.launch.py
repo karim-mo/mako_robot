@@ -1,1 +1,0 @@
-/home/ubuntu/mako_ws/mako_robot/src/rplidar_ros2/launch/view_rplidar_s1_tcp.launch.py
