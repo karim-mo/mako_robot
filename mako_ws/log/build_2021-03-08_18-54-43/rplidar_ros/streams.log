@@ -1,0 +1,6 @@
+[0.385s] Invoking command in '/home/karim/mako_robot/mako_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/dev_test_tools:/opt/ros/foxy /usr/bin/cmake --build /home/karim/mako_robot/mako_ws/build/rplidar_ros -- -j6 -l6
+[0.404s] CMake Error: The current CMakeCache.txt directory /home/karim/mako_robot/mako_ws/build/rplidar_ros/CMakeCache.txt is different than the directory /home/ubuntu/mako_robot/mako_ws/build/rplidar_ros where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+[0.421s] CMake Error: The source directory "/home/ubuntu/mako_robot/mako_ws/src/lidar_ros2" does not exist.
+[0.421s] Specify --help for usage, or press the help button on the CMake GUI.
+[0.425s] make: *** [Makefile:563: cmake_check_build_system] Error 1
+[0.430s] Invoked command in '/home/karim/mako_robot/mako_ws/build/rplidar_ros' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/dev_test_tools:/opt/ros/foxy /usr/bin/cmake --build /home/karim/mako_robot/mako_ws/build/rplidar_ros -- -j6 -l6

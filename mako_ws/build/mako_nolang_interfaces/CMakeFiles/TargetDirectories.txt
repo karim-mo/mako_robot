@@ -1,0 +1,9 @@
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/install/strip.dir
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/install/local.dir
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/install.dir
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/list_install_components.dir
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/rebuild_cache.dir
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/edit_cache.dir
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/test.dir
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/mako_nolang_interfaces_uninstall.dir
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/uninstall.dir

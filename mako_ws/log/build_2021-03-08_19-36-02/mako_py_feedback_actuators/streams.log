@@ -1,0 +1,39 @@
+[1.616s] Invoking command in '/home/karim/mako_robot/mako_ws/src/mako_py_feedback_actuators': PYTHONPATH=/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mako_py_feedback_actuators build --build-base /home/karim/mako_robot/mako_ws/build/mako_py_feedback_actuators/build install --prefix /home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators --record /home/karim/mako_robot/mako_ws/build/mako_py_feedback_actuators/install.log --single-version-externally-managed
+[2.140s] running egg_info
+[2.140s] creating ../../build/mako_py_feedback_actuators/mako_py_feedback_actuators.egg-info
+[2.140s] writing ../../build/mako_py_feedback_actuators/mako_py_feedback_actuators.egg-info/PKG-INFO
+[2.140s] writing dependency_links to ../../build/mako_py_feedback_actuators/mako_py_feedback_actuators.egg-info/dependency_links.txt
+[2.141s] writing entry points to ../../build/mako_py_feedback_actuators/mako_py_feedback_actuators.egg-info/entry_points.txt
+[2.141s] writing requirements to ../../build/mako_py_feedback_actuators/mako_py_feedback_actuators.egg-info/requires.txt
+[2.142s] writing top-level names to ../../build/mako_py_feedback_actuators/mako_py_feedback_actuators.egg-info/top_level.txt
+[2.148s] writing manifest file '../../build/mako_py_feedback_actuators/mako_py_feedback_actuators.egg-info/SOURCES.txt'
+[2.237s] reading manifest file '../../build/mako_py_feedback_actuators/mako_py_feedback_actuators.egg-info/SOURCES.txt'
+[2.239s] writing manifest file '../../build/mako_py_feedback_actuators/mako_py_feedback_actuators.egg-info/SOURCES.txt'
+[2.239s] running build
+[2.240s] running build_py
+[2.240s] creating /home/karim/mako_robot/mako_ws/build/mako_py_feedback_actuators/build
+[2.240s] creating /home/karim/mako_robot/mako_ws/build/mako_py_feedback_actuators/build/lib
+[2.240s] creating /home/karim/mako_robot/mako_ws/build/mako_py_feedback_actuators/build/lib/mako_py_feedback_actuators
+[2.241s] copying mako_py_feedback_actuators/LED_Control.py -> /home/karim/mako_robot/mako_ws/build/mako_py_feedback_actuators/build/lib/mako_py_feedback_actuators
+[2.241s] copying mako_py_feedback_actuators/Servo_Control.py -> /home/karim/mako_robot/mako_ws/build/mako_py_feedback_actuators/build/lib/mako_py_feedback_actuators
+[2.241s] copying mako_py_feedback_actuators/__init__.py -> /home/karim/mako_robot/mako_ws/build/mako_py_feedback_actuators/build/lib/mako_py_feedback_actuators
+[2.241s] running install
+[2.243s] running install_lib
+[2.245s] creating /home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/lib/python3.8/site-packages/mako_py_feedback_actuators
+[2.246s] copying /home/karim/mako_robot/mako_ws/build/mako_py_feedback_actuators/build/lib/mako_py_feedback_actuators/LED_Control.py -> /home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/lib/python3.8/site-packages/mako_py_feedback_actuators
+[2.249s] copying /home/karim/mako_robot/mako_ws/build/mako_py_feedback_actuators/build/lib/mako_py_feedback_actuators/Servo_Control.py -> /home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/lib/python3.8/site-packages/mako_py_feedback_actuators
+[2.249s] copying /home/karim/mako_robot/mako_ws/build/mako_py_feedback_actuators/build/lib/mako_py_feedback_actuators/__init__.py -> /home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/lib/python3.8/site-packages/mako_py_feedback_actuators
+[2.254s] byte-compiling /home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/lib/python3.8/site-packages/mako_py_feedback_actuators/LED_Control.py to LED_Control.cpython-38.pyc
+[2.254s] byte-compiling /home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/lib/python3.8/site-packages/mako_py_feedback_actuators/Servo_Control.py to Servo_Control.cpython-38.pyc
+[2.254s] byte-compiling /home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/lib/python3.8/site-packages/mako_py_feedback_actuators/__init__.py to __init__.cpython-38.pyc
+[2.254s] running install_data
+[2.260s] creating /home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/share/ament_index
+[2.260s] creating /home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/share/ament_index/resource_index
+[2.260s] creating /home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/share/ament_index/resource_index/packages
+[2.260s] copying resource/mako_py_feedback_actuators -> /home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/share/ament_index/resource_index/packages
+[2.260s] copying package.xml -> /home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/share/mako_py_feedback_actuators
+[2.261s] running install_egg_info
+[2.261s] Copying ../../build/mako_py_feedback_actuators/mako_py_feedback_actuators.egg-info to /home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/lib/python3.8/site-packages/mako_py_feedback_actuators-0.0.0-py3.8.egg-info
+[2.261s] running install_scripts
+[2.315s] writing list of installed files to '/home/karim/mako_robot/mako_ws/build/mako_py_feedback_actuators/install.log'
+[2.367s] Invoked command in '/home/karim/mako_robot/mako_ws/src/mako_py_feedback_actuators' returned '0': PYTHONPATH=/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mako_py_feedback_actuators build --build-base /home/karim/mako_robot/mako_ws/build/mako_py_feedback_actuators/build install --prefix /home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators --record /home/karim/mako_robot/mako_ws/build/mako_py_feedback_actuators/install.log --single-version-externally-managed

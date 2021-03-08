@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/mako_robot/mako_ws/src/lidar_ros2/src/standalone_rplidar.cpp" "/home/ubuntu/mako_robot/mako_ws/build/rplidar_ros/CMakeFiles/rplidar_composition.dir/src/standalone_rplidar.cpp.o"
+  "/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/standalone_rplidar.cpp" "/home/karim/mako_robot/mako_ws/build/rplidar_ros/CMakeFiles/rplidar_composition.dir/src/standalone_rplidar.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -18,15 +18,15 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/ubuntu/mako_robot/mako_ws/src/lidar_ros2/./sdk/include"
-  "/home/ubuntu/mako_robot/mako_ws/src/lidar_ros2/./sdk/src"
-  "/home/ubuntu/mako_robot/mako_ws/src/lidar_ros2/include"
+  "/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include"
+  "/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/src"
+  "/home/karim/mako_robot/mako_ws/src/lidar_ros2/include"
   "/opt/ros/foxy/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ubuntu/mako_robot/mako_ws/build/rplidar_ros/CMakeFiles/rplidar_composition_node.dir/DependInfo.cmake"
+  "/home/karim/mako_robot/mako_ws/build/rplidar_ros/CMakeFiles/rplidar_composition_node.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

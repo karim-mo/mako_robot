@@ -1,0 +1,15 @@
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/ament_index/resource_index/package_run_dependencies/mako_nolang_interfaces
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/ament_index/resource_index/parent_prefix_path/mako_nolang_interfaces
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/environment/ament_prefix_path.sh
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/environment/ament_prefix_path.dsv
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/environment/path.sh
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/environment/path.dsv
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/local_setup.bash
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/local_setup.sh
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/local_setup.zsh
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/local_setup.dsv
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/package.dsv
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/ament_index/resource_index/packages/mako_nolang_interfaces
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/cmake/mako_nolang_interfacesConfig.cmake
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/cmake/mako_nolang_interfacesConfig-version.cmake
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/package.xml
