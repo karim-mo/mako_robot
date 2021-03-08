@@ -1,0 +1,49 @@
+[1.241s] Invoking command in '/home/ubuntu/mako_robot/mako_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/mako_robot/mako_ws/build/rplidar_ros -- -j4 -l4
+[1.647s] [ 11%] Built target rplidarNodeClient
+[1.672s] [ 50%] Built target rplidarNode
+[1.686s] [ 88%] Built target rplidar_composition_node
+[1.884s] [100%] Built target rplidar_composition
+[1.939s] Invoked command in '/home/ubuntu/mako_robot/mako_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/mako_robot/mako_ws/build/rplidar_ros -- -j4 -l4
+[2.257s] Invoking command in '/home/ubuntu/mako_robot/mako_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/mako_robot/mako_ws/build/rplidar_ros
+[2.298s] -- Install configuration: ""
+[2.301s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/lib/rplidar_ros/rplidarNode
+[2.303s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/lib/rplidar_ros/rplidarNodeClient
+[2.305s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/lib/rplidar_ros/rplidar_composition
+[2.310s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch
+[2.310s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a3.launch.py
+[2.311s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a3.launch.py
+[2.313s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_tcp.launch.py
+[2.314s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar.launch.py
+[2.315s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar.launch.py
+[2.316s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1.launch.py
+[2.317s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/test_rplidar.launch.py
+[2.317s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1.launch.py
+[2.318s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_tcp.launch.py
+[2.318s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/test_rplidar_a3.launch.py
+[2.319s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/rviz
+[2.319s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/rviz/rplidar.rviz
+[2.320s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/lib/librplidar_composition_node.so
+[2.321s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/include
+[2.321s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/include/visibility.h
+[2.322s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/include/rplidar_node.hpp
+[2.322s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/lib/rplidar_ros/rplidarNode
+[2.322s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/lib/rplidar_ros/rplidarNodeClient
+[2.323s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/lib/rplidar_ros/rplidar_composition
+[2.325s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/ament_index/resource_index/package_run_dependencies/rplidar_ros
+[2.326s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/ament_index/resource_index/parent_prefix_path/rplidar_ros
+[2.326s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.sh
+[2.327s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.dsv
+[2.328s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/environment/path.sh
+[2.328s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/environment/path.dsv
+[2.329s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/local_setup.bash
+[2.330s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/local_setup.sh
+[2.330s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/local_setup.zsh
+[2.331s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/local_setup.dsv
+[2.331s] -- Installing: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/package.dsv
+[2.332s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/ament_index/resource_index/packages/rplidar_ros
+[2.333s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.334s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.334s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig.cmake
+[2.335s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig-version.cmake
+[2.340s] -- Up-to-date: /home/ubuntu/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/package.xml
+[2.346s] Invoked command in '/home/ubuntu/mako_robot/mako_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/mako_robot/mako_ws/build/rplidar_ros

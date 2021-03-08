@@ -1,0 +1,21 @@
+[1.301s] Invoking command in '/home/ubuntu/mako_robot/mako_ws/src/dev_test_tools': PYTHONPATH=/home/ubuntu/mako_robot/mako_ws/install/dev_test_tools/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/dev_test_tools build --build-base /home/ubuntu/mako_robot/mako_ws/build/dev_test_tools/build install --prefix /home/ubuntu/mako_robot/mako_ws/install/dev_test_tools --record /home/ubuntu/mako_robot/mako_ws/build/dev_test_tools/install.log --single-version-externally-managed
+[2.418s] running egg_info
+[2.419s] writing ../../build/dev_test_tools/dev_test_tools.egg-info/PKG-INFO
+[2.420s] writing dependency_links to ../../build/dev_test_tools/dev_test_tools.egg-info/dependency_links.txt
+[2.421s] writing entry points to ../../build/dev_test_tools/dev_test_tools.egg-info/entry_points.txt
+[2.421s] writing requirements to ../../build/dev_test_tools/dev_test_tools.egg-info/requires.txt
+[2.422s] writing top-level names to ../../build/dev_test_tools/dev_test_tools.egg-info/top_level.txt
+[2.570s] reading manifest file '../../build/dev_test_tools/dev_test_tools.egg-info/SOURCES.txt'
+[2.574s] writing manifest file '../../build/dev_test_tools/dev_test_tools.egg-info/SOURCES.txt'
+[2.575s] running build
+[2.575s] running build_py
+[2.577s] running install
+[2.580s] running install_lib
+[2.586s] running install_data
+[2.588s] running install_egg_info
+[2.594s] removing '/home/ubuntu/mako_robot/mako_ws/install/dev_test_tools/lib/python3.8/site-packages/dev_test_tools-0.0.0-py3.8.egg-info' (and everything under it)
+[2.596s] Copying ../../build/dev_test_tools/dev_test_tools.egg-info to /home/ubuntu/mako_robot/mako_ws/install/dev_test_tools/lib/python3.8/site-packages/dev_test_tools-0.0.0-py3.8.egg-info
+[2.601s] running install_scripts
+[2.678s] Installing camTestNode script to /home/ubuntu/mako_robot/mako_ws/install/dev_test_tools/lib/dev_test_tools
+[2.679s] Installing lidarTestNode script to /home/ubuntu/mako_robot/mako_ws/install/dev_test_tools/lib/dev_test_tools
+[2.680s] writing list of installed files to '/home/ubuntu/mako_robot/mako_ws/build/dev_test_tools/install.log'

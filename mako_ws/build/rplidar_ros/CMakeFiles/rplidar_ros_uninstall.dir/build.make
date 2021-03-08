@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/karim/mako_robot/mako_ws/src/lidar_ros2
+CMAKE_SOURCE_DIR = /home/ubuntu/mako_robot/mako_ws/src/lidar_ros2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/karim/mako_robot/mako_ws/build/rplidar_ros
+CMAKE_BINARY_DIR = /home/ubuntu/mako_robot/mako_ws/build/rplidar_ros
 
 # Utility rule file for rplidar_ros_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/karim/mako_robot/mako_ws/build/rplidar_ros
 include CMakeFiles/rplidar_ros_uninstall.dir/progress.make
 
 CMakeFiles/rplidar_ros_uninstall:
-	/usr/bin/cmake -P /home/karim/mako_robot/mako_ws/build/rplidar_ros/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/ubuntu/mako_robot/mako_ws/build/rplidar_ros/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 rplidar_ros_uninstall: CMakeFiles/rplidar_ros_uninstall
 rplidar_ros_uninstall: CMakeFiles/rplidar_ros_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/rplidar_ros_uninstall.dir/clean:
 .PHONY : CMakeFiles/rplidar_ros_uninstall.dir/clean
 
 CMakeFiles/rplidar_ros_uninstall.dir/depend:
-	cd /home/karim/mako_robot/mako_ws/build/rplidar_ros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/karim/mako_robot/mako_ws/src/lidar_ros2 /home/karim/mako_robot/mako_ws/src/lidar_ros2 /home/karim/mako_robot/mako_ws/build/rplidar_ros /home/karim/mako_robot/mako_ws/build/rplidar_ros /home/karim/mako_robot/mako_ws/build/rplidar_ros/CMakeFiles/rplidar_ros_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/mako_robot/mako_ws/build/rplidar_ros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/mako_robot/mako_ws/src/lidar_ros2 /home/ubuntu/mako_robot/mako_ws/src/lidar_ros2 /home/ubuntu/mako_robot/mako_ws/build/rplidar_ros /home/ubuntu/mako_robot/mako_ws/build/rplidar_ros /home/ubuntu/mako_robot/mako_ws/build/rplidar_ros/CMakeFiles/rplidar_ros_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rplidar_ros_uninstall.dir/depend
 
