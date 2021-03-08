@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/mako_robot/mako_ws/src/lidar_ros2
+CMAKE_SOURCE_DIR = /home/karim/mako_robot/mako_ws/src/lidar_ros2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/mako_robot/mako_ws/build/rplidar_ros
+CMAKE_BINARY_DIR = /home/karim/mako_robot/mako_ws/build/rplidar_ros
 
 # Include any dependencies generated for this target.
 include CMakeFiles/rplidar_composition.dir/depend.make
@@ -58,17 +58,17 @@ include CMakeFiles/rplidar_composition.dir/progress.make
 include CMakeFiles/rplidar_composition.dir/flags.make
 
 CMakeFiles/rplidar_composition.dir/src/standalone_rplidar.cpp.o: CMakeFiles/rplidar_composition.dir/flags.make
-CMakeFiles/rplidar_composition.dir/src/standalone_rplidar.cpp.o: /home/ubuntu/mako_robot/mako_ws/src/lidar_ros2/src/standalone_rplidar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/mako_robot/mako_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rplidar_composition.dir/src/standalone_rplidar.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidar_composition.dir/src/standalone_rplidar.cpp.o -c /home/ubuntu/mako_robot/mako_ws/src/lidar_ros2/src/standalone_rplidar.cpp
+CMakeFiles/rplidar_composition.dir/src/standalone_rplidar.cpp.o: /home/karim/mako_robot/mako_ws/src/lidar_ros2/src/standalone_rplidar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karim/mako_robot/mako_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rplidar_composition.dir/src/standalone_rplidar.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidar_composition.dir/src/standalone_rplidar.cpp.o -c /home/karim/mako_robot/mako_ws/src/lidar_ros2/src/standalone_rplidar.cpp
 
 CMakeFiles/rplidar_composition.dir/src/standalone_rplidar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidar_composition.dir/src/standalone_rplidar.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/mako_robot/mako_ws/src/lidar_ros2/src/standalone_rplidar.cpp > CMakeFiles/rplidar_composition.dir/src/standalone_rplidar.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/karim/mako_robot/mako_ws/src/lidar_ros2/src/standalone_rplidar.cpp > CMakeFiles/rplidar_composition.dir/src/standalone_rplidar.cpp.i
 
 CMakeFiles/rplidar_composition.dir/src/standalone_rplidar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidar_composition.dir/src/standalone_rplidar.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/mako_robot/mako_ws/src/lidar_ros2/src/standalone_rplidar.cpp -o CMakeFiles/rplidar_composition.dir/src/standalone_rplidar.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/karim/mako_robot/mako_ws/src/lidar_ros2/src/standalone_rplidar.cpp -o CMakeFiles/rplidar_composition.dir/src/standalone_rplidar.cpp.s
 
 # Object files for target rplidar_composition
 rplidar_composition_OBJECTS = \
@@ -112,7 +112,7 @@ rplidar_composition: /opt/ros/foxy/lib/librcl.so
 rplidar_composition: /opt/ros/foxy/lib/librmw_implementation.so
 rplidar_composition: /opt/ros/foxy/lib/librmw.so
 rplidar_composition: /opt/ros/foxy/lib/librcl_logging_spdlog.so
-rplidar_composition: /usr/lib/aarch64-linux-gnu/libspdlog.so.1.5.0
+rplidar_composition: /usr/lib/x86_64-linux-gnu/libspdlog.so.1.5.0
 rplidar_composition: /opt/ros/foxy/lib/librcl_yaml_param_parser.so
 rplidar_composition: /opt/ros/foxy/lib/libyaml.so
 rplidar_composition: /opt/ros/foxy/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so
@@ -128,7 +128,7 @@ rplidar_composition: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_cp
 rplidar_composition: /opt/ros/foxy/lib/libtracetools.so
 rplidar_composition: /opt/ros/foxy/lib/libament_index_cpp.so
 rplidar_composition: /opt/ros/foxy/lib/libclass_loader.so
-rplidar_composition: /opt/ros/foxy/lib/aarch64-linux-gnu/libconsole_bridge.so.1.0
+rplidar_composition: /opt/ros/foxy/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
 rplidar_composition: /opt/ros/foxy/lib/libcomposition_interfaces__rosidl_typesupport_introspection_c.so
 rplidar_composition: /opt/ros/foxy/lib/libcomposition_interfaces__rosidl_generator_c.so
 rplidar_composition: /opt/ros/foxy/lib/libcomposition_interfaces__rosidl_typesupport_c.so
@@ -152,7 +152,7 @@ rplidar_composition: /opt/ros/foxy/lib/librcpputils.so
 rplidar_composition: /opt/ros/foxy/lib/librosidl_runtime_c.so
 rplidar_composition: /opt/ros/foxy/lib/librcutils.so
 rplidar_composition: CMakeFiles/rplidar_composition.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/mako_robot/mako_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable rplidar_composition"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/karim/mako_robot/mako_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable rplidar_composition"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rplidar_composition.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -165,6 +165,6 @@ CMakeFiles/rplidar_composition.dir/clean:
 .PHONY : CMakeFiles/rplidar_composition.dir/clean
 
 CMakeFiles/rplidar_composition.dir/depend:
-	cd /home/ubuntu/mako_robot/mako_ws/build/rplidar_ros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/mako_robot/mako_ws/src/lidar_ros2 /home/ubuntu/mako_robot/mako_ws/src/lidar_ros2 /home/ubuntu/mako_robot/mako_ws/build/rplidar_ros /home/ubuntu/mako_robot/mako_ws/build/rplidar_ros /home/ubuntu/mako_robot/mako_ws/build/rplidar_ros/CMakeFiles/rplidar_composition.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/karim/mako_robot/mako_ws/build/rplidar_ros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/karim/mako_robot/mako_ws/src/lidar_ros2 /home/karim/mako_robot/mako_ws/src/lidar_ros2 /home/karim/mako_robot/mako_ws/build/rplidar_ros /home/karim/mako_robot/mako_ws/build/rplidar_ros /home/karim/mako_robot/mako_ws/build/rplidar_ros/CMakeFiles/rplidar_composition.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rplidar_composition.dir/depend
 

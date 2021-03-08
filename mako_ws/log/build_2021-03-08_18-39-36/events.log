@@ -1,0 +1,683 @@
+[0.000000] (-) TimerEvent: {}
+[0.003886] (dev_test_tools) JobQueued: {'identifier': 'dev_test_tools', 'dependencies': OrderedDict()}
+[0.004036] (rplidar_ros) JobQueued: {'identifier': 'rplidar_ros', 'dependencies': OrderedDict()}
+[0.004068] (dev_test_tools) JobStarted: {'identifier': 'dev_test_tools'}
+[0.026114] (rplidar_ros) JobStarted: {'identifier': 'rplidar_ros'}
+[0.261767] (-) TimerEvent: {}
+[0.371590] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'cmake'}
+[0.371779] (-) TimerEvent: {}
+[0.374537] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '/home/karim/mako_robot/mako_ws/src/lidar_ros2', '-DCMAKE_INSTALL_PREFIX=/home/karim/mako_robot/mako_ws/install/rplidar_ros'], 'cwd': '/home/karim/mako_robot/mako_ws/build/rplidar_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'karim'), ('LC_TIME', 'ar_EG.UTF-8'), ('SSH_AGENT_PID', '1747'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/karim/ros2_ws/install/serv_act_sol_interfaces/lib:/home/karim/ros2_ws/install/robot_interfaces/lib:/home/karim/project_ws/install/ros_project_pkg_cpp_robot_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/karim'), ('OLDPWD', '/home/karim/mako_robot'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('MANAGERPID', '1531'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9a27a7b27a1a7fe215b7c2216046262a'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/karim/project_ws/install:/home/karim/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'karim'), ('JOURNAL_STREAM', '8:35439'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'karim'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/karim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/karim-vm:@/tmp/.ICE-unix/1842,unix/karim-vm:/tmp/.ICE-unix/1842'), ('INVOCATION_ID', '967a31cd3a484c5ebc39176c4a924545'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3f80b3fa_3d99_45de_8b89_8cc96cd29faf'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.507'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/karim/ros2_ws/install/serv_act_sol_pkg:/home/karim/ros2_ws/install/serv_act_sol_interfaces:/home/karim/ros2_ws/install/my_cpp_pkg:/home/karim/ros2_ws/install/robot_interfaces:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/ros-project_pkg-cpp_robot-bringup:/home/karim/project_ws/install/ros-project_pkg-cpp_robot-driver-spawner:/home/karim/project_ws/install/ros_project_pkg_cpp_robot_interfaces:/home/karim/project_ws/install/dev_test_tools:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/karim/mako_robot/mako_ws/build/rplidar_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9a27a7b27a1a7fe215b7c2216046262a'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/karim/ros2_ws/install/serv_act_sol_interfaces/lib/python3.8/site-packages:/home/karim/ros2_ws/install/robot_interfaces/lib/python3.8/site-packages:/home/karim/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver/lib/python3.8/site-packages:/home/karim/project_ws/install/ros_project_pkg_cpp_robot_interfaces/lib/python3.8/site-packages:/home/karim/project_ws/install/dev_test_tools/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/karim/ros2_ws/install/serv_act_sol_pkg:/home/karim/ros2_ws/install/serv_act_sol_interfaces:/home/karim/ros2_ws/install/my_cpp_pkg:/home/karim/ros2_ws/install/robot_interfaces:/home/karim/project_ws/install/ros-project_pkg-cpp_robot-bringup:/home/karim/project_ws/install/ros-project_pkg-cpp_robot-driver-spawner:/home/karim/project_ws/install/ros_project_pkg_cpp_robot_interfaces:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/dev_test_tools:/opt/ros/foxy')]), 'shell': False}
+[0.391091] (dev_test_tools) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/dev_test_tools', 'build', '--build-base', '/home/karim/mako_robot/mako_ws/build/dev_test_tools/build', 'install', '--prefix', '/home/karim/mako_robot/mako_ws/install/dev_test_tools', '--record', '/home/karim/mako_robot/mako_ws/build/dev_test_tools/install.log', '--single-version-externally-managed'], 'cwd': '/home/karim/mako_robot/mako_ws/src/dev_test_tools', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'karim', 'LC_TIME': 'ar_EG.UTF-8', 'SSH_AGENT_PID': '1747', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/karim/ros2_ws/install/serv_act_sol_interfaces/lib:/home/karim/ros2_ws/install/robot_interfaces/lib:/home/karim/project_ws/install/ros_project_pkg_cpp_robot_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/karim', 'OLDPWD': '/home/karim/mako_robot', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ar_EG.UTF-8', 'MANAGERPID': '1531', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=9a27a7b27a1a7fe215b7c2216046262a', 'COLORTERM': 'truecolor', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/karim/project_ws/install:/home/karim/ros2_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'karim', 'JOURNAL_STREAM': '8:35439', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'USERNAME': 'karim', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/karim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/karim-vm:@/tmp/.ICE-unix/1842,unix/karim-vm:/tmp/.ICE-unix/1842', 'INVOCATION_ID': '967a31cd3a484c5ebc39176c4a924545', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ar_EG.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/3f80b3fa_3d99_45de_8b89_8cc96cd29faf', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ar_EG.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.507', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/karim/ros2_ws/install/serv_act_sol_pkg:/home/karim/ros2_ws/install/serv_act_sol_interfaces:/home/karim/ros2_ws/install/my_cpp_pkg:/home/karim/ros2_ws/install/robot_interfaces:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/ros-project_pkg-cpp_robot-bringup:/home/karim/project_ws/install/ros-project_pkg-cpp_robot-driver-spawner:/home/karim/project_ws/install/ros_project_pkg_cpp_robot_interfaces:/home/karim/project_ws/install/dev_test_tools:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'ar_EG.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ar_EG.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ar_EG.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/karim/mako_robot/mako_ws/build/dev_test_tools', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=9a27a7b27a1a7fe215b7c2216046262a', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/karim/mako_robot/mako_ws/install/dev_test_tools/lib/python3.8/site-packages:/home/karim/ros2_ws/install/serv_act_sol_interfaces/lib/python3.8/site-packages:/home/karim/ros2_ws/install/robot_interfaces/lib/python3.8/site-packages:/home/karim/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver/lib/python3.8/site-packages:/home/karim/project_ws/install/ros_project_pkg_cpp_robot_interfaces/lib/python3.8/site-packages:/home/karim/project_ws/install/dev_test_tools/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'ar_EG.UTF-8', 'LC_PAPER': 'ar_EG.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/karim/ros2_ws/install/serv_act_sol_pkg:/home/karim/ros2_ws/install/serv_act_sol_interfaces:/home/karim/ros2_ws/install/my_cpp_pkg:/home/karim/ros2_ws/install/robot_interfaces:/home/karim/project_ws/install/ros-project_pkg-cpp_robot-bringup:/home/karim/project_ws/install/ros-project_pkg-cpp_robot-driver-spawner:/home/karim/project_ws/install/ros_project_pkg_cpp_robot_interfaces'}, 'shell': False}
+[0.473514] (-) TimerEvent: {}
+[0.487668] (rplidar_ros) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.3.0\n'}
+[0.572298] (rplidar_ros) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.3.0\n'}
+[0.577981] (-) TimerEvent: {}
+[0.578233] (rplidar_ros) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.678188] (-) TimerEvent: {}
+[0.722316] (dev_test_tools) StdoutLine: {'line': b'running egg_info\n'}
+[0.730180] (dev_test_tools) StdoutLine: {'line': b'writing ../../build/dev_test_tools/dev_test_tools.egg-info/PKG-INFO\n'}
+[0.730595] (dev_test_tools) StdoutLine: {'line': b'writing dependency_links to ../../build/dev_test_tools/dev_test_tools.egg-info/dependency_links.txt\n'}
+[0.730685] (dev_test_tools) StdoutLine: {'line': b'writing entry points to ../../build/dev_test_tools/dev_test_tools.egg-info/entry_points.txt\n'}
+[0.730796] (dev_test_tools) StdoutLine: {'line': b'writing requirements to ../../build/dev_test_tools/dev_test_tools.egg-info/requires.txt\n'}
+[0.730874] (dev_test_tools) StdoutLine: {'line': b'writing top-level names to ../../build/dev_test_tools/dev_test_tools.egg-info/top_level.txt\n'}
+[0.742746] (rplidar_ros) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.742953] (rplidar_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.778925] (-) TimerEvent: {}
+[0.787998] (dev_test_tools) StdoutLine: {'line': b"reading manifest file '../../build/dev_test_tools/dev_test_tools.egg-info/SOURCES.txt'\n"}
+[0.788442] (dev_test_tools) StdoutLine: {'line': b"writing manifest file '../../build/dev_test_tools/dev_test_tools.egg-info/SOURCES.txt'\n"}
+[0.788564] (dev_test_tools) StdoutLine: {'line': b'running build\n'}
+[0.788647] (dev_test_tools) StdoutLine: {'line': b'running build_py\n'}
+[0.788742] (dev_test_tools) StdoutLine: {'line': b'running install\n'}
+[0.789567] (dev_test_tools) StdoutLine: {'line': b'running install_lib\n'}
+[0.791838] (dev_test_tools) StdoutLine: {'line': b'running install_data\n'}
+[0.792490] (dev_test_tools) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.795675] (dev_test_tools) StdoutLine: {'line': b"removing '/home/karim/mako_robot/mako_ws/install/dev_test_tools/lib/python3.8/site-packages/dev_test_tools-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[0.796599] (dev_test_tools) StdoutLine: {'line': b'Copying ../../build/dev_test_tools/dev_test_tools.egg-info to /home/karim/mako_robot/mako_ws/install/dev_test_tools/lib/python3.8/site-packages/dev_test_tools-0.0.0-py3.8.egg-info\n'}
+[0.799845] (dev_test_tools) StdoutLine: {'line': b'running install_scripts\n'}
+[0.827793] (dev_test_tools) StdoutLine: {'line': b'Installing camTestNode script to /home/karim/mako_robot/mako_ws/install/dev_test_tools/lib/dev_test_tools\n'}
+[0.827992] (dev_test_tools) StdoutLine: {'line': b'Installing lidarTestNode script to /home/karim/mako_robot/mako_ws/install/dev_test_tools/lib/dev_test_tools\n'}
+[0.828083] (dev_test_tools) StdoutLine: {'line': b"writing list of installed files to '/home/karim/mako_robot/mako_ws/build/dev_test_tools/install.log'\n"}
+[0.858547] (dev_test_tools) CommandEnded: {'returncode': 0}
+[0.879151] (-) TimerEvent: {}
+[0.882656] (rplidar_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.885534] (dev_test_tools) JobEnded: {'identifier': 'dev_test_tools', 'rc': 0}
+[0.900062] (rplidar_ros) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.900470] (rplidar_ros) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.903911] (rplidar_ros) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.979612] (-) TimerEvent: {}
+[1.038278] (rplidar_ros) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[1.039415] (rplidar_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.080619] (-) TimerEvent: {}
+[1.177844] (rplidar_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.181237] (-) TimerEvent: {}
+[1.198162] (rplidar_ros) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.199081] (rplidar_ros) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.203416] (rplidar_ros) StdoutLine: {'line': b'-- Found ament_cmake_auto: 0.9.8 (/opt/ros/foxy/share/ament_cmake_auto/cmake)\n'}
+[1.243498] (rplidar_ros) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") \n'}
+[1.243675] (rplidar_ros) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.281391] (-) TimerEvent: {}
+[1.451746] (-) TimerEvent: {}
+[1.553172] (rplidar_ros) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.0 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[1.553379] (-) TimerEvent: {}
+[1.675097] (-) TimerEvent: {}
+[1.718546] (rplidar_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.733885] (rplidar_ros) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.775547] (-) TimerEvent: {}
+[1.876915] (rplidar_ros) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[1.877211] (-) TimerEvent: {}
+[1.920585] (rplidar_ros) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[1.977563] (-) TimerEvent: {}
+[2.040087] (rplidar_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.079644] (-) TimerEvent: {}
+[2.135940] (rplidar_ros) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.2 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[2.138278] (rplidar_ros) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.139829] (rplidar_ros) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.180215] (-) TimerEvent: {}
+[2.251356] (rplidar_ros) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.252029] (rplidar_ros) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.280721] (-) TimerEvent: {}
+[2.371059] (rplidar_ros) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[2.371250] (rplidar_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[2.381677] (-) TimerEvent: {}
+[2.468256] (rplidar_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[2.468444] (rplidar_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[2.481803] (-) TimerEvent: {}
+[2.582317] (-) TimerEvent: {}
+[2.583667] (rplidar_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[2.584913] (rplidar_ros) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.682987] (-) TimerEvent: {}
+[2.784649] (-) TimerEvent: {}
+[2.891083] (-) TimerEvent: {}
+[2.992277] (-) TimerEvent: {}
+[3.107602] (-) TimerEvent: {}
+[3.140340] (rplidar_ros) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.189915] (rplidar_ros) StdoutLine: {'line': b'-- Generating done\n'}
+[3.196004] (rplidar_ros) StdoutLine: {'line': b'-- Build files have been written to: /home/karim/mako_robot/mako_ws/build/rplidar_ros\n'}
+[3.208487] (rplidar_ros) CommandEnded: {'returncode': 0}
+[3.209961] (-) TimerEvent: {}
+[3.210241] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'build'}
+[3.210281] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/karim/mako_robot/mako_ws/build/rplidar_ros', '--', '-j6', '-l6'], 'cwd': '/home/karim/mako_robot/mako_ws/build/rplidar_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'karim'), ('LC_TIME', 'ar_EG.UTF-8'), ('SSH_AGENT_PID', '1747'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/karim/ros2_ws/install/serv_act_sol_interfaces/lib:/home/karim/ros2_ws/install/robot_interfaces/lib:/home/karim/project_ws/install/ros_project_pkg_cpp_robot_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/karim'), ('OLDPWD', '/home/karim/mako_robot'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('MANAGERPID', '1531'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9a27a7b27a1a7fe215b7c2216046262a'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/karim/project_ws/install:/home/karim/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'karim'), ('JOURNAL_STREAM', '8:35439'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'karim'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/karim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/karim-vm:@/tmp/.ICE-unix/1842,unix/karim-vm:/tmp/.ICE-unix/1842'), ('INVOCATION_ID', '967a31cd3a484c5ebc39176c4a924545'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3f80b3fa_3d99_45de_8b89_8cc96cd29faf'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.507'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/karim/ros2_ws/install/serv_act_sol_pkg:/home/karim/ros2_ws/install/serv_act_sol_interfaces:/home/karim/ros2_ws/install/my_cpp_pkg:/home/karim/ros2_ws/install/robot_interfaces:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/ros-project_pkg-cpp_robot-bringup:/home/karim/project_ws/install/ros-project_pkg-cpp_robot-driver-spawner:/home/karim/project_ws/install/ros_project_pkg_cpp_robot_interfaces:/home/karim/project_ws/install/dev_test_tools:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/karim/mako_robot/mako_ws/build/rplidar_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9a27a7b27a1a7fe215b7c2216046262a'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/karim/ros2_ws/install/serv_act_sol_interfaces/lib/python3.8/site-packages:/home/karim/ros2_ws/install/robot_interfaces/lib/python3.8/site-packages:/home/karim/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver/lib/python3.8/site-packages:/home/karim/project_ws/install/ros_project_pkg_cpp_robot_interfaces/lib/python3.8/site-packages:/home/karim/project_ws/install/dev_test_tools/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/karim/ros2_ws/install/serv_act_sol_pkg:/home/karim/ros2_ws/install/serv_act_sol_interfaces:/home/karim/ros2_ws/install/my_cpp_pkg:/home/karim/ros2_ws/install/robot_interfaces:/home/karim/project_ws/install/ros-project_pkg-cpp_robot-bringup:/home/karim/project_ws/install/ros-project_pkg-cpp_robot-driver-spawner:/home/karim/project_ws/install/ros_project_pkg_cpp_robot_interfaces:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/dev_test_tools:/opt/ros/foxy')]), 'shell': False}
+[3.280820] (rplidar_ros) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target rplidar_composition_node\x1b[0m\n'}
+[3.287447] (rplidar_ros) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target rplidarNodeClient\x1b[0m\n'}
+[3.290122] (rplidar_ros) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target rplidarNode\x1b[0m\n'}
+[3.310831] (-) TimerEvent: {}
+[3.363085] (rplidar_ros) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/rplidarNode.dir/src/node.cpp.o\x1b[0m\n'}
+[3.368101] (rplidar_ros) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o\x1b[0m\n'}
+[3.368322] (rplidar_ros) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o\x1b[0m\n'}
+[3.368617] (rplidar_ros) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/rplidarNodeClient.dir/src/client.cpp.o\x1b[0m\n'}
+[3.371423] (rplidar_ros) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/src/rplidar_node.cpp.o\x1b[0m\n'}
+[3.371751] (rplidar_ros) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.o\x1b[0m\n'}
+[3.457198] (-) TimerEvent: {}
+[3.541758] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/client.cpp:43:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K"M_PI" redefined\n'}
+[3.542043] (rplidar_ros) StderrLine: {'line': b'   43 | #define M_PI 3.1415926535897932384626433832795\n'}
+[3.542207] (rplidar_ros) StderrLine: {'line': b'      | \n'}
+[3.542335] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/cmath:45\x1b[m\x1b[K,\n'}
+[3.542473] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/libstatistics_collector/moving_average_statistics/types.hpp:18\x1b[m\x1b[K,\n'}
+[3.542631] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:24\x1b[m\x1b[K,\n'}
+[3.542763] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[3.542882] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[3.542996] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[3.543193] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[3.543278] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.543346] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.543410] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[3.543470] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.543530] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.543627] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[3.543705] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/client.cpp:38\x1b[m\x1b[K:\n'}
+[3.543768] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/math.h:1070:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kthis is the location of the previous definition\n'}
+[3.543828] (rplidar_ros) StderrLine: {'line': b' 1070 | # define M_PI  3.14159265358979323846 /* pi */\n'}
+[3.543887] (rplidar_ros) StderrLine: {'line': b'      | \n'}
+[3.557351] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/rplidar_node.cpp:36\x1b[m\x1b[K:\n'}
+[3.557637] (-) TimerEvent: {}
+[3.558749] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/include/rplidar_node.hpp:50:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K"M_PI" redefined\n'}
+[3.559331] (rplidar_ros) StderrLine: {'line': b'   50 | #define M_PI 3.1415926535897932384626433832795\n'}
+[3.559518] (rplidar_ros) StderrLine: {'line': b'      | \n'}
+[3.559673] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/cmath:45\x1b[m\x1b[K,\n'}
+[3.559786] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/libstatistics_collector/moving_average_statistics/types.hpp:18\x1b[m\x1b[K,\n'}
+[3.559888] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:24\x1b[m\x1b[K,\n'}
+[3.560404] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[3.561848] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[3.562052] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[3.562221] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[3.562374] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.562524] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.562690] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[3.562855] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.563003] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.563170] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[3.563308] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/include/rplidar_node.hpp:34\x1b[m\x1b[K,\n'}
+[3.563457] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/rplidar_node.cpp:36\x1b[m\x1b[K:\n'}
+[3.563618] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/math.h:1070:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kthis is the location of the previous definition\n'}
+[3.563818] (rplidar_ros) StderrLine: {'line': b' 1070 | # define M_PI  3.14159265358979323846 /* pi */\n'}
+[3.563984] (rplidar_ros) StderrLine: {'line': b'      | \n'}
+[3.566973] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/node.cpp:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K"M_PI" redefined\n'}
+[3.567256] (rplidar_ros) StderrLine: {'line': b'   51 | #define M_PI 3.1415926535897932384626433832795\n'}
+[3.567423] (rplidar_ros) StderrLine: {'line': b'      | \n'}
+[3.568013] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/cmath:45\x1b[m\x1b[K,\n'}
+[3.568659] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/libstatistics_collector/moving_average_statistics/types.hpp:18\x1b[m\x1b[K,\n'}
+[3.569282] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:24\x1b[m\x1b[K,\n'}
+[3.569763] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[3.569862] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[3.569929] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[3.570343] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[3.575172] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.576487] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.576714] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[3.577184] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.577343] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.577475] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[3.577632] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/node.cpp:36\x1b[m\x1b[K:\n'}
+[3.577767] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/math.h:1070:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kthis is the location of the previous definition\n'}
+[3.577893] (rplidar_ros) StderrLine: {'line': b' 1070 | # define M_PI  3.14159265358979323846 /* pi */\n'}
+[3.578012] (rplidar_ros) StderrLine: {'line': b'      | \n'}
+[3.578251] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/node.cpp:231:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kinvalid suffix on literal; C++11 requires a space between literal and string macro [\x1b[01;35m\x1b[K-Wliteral-suffix\x1b[m\x1b[K]\n'}
+[3.578427] (rplidar_ros) StderrLine: {'line': b'  231 |     ROS_INFO(\x1b[01;35m\x1b[K"\x1b[m\x1b[KRPLIDAR running on ROS package rplidar_ros. SDK Version:"RPLIDAR_SDK_VERSION"");\n'}
+[3.578597] (rplidar_ros) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.013457] (-) TimerEvent: {}
+[4.079014] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[4.079314] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/src/sdkcommon.h:48\x1b[m\x1b[K,\n'}
+[4.079498] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_socket.cpp:10\x1b[m\x1b[K:\n'}
+[4.079635] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar_protocol.h:59:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[4.079774] (rplidar_ros) StderrLine: {'line': b'   59 |     _u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[4.079945] (rplidar_ros) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.080080] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[4.080211] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/src/sdkcommon.h:48\x1b[m\x1b[K,\n'}
+[4.080339] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_socket.cpp:10\x1b[m\x1b[K:\n'}
+[4.080517] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar_cmd.h:260:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[4.080651] (rplidar_ros) StderrLine: {'line': b'  260 |     _u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[4.080774] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.088958] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_socket.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::net::SocketAddress::getAddressAsString(char*, size_t) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.090143] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_socket.cpp:170:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kordered comparison of pointer with integer zero [\x1b[01;35m\x1b[K-Wextra\x1b[m\x1b[K]\n'}
+[4.090392] (rplidar_ros) StderrLine: {'line': b'  170 |     return ans<=\x1b[01;35m\x1b[K0\x1b[m\x1b[K?RESULT_OPERATION_FAIL:RESULT_OK;\n'}
+[4.090574] (rplidar_ros) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.098032] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_socket.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::arch::net::StreamSocketImpl::send(const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.098302] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_socket.cpp:438:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[4.098467] (rplidar_ros) StderrLine: {'line': b'  438 |         if (\x1b[01;35m\x1b[Kans == (int)len\x1b[m\x1b[K) {\n'}
+[4.098541] (rplidar_ros) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.104416] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/src/arch/linux/arch_linux.h:42\x1b[m\x1b[K,\n'}
+[4.104987] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/src/sdkcommon.h:40\x1b[m\x1b[K,\n'}
+[4.105081] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_socket.cpp:10\x1b[m\x1b[K:\n'}
+[4.105150] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_socket.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::arch::net::DGramSocketImpl::sendTo(const rp::net::SocketAddress&, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.105218] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_socket.cpp:726:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[4.105284] (rplidar_ros) StderrLine: {'line': b'  726 |             assert(\x1b[01;35m\x1b[Kans == (int)len\x1b[m\x1b[K);\n'}
+[4.105345] (rplidar_ros) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.111785] (rplidar_ros) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o\x1b[0m\n'}
+[4.178496] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool rp::arch::net::raw_serial::open(const char*, uint32_t, uint32_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.178799] (-) TimerEvent: {}
+[4.179059] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_serial.cpp:97:74:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflags\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.179624] (rplidar_ros) StderrLine: {'line': b'   97 | bool raw_serial::open(const char * portname, uint32_t baudrate, \x1b[01;35m\x1b[Kuint32_t flags\x1b[m\x1b[K)\n'}
+[4.179762] (rplidar_ros) StderrLine: {'line': b'      |                                                                 \x1b[01;35m\x1b[K~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[4.180390] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void rp::arch::net::raw_serial::flush(_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.180614] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_serial.cpp:281:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflags\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.180759] (rplidar_ros) StderrLine: {'line': b'  281 | void raw_serial::flush( \x1b[01;35m\x1b[K_u32 flags\x1b[m\x1b[K)\n'}
+[4.180894] (rplidar_ros) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~~~~^~~~~\x1b[m\x1b[K\n'}
+[4.181054] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual int rp::arch::net::raw_serial::waitforsent(_u32, size_t*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.181188] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_serial.cpp:286:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.181318] (rplidar_ros) StderrLine: {'line': b'  286 | int raw_serial::waitforsent(\x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K, size_t * returned_size)\n'}
+[4.181478] (rplidar_ros) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[4.181612] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual int rp::arch::net::raw_serial::waitforrecv(_u32, size_t*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.181756] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_serial.cpp:292:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.181887] (rplidar_ros) StderrLine: {'line': b'  292 | int raw_serial::waitforrecv(\x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K, size_t * returned_size)\n'}
+[4.182328] (rplidar_ros) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[4.305980] (-) TimerEvent: {}
+[4.408424] (-) TimerEvent: {}
+[4.417777] (rplidar_ros) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o\x1b[0m\n'}
+[4.444913] (rplidar_ros) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/sdk/src/arch/linux/net_serial.cpp.o\x1b[0m\n'}
+[4.707098] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[4.707596] (-) TimerEvent: {}
+[4.707993] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/src/sdkcommon.h:48\x1b[m\x1b[K,\n'}
+[4.708195] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/hal/thread.cpp:35\x1b[m\x1b[K:\n'}
+[4.708360] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar_protocol.h:59:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[4.708957] (rplidar_ros) StderrLine: {'line': b'   59 |     _u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[4.709113] (rplidar_ros) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.710004] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[4.710526] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/src/sdkcommon.h:48\x1b[m\x1b[K,\n'}
+[4.710712] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/hal/thread.cpp:35\x1b[m\x1b[K:\n'}
+[4.710840] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar_cmd.h:260:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[4.710989] (rplidar_ros) StderrLine: {'line': b'  260 |     _u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[4.711108] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.713811] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/hal/thread.cpp:43\x1b[m\x1b[K:\n'}
+[4.714344] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/src/arch/linux/thread.hpp:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic rp::hal::Thread rp::hal::Thread::create(thread_proc_t, void*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.715290] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/src/arch/linux/thread.hpp:48:77:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcast between incompatible function types from \xe2\x80\x98\x1b[01m\x1b[Kthread_proc_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int (*)(void*)\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kvoid* (*)(void*)\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wcast-function-type\x1b[m\x1b[K]\n'}
+[4.715551] (rplidar_ros) StderrLine: {'line': b'   48 |     pthread_create((pthread_t *)&newborn._handle, NULL, (void * (*)(void *))\x1b[01;35m\x1b[Kproc\x1b[m\x1b[K, data);\n'}
+[4.715763] (rplidar_ros) StderrLine: {'line': b'      |                                                                             \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.716535] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/src/arch/linux/thread.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Ku_result rp::hal::Thread::join(long unsigned int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.717103] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/src/arch/linux/thread.hpp:129:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.717289] (rplidar_ros) StderrLine: {'line': b'  129 | u_result Thread::join(\x1b[01;35m\x1b[Kunsigned long timeout\x1b[m\x1b[K)\n'}
+[4.717427] (rplidar_ros) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[4.852785] (rplidar_ros) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/sdk/src/arch/linux/net_socket.cpp.o\x1b[0m\n'}
+[4.853091] (-) TimerEvent: {}
+[4.974621] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[4.974879] (-) TimerEvent: {}
+[4.975081] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/sdkcommon.h:48\x1b[m\x1b[K,\n'}
+[4.975179] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:35\x1b[m\x1b[K:\n'}
+[4.975247] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar_protocol.h:59:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[4.975357] (rplidar_ros) StderrLine: {'line': b'   59 |     _u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[4.975424] (rplidar_ros) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.975696] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[4.975819] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/sdkcommon.h:48\x1b[m\x1b[K,\n'}
+[4.975899] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:35\x1b[m\x1b[K:\n'}
+[4.975962] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar_cmd.h:260:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[4.976024] (rplidar_ros) StderrLine: {'line': b'  260 |     _u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[4.976082] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.201504] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::reset(_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.201798] (-) TimerEvent: {}
+[5.202115] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:121:46:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.202302] (rplidar_ros) StderrLine: {'line': b'  121 | u_result RPlidarDriverImplCommon::reset(\x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K)\n'}
+[5.202479] (rplidar_ros) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[5.204285] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::checkIfTofLidar(bool&, _u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.204632] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:274:75:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.204814] (rplidar_ros) StderrLine: {'line': b'  274 | u_result RPlidarDriverImplCommon::checkIfTofLidar(bool & isTofLidar, \x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K)\n'}
+[5.205025] (rplidar_ros) StderrLine: {'line': b'      |                                                                      \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[5.212426] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void rp::standalone::rplidar::RPlidarDriverImplCommon::_dense_capsuleToNormal(const rplidar_response_capsule_measurement_nodes_t&, rplidar_response_measurement_node_hq_t*, size_t&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.212719] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:872:108:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktype qualifiers ignored on cast result type [\x1b[01;35m\x1b[K-Wignored-qualifiers\x1b[m\x1b[K]\n'}
+[5.212852] (rplidar_ros) StderrLine: {'line': b'  872 |             const int dist = static_cast<const int>(_cached_previous_dense_capsuledata.cabins[pos].distance\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[5.213003] (rplidar_ros) StderrLine: {'line': b'      |                                                                                                            \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.214469] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[K_u32 rp::standalone::rplidar::_crc32cal(_u32, void*, _u16)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.214741] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:996:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around \xe2\x80\x98\x1b[01m\x1b[K-\x1b[m\x1b[K\xe2\x80\x99 in operand of \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wparentheses\x1b[m\x1b[K]\n'}
+[5.214884] (rplidar_ros) StderrLine: {'line': b'  996 |     _u8 leftBytes = \x1b[01;35m\x1b[K4 - len\x1b[m\x1b[K & 0x3;\n'}
+[5.215072] (rplidar_ros) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~^~~~~\x1b[m\x1b[K\n'}
+[5.217249] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void rp::standalone::rplidar::RPlidarDriverImplCommon::_ultraCapsuleToNormal(const rplidar_response_ultra_capsule_measurement_nodes_t&, rplidar_response_measurement_node_hq_t*, size_t&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.217546] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:1207:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[5.217697] (rplidar_ros) StderrLine: {'line': b' 1207 |             if ((\x1b[01;35m\x1b[Kdist_predict1 == 0xFFFFFE00\x1b[m\x1b[K) || (dist_predict1 == 0x1FF)) {\n'}
+[5.217813] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.217951] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:1215:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[5.218075] (rplidar_ros) StderrLine: {'line': b' 1215 |             if ((\x1b[01;35m\x1b[Kdist_predict2 == 0xFFFFFE00\x1b[m\x1b[K) || (dist_predict2 == 0x1FF)) {\n'}
+[5.218182] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.226289] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool rp::arch::net::raw_serial::open(const char*, uint32_t, uint32_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.226555] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_serial.cpp:97:74:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflags\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.226715] (rplidar_ros) StderrLine: {'line': b'   97 | bool raw_serial::open(const char * portname, uint32_t baudrate, \x1b[01;35m\x1b[Kuint32_t flags\x1b[m\x1b[K)\n'}
+[5.226844] (rplidar_ros) StderrLine: {'line': b'      |                                                                 \x1b[01;35m\x1b[K~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[5.227006] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::getAllSupportedScanModes(std::vector<rp::standalone::rplidar::RplidarScanMode>&, _u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.227141] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:1453:105:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KtimeoutInMs\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.227270] (rplidar_ros) StderrLine: {'line': b' 1453 | u_result RPlidarDriverImplCommon::getAllSupportedScanModes(std::vector<RplidarScanMode>& outModes, \x1b[01;35m\x1b[K_u32 timeoutInMs\x1b[m\x1b[K)\n'}
+[5.227673] (rplidar_ros) StderrLine: {'line': b'      |                                                                                                    \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.227835] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::startScan(bool, bool, _u32, rp::standalone::rplidar::RplidarScanMode*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.228013] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:1550:83:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Koptions\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.228150] (rplidar_ros) StderrLine: {'line': b' 1550 | u_result RPlidarDriverImplCommon::startScan(bool force, bool useTypicalScan, \x1b[01;35m\x1b[K_u32 options\x1b[m\x1b[K, RplidarScanMode* outUsedScanMode)\n'}
+[5.228278] (rplidar_ros) StderrLine: {'line': b'      |                                                                              \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[5.230195] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void rp::arch::net::raw_serial::flush(_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.230480] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_serial.cpp:281:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflags\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.230653] (rplidar_ros) StderrLine: {'line': b'  281 | void raw_serial::flush( \x1b[01;35m\x1b[K_u32 flags\x1b[m\x1b[K)\n'}
+[5.230787] (rplidar_ros) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~~~~^~~~~\x1b[m\x1b[K\n'}
+[5.230932] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual int rp::arch::net::raw_serial::waitforsent(_u32, size_t*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.231053] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_serial.cpp:286:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.231173] (rplidar_ros) StderrLine: {'line': b'  286 | int raw_serial::waitforsent(\x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K, size_t * returned_size)\n'}
+[5.231307] (rplidar_ros) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[5.231460] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::stop(_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.231593] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:1774:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.231718] (rplidar_ros) StderrLine: {'line': b' 1774 | u_result RPlidarDriverImplCommon::stop(\x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K)\n'}
+[5.231844] (rplidar_ros) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[5.232036] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual int rp::arch::net::raw_serial::waitforrecv(_u32, size_t*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.232165] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_serial.cpp:292:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.232270] (rplidar_ros) StderrLine: {'line': b'  292 | int raw_serial::waitforrecv(\x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K, size_t * returned_size)\n'}
+[5.232368] (rplidar_ros) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[5.236124] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::setLidarSpinSpeed(_u16, _u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.236437] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:2162:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.236602] (rplidar_ros) StderrLine: {'line': b' 2162 | u_result RPlidarDriverImplCommon::setLidarSpinSpeed(_u16 rpm, \x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K)\n'}
+[5.236729] (rplidar_ros) StderrLine: {'line': b'      |                                                               \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[5.237296] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverSerial::connect(const char*, _u32, _u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.237505] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:2240:83:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflag\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.237650] (rplidar_ros) StderrLine: {'line': b' 2240 | u_result RPlidarDriverSerial::connect(const char * port_path, _u32 baudrate, \x1b[01;35m\x1b[K_u32 flag\x1b[m\x1b[K)\n'}
+[5.237925] (rplidar_ros) StderrLine: {'line': b'      |                                                                              \x1b[01;35m\x1b[K~~~~~^~~~\x1b[m\x1b[K\n'}
+[5.238663] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverTCP::connect(const char*, _u32, _u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.238855] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:2282:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflag\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.239030] (rplidar_ros) StderrLine: {'line': b' 2282 | u_result RPlidarDriverTCP::connect(const char * ipStr, _u32 port, \x1b[01;35m\x1b[K_u32 flag\x1b[m\x1b[K)\n'}
+[5.239166] (rplidar_ros) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K~~~~~^~~~\x1b[m\x1b[K\n'}
+[5.365457] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[5.365817] (-) TimerEvent: {}
+[5.366124] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/src/sdkcommon.h:48\x1b[m\x1b[K,\n'}
+[5.366401] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_socket.cpp:10\x1b[m\x1b[K:\n'}
+[5.366757] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar_protocol.h:59:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.367519] (rplidar_ros) StderrLine: {'line': b'   59 |     _u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[5.367710] (rplidar_ros) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.368327] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[5.368512] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/src/sdkcommon.h:48\x1b[m\x1b[K,\n'}
+[5.368666] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_socket.cpp:10\x1b[m\x1b[K:\n'}
+[5.368805] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar_cmd.h:260:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.368929] (rplidar_ros) StderrLine: {'line': b'  260 |     _u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[5.369080] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.377417] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_socket.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::net::SocketAddress::getAddressAsString(char*, size_t) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.378167] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_socket.cpp:170:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kordered comparison of pointer with integer zero [\x1b[01;35m\x1b[K-Wextra\x1b[m\x1b[K]\n'}
+[5.378351] (rplidar_ros) StderrLine: {'line': b'  170 |     return ans<=\x1b[01;35m\x1b[K0\x1b[m\x1b[K?RESULT_OPERATION_FAIL:RESULT_OK;\n'}
+[5.378516] (rplidar_ros) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.386224] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_socket.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::arch::net::StreamSocketImpl::send(const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.386521] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_socket.cpp:438:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[5.386684] (rplidar_ros) StderrLine: {'line': b'  438 |         if (\x1b[01;35m\x1b[Kans == (int)len\x1b[m\x1b[K) {\n'}
+[5.386819] (rplidar_ros) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.390145] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/src/arch/linux/arch_linux.h:42\x1b[m\x1b[K,\n'}
+[5.390553] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/src/sdkcommon.h:40\x1b[m\x1b[K,\n'}
+[5.390733] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_socket.cpp:10\x1b[m\x1b[K:\n'}
+[5.390900] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_socket.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::arch::net::DGramSocketImpl::sendTo(const rp::net::SocketAddress&, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.391310] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/arch/linux/net_socket.cpp:726:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[5.391439] (rplidar_ros) StderrLine: {'line': b'  726 |             assert(\x1b[01;35m\x1b[Kans == (int)len\x1b[m\x1b[K);\n'}
+[5.391583] (rplidar_ros) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.428231] (rplidar_ros) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/sdk/src/arch/linux/timer.cpp.o\x1b[0m\n'}
+[5.467647] (-) TimerEvent: {}
+[5.790913] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[5.791234] (-) TimerEvent: {}
+[5.791622] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/include/rplidar_node.hpp:41\x1b[m\x1b[K,\n'}
+[5.791847] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/rplidar_node.cpp:36\x1b[m\x1b[K:\n'}
+[5.791999] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar_protocol.h:59:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.792520] (rplidar_ros) StderrLine: {'line': b'   59 |     _u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[5.792709] (rplidar_ros) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.792855] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[5.793014] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/include/rplidar_node.hpp:41\x1b[m\x1b[K,\n'}
+[5.793146] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/rplidar_node.cpp:36\x1b[m\x1b[K:\n'}
+[5.793322] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar_cmd.h:260:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.793455] (rplidar_ros) StderrLine: {'line': b'  260 |     _u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[5.793579] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.833767] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[5.833963] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/node.cpp:45\x1b[m\x1b[K:\n'}
+[5.834041] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar_protocol.h:59:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.834110] (rplidar_ros) StderrLine: {'line': b'   59 |     _u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[5.834174] (rplidar_ros) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.834270] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[5.834338] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/node.cpp:45\x1b[m\x1b[K:\n'}
+[5.834399] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar_cmd.h:260:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.834480] (rplidar_ros) StderrLine: {'line': b'  260 |     _u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[5.834557] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.865938] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kbool stop_motor(std::shared_ptr<std_srvs::srv::Empty_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Empty_Response_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.866131] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/node.cpp:166:70:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kreq\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.869081] (rplidar_ros) StderrLine: {'line': b'  166 | bool stop_motor(\x1b[01;35m\x1b[Kconst std::shared_ptr<std_srvs::srv::Empty::Request> req\x1b[m\x1b[K,\n'}
+[5.869366] (rplidar_ros) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.869456] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/node.cpp:167:65:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kres\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.869528] (rplidar_ros) StderrLine: {'line': b'  167 |                 \x1b[01;35m\x1b[Kstd::shared_ptr<std_srvs::srv::Empty::Response> res\x1b[m\x1b[K)\n'}
+[5.872322] (rplidar_ros) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.895949] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kbool start_motor(std::shared_ptr<std_srvs::srv::Empty_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Empty_Response_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.897884] (-) TimerEvent: {}
+[5.898616] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/node.cpp:178:71:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kreq\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.899750] (rplidar_ros) StderrLine: {'line': b'  178 | bool start_motor(\x1b[01;35m\x1b[Kconst std::shared_ptr<std_srvs::srv::Empty::Request> req\x1b[m\x1b[K,\n'}
+[5.900174] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.902855] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/node.cpp:179:66:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kres\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.902995] (rplidar_ros) StderrLine: {'line': b'  179 |                  \x1b[01;35m\x1b[Kstd::shared_ptr<std_srvs::srv::Empty::Response> res\x1b[m\x1b[K)\n'}
+[5.904275] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.937978] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.938162] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/node.cpp:356:60:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids variable length array \xe2\x80\x98\x1b[01m\x1b[Kangle_compensate_nodes\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wvla\x1b[m\x1b[K]\n'}
+[5.938527] (rplidar_ros) StderrLine: {'line': b'  356 |                     rplidar_response_measurement_node_hq_t \x1b[01;35m\x1b[Kangle_compensate_nodes\x1b[m\x1b[K[angle_compensate_nodes_count];\n'}
+[5.939169] (rplidar_ros) StderrLine: {'line': b'      |                                                            \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.944127] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/node.cpp:360:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[5.944294] (rplidar_ros) StderrLine: {'line': b'  360 |                     for( ; \x1b[01;35m\x1b[Ki < count\x1b[m\x1b[K; i++ ) {\n'}
+[5.944389] (rplidar_ros) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K~~^~~~~~~\x1b[m\x1b[K\n'}
+[5.986217] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/rplidar_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid rplidar_ros::rplidar_node::stop_motor({anonymous}::EmptyRequest, {anonymous}::EmptyResponse)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.986448] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/rplidar_node.cpp:245:50:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kreq\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.986540] (rplidar_ros) StderrLine: {'line': b'  245 | void rplidar_node::stop_motor(\x1b[01;35m\x1b[Kconst EmptyRequest req\x1b[m\x1b[K, EmptyResponse res)\n'}
+[5.986608] (rplidar_ros) StderrLine: {'line': b'      |                               \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.986671] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/rplidar_node.cpp:245:69:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kres\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.986733] (rplidar_ros) StderrLine: {'line': b'  245 | void rplidar_node::stop_motor(const EmptyRequest req, \x1b[01;35m\x1b[KEmptyResponse res\x1b[m\x1b[K)\n'}
+[5.987003] (rplidar_ros) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.987147] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/rplidar_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid rplidar_ros::rplidar_node::start_motor({anonymous}::EmptyRequest, {anonymous}::EmptyResponse)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.987228] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/rplidar_node.cpp:256:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kreq\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.987332] (rplidar_ros) StderrLine: {'line': b'  256 | void rplidar_node::start_motor(\x1b[01;35m\x1b[Kconst EmptyRequest req\x1b[m\x1b[K, EmptyResponse res)\n'}
+[5.987400] (rplidar_ros) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.987462] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/rplidar_node.cpp:256:70:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kres\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.987522] (rplidar_ros) StderrLine: {'line': b'  256 | void rplidar_node::start_motor(const EmptyRequest req, \x1b[01;35m\x1b[KEmptyResponse res\x1b[m\x1b[K)\n'}
+[5.987581] (rplidar_ros) StderrLine: {'line': b'      |                                                        \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.996890] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/rplidar_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid rplidar_ros::rplidar_node::publish_loop()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.997360] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/rplidar_node.cpp:343:46:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids variable length array \xe2\x80\x98\x1b[01m\x1b[Kangle_compensate_nodes\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wvla\x1b[m\x1b[K]\n'}
+[5.997460] (rplidar_ros) StderrLine: {'line': b'  343 |       rplidar_response_measurement_node_hq_t \x1b[01;35m\x1b[Kangle_compensate_nodes\x1b[m\x1b[K[angle_compensate_nodes_count];\n'}
+[5.997527] (rplidar_ros) StderrLine: {'line': b'      |                                              \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.997645] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/rplidar_node.cpp:353:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[5.997730] (rplidar_ros) StderrLine: {'line': b'  353 |           for (j = 0; \x1b[01;35m\x1b[Kj < m_angle_compensate_multiple\x1b[m\x1b[K; j++) {\n'}
+[5.997833] (rplidar_ros) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.997898] (-) TimerEvent: {}
+[5.998745] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/rplidar_node.cpp:374:44:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[5.999240] (rplidar_ros) StderrLine: {'line': b'  374 |       for (size_t x = start_node, y = 0; \x1b[01;35m\x1b[Kx < end_node\x1b[m\x1b[K; ++x, ++y) {\n'}
+[5.999459] (rplidar_ros) StderrLine: {'line': b'      |                                          \x1b[01;35m\x1b[K~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.999676] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/rplidar_node.cpp:381:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kangle_min\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[5.999885] (rplidar_ros) StderrLine: {'line': b'  381 |     float \x1b[01;35m\x1b[Kangle_min\x1b[m\x1b[K = deg_2_rad(0.0f);\n'}
+[6.000033] (rplidar_ros) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[6.000172] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/rplidar_node.cpp:382:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kangle_max\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[6.000330] (rplidar_ros) StderrLine: {'line': b'  382 |     float \x1b[01;35m\x1b[Kangle_max\x1b[m\x1b[K = deg_2_rad(359.0f);\n'}
+[6.000490] (rplidar_ros) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[6.011350] (rplidar_ros) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/sdk/src/hal/thread.cpp.o\x1b[0m\n'}
+[6.046004] (rplidar_ros) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/sdk/src/rplidar_driver.cpp.o\x1b[0m\n'}
+[6.313996] (-) TimerEvent: {}
+[6.513100] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[6.513693] (-) TimerEvent: {}
+[6.514291] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/src/sdkcommon.h:48\x1b[m\x1b[K,\n'}
+[6.514472] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/hal/thread.cpp:35\x1b[m\x1b[K:\n'}
+[6.514598] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar_protocol.h:59:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[6.514839] (rplidar_ros) StderrLine: {'line': b'   59 |     _u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[6.514971] (rplidar_ros) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.515135] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[6.515626] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/src/sdkcommon.h:48\x1b[m\x1b[K,\n'}
+[6.515719] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/hal/thread.cpp:35\x1b[m\x1b[K:\n'}
+[6.515784] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar_cmd.h:260:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[6.515861] (rplidar_ros) StderrLine: {'line': b'  260 |     _u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[6.515921] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.516753] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/hal/thread.cpp:43\x1b[m\x1b[K:\n'}
+[6.517062] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/src/arch/linux/thread.hpp:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic rp::hal::Thread rp::hal::Thread::create(thread_proc_t, void*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.517220] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/src/arch/linux/thread.hpp:48:77:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcast between incompatible function types from \xe2\x80\x98\x1b[01m\x1b[Kthread_proc_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int (*)(void*)\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kvoid* (*)(void*)\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wcast-function-type\x1b[m\x1b[K]\n'}
+[6.517365] (rplidar_ros) StderrLine: {'line': b'   48 |     pthread_create((pthread_t *)&newborn._handle, NULL, (void * (*)(void *))\x1b[01;35m\x1b[Kproc\x1b[m\x1b[K, data);\n'}
+[6.517499] (rplidar_ros) StderrLine: {'line': b'      |                                                                             \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[6.517928] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/src/arch/linux/thread.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Ku_result rp::hal::Thread::join(long unsigned int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.518095] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/src/arch/linux/thread.hpp:129:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[6.518239] (rplidar_ros) StderrLine: {'line': b'  129 | u_result Thread::join(\x1b[01;35m\x1b[Kunsigned long timeout\x1b[m\x1b[K)\n'}
+[6.518368] (rplidar_ros) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[6.531976] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[6.532419] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/sdkcommon.h:48\x1b[m\x1b[K,\n'}
+[6.532623] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:35\x1b[m\x1b[K:\n'}
+[6.532697] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar_protocol.h:59:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[6.532763] (rplidar_ros) StderrLine: {'line': b'   59 |     _u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[6.532823] (rplidar_ros) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.532882] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[6.532950] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/sdkcommon.h:48\x1b[m\x1b[K,\n'}
+[6.533018] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:35\x1b[m\x1b[K:\n'}
+[6.533159] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar_cmd.h:260:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[6.533271] (rplidar_ros) StderrLine: {'line': b'  260 |     _u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[6.533382] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.731920] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::reset(_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.732125] (-) TimerEvent: {}
+[6.732340] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:121:46:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[6.732539] (rplidar_ros) StderrLine: {'line': b'  121 | u_result RPlidarDriverImplCommon::reset(\x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K)\n'}
+[6.732720] (rplidar_ros) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[6.733577] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::checkIfTofLidar(bool&, _u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.733715] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:274:75:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[6.733789] (rplidar_ros) StderrLine: {'line': b'  274 | u_result RPlidarDriverImplCommon::checkIfTofLidar(bool & isTofLidar, \x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K)\n'}
+[6.733853] (rplidar_ros) StderrLine: {'line': b'      |                                                                      \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[6.740281] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void rp::standalone::rplidar::RPlidarDriverImplCommon::_dense_capsuleToNormal(const rplidar_response_capsule_measurement_nodes_t&, rplidar_response_measurement_node_hq_t*, size_t&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.740470] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:872:108:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktype qualifiers ignored on cast result type [\x1b[01;35m\x1b[K-Wignored-qualifiers\x1b[m\x1b[K]\n'}
+[6.740547] (rplidar_ros) StderrLine: {'line': b'  872 |             const int dist = static_cast<const int>(_cached_previous_dense_capsuledata.cabins[pos].distance\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[6.740615] (rplidar_ros) StderrLine: {'line': b'      |                                                                                                            \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.742098] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[K_u32 rp::standalone::rplidar::_crc32cal(_u32, void*, _u16)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.742358] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:996:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around \xe2\x80\x98\x1b[01m\x1b[K-\x1b[m\x1b[K\xe2\x80\x99 in operand of \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wparentheses\x1b[m\x1b[K]\n'}
+[6.742518] (rplidar_ros) StderrLine: {'line': b'  996 |     _u8 leftBytes = \x1b[01;35m\x1b[K4 - len\x1b[m\x1b[K & 0x3;\n'}
+[6.742634] (rplidar_ros) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~^~~~~\x1b[m\x1b[K\n'}
+[6.745047] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void rp::standalone::rplidar::RPlidarDriverImplCommon::_ultraCapsuleToNormal(const rplidar_response_ultra_capsule_measurement_nodes_t&, rplidar_response_measurement_node_hq_t*, size_t&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.745352] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:1207:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[6.745516] (rplidar_ros) StderrLine: {'line': b' 1207 |             if ((\x1b[01;35m\x1b[Kdist_predict1 == 0xFFFFFE00\x1b[m\x1b[K) || (dist_predict1 == 0x1FF)) {\n'}
+[6.745700] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.745867] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:1215:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[6.745975] (rplidar_ros) StderrLine: {'line': b' 1215 |             if ((\x1b[01;35m\x1b[Kdist_predict2 == 0xFFFFFE00\x1b[m\x1b[K) || (dist_predict2 == 0x1FF)) {\n'}
+[6.746044] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.754401] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::getAllSupportedScanModes(std::vector<rp::standalone::rplidar::RplidarScanMode>&, _u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.754594] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:1453:105:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KtimeoutInMs\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[6.754718] (rplidar_ros) StderrLine: {'line': b' 1453 | u_result RPlidarDriverImplCommon::getAllSupportedScanModes(std::vector<RplidarScanMode>& outModes, \x1b[01;35m\x1b[K_u32 timeoutInMs\x1b[m\x1b[K)\n'}
+[6.754803] (rplidar_ros) StderrLine: {'line': b'      |                                                                                                    \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.755464] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::startScan(bool, bool, _u32, rp::standalone::rplidar::RplidarScanMode*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.755568] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:1550:83:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Koptions\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[6.755673] (rplidar_ros) StderrLine: {'line': b' 1550 | u_result RPlidarDriverImplCommon::startScan(bool force, bool useTypicalScan, \x1b[01;35m\x1b[K_u32 options\x1b[m\x1b[K, RplidarScanMode* outUsedScanMode)\n'}
+[6.755778] (rplidar_ros) StderrLine: {'line': b'      |                                                                              \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[6.758435] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::stop(_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.758742] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:1774:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[6.758922] (rplidar_ros) StderrLine: {'line': b' 1774 | u_result RPlidarDriverImplCommon::stop(\x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K)\n'}
+[6.759060] (rplidar_ros) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[6.764827] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::setLidarSpinSpeed(_u16, _u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.765133] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:2162:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[6.765327] (rplidar_ros) StderrLine: {'line': b' 2162 | u_result RPlidarDriverImplCommon::setLidarSpinSpeed(_u16 rpm, \x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K)\n'}
+[6.765458] (rplidar_ros) StderrLine: {'line': b'      |                                                               \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[6.766498] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverSerial::connect(const char*, _u32, _u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.766779] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:2240:83:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflag\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[6.766946] (rplidar_ros) StderrLine: {'line': b' 2240 | u_result RPlidarDriverSerial::connect(const char * port_path, _u32 baudrate, \x1b[01;35m\x1b[K_u32 flag\x1b[m\x1b[K)\n'}
+[6.767421] (rplidar_ros) StderrLine: {'line': b'      |                                                                              \x1b[01;35m\x1b[K~~~~~^~~~\x1b[m\x1b[K\n'}
+[6.767533] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverTCP::connect(const char*, _u32, _u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.767605] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/rplidar_driver.cpp:2282:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflag\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[6.767715] (rplidar_ros) StderrLine: {'line': b' 2282 | u_result RPlidarDriverTCP::connect(const char * ipStr, _u32 port, \x1b[01;35m\x1b[K_u32 flag\x1b[m\x1b[K)\n'}
+[6.767806] (rplidar_ros) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K~~~~~^~~~\x1b[m\x1b[K\n'}
+[6.929058] (-) TimerEvent: {}
+[7.043889] (-) TimerEvent: {}
+[7.148723] (-) TimerEvent: {}
+[7.281325] (-) TimerEvent: {}
+[7.382543] (-) TimerEvent: {}
+[7.483905] (-) TimerEvent: {}
+[7.588446] (-) TimerEvent: {}
+[7.694957] (-) TimerEvent: {}
+[7.798547] (-) TimerEvent: {}
+[7.900147] (-) TimerEvent: {}
+[8.001236] (-) TimerEvent: {}
+[8.102490] (-) TimerEvent: {}
+[8.204211] (-) TimerEvent: {}
+[8.305177] (-) TimerEvent: {}
+[8.405864] (-) TimerEvent: {}
+[8.506417] (-) TimerEvent: {}
+[8.607981] (-) TimerEvent: {}
+[8.708672] (-) TimerEvent: {}
+[8.809793] (-) TimerEvent: {}
+[8.910506] (-) TimerEvent: {}
+[9.011697] (-) TimerEvent: {}
+[9.112565] (-) TimerEvent: {}
+[9.215702] (-) TimerEvent: {}
+[9.421392] (-) TimerEvent: {}
+[9.453655] (rplidar_ros) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX executable rplidarNode\x1b[0m\n'}
+[9.525150] (-) TimerEvent: {}
+[9.626483] (-) TimerEvent: {}
+[9.728385] (-) TimerEvent: {}
+[9.812147] (rplidar_ros) StdoutLine: {'line': b'[ 77%] Built target rplidarNode\n'}
+[9.830934] (-) TimerEvent: {}
+[9.932093] (-) TimerEvent: {}
+[9.955407] (rplidar_ros) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX shared library librplidar_composition_node.so\x1b[0m\n'}
+[10.032619] (-) TimerEvent: {}
+[10.135669] (-) TimerEvent: {}
+[10.236479] (-) TimerEvent: {}
+[10.288519] (rplidar_ros) StdoutLine: {'line': b'[ 83%] Built target rplidar_composition_node\n'}
+[10.312561] (rplidar_ros) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target rplidar_composition\x1b[0m\n'}
+[10.349371] (-) TimerEvent: {}
+[10.355312] (rplidar_ros) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition.dir/src/standalone_rplidar.cpp.o\x1b[0m\n'}
+[10.451456] (-) TimerEvent: {}
+[10.519337] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/standalone_rplidar.cpp:16\x1b[m\x1b[K:\n'}
+[10.519568] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/include/rplidar_node.hpp:50:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K"M_PI" redefined\n'}
+[10.519669] (rplidar_ros) StderrLine: {'line': b'   50 | #define M_PI 3.1415926535897932384626433832795\n'}
+[10.519739] (rplidar_ros) StderrLine: {'line': b'      | \n'}
+[10.519804] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/cmath:45\x1b[m\x1b[K,\n'}
+[10.519866] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/libstatistics_collector/moving_average_statistics/types.hpp:18\x1b[m\x1b[K,\n'}
+[10.519929] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:24\x1b[m\x1b[K,\n'}
+[10.519990] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[10.520085] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[10.520162] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[10.520232] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[10.520298] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[10.520592] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[10.520670] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[10.520741] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[10.520801] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[10.520862] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[10.520921] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/include/rplidar_node.hpp:34\x1b[m\x1b[K,\n'}
+[10.520980] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/standalone_rplidar.cpp:16\x1b[m\x1b[K:\n'}
+[10.521252] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/math.h:1070:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kthis is the location of the previous definition\n'}
+[10.521349] (rplidar_ros) StderrLine: {'line': b' 1070 | # define M_PI  3.14159265358979323846 /* pi */\n'}
+[10.521416] (rplidar_ros) StderrLine: {'line': b'      | \n'}
+[10.552428] (-) TimerEvent: {}
+[10.654053] (-) TimerEvent: {}
+[10.757000] (-) TimerEvent: {}
+[10.858593] (-) TimerEvent: {}
+[10.962557] (-) TimerEvent: {}
+[11.072088] (-) TimerEvent: {}
+[11.174801] (-) TimerEvent: {}
+[11.275824] (-) TimerEvent: {}
+[11.377389] (-) TimerEvent: {}
+[11.400740] (rplidar_ros) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking CXX executable rplidarNodeClient\x1b[0m\n'}
+[11.480712] (-) TimerEvent: {}
+[11.584909] (-) TimerEvent: {}
+[11.686722] (-) TimerEvent: {}
+[11.782101] (rplidar_ros) StdoutLine: {'line': b'[ 94%] Built target rplidarNodeClient\n'}
+[11.787957] (-) TimerEvent: {}
+[11.888557] (-) TimerEvent: {}
+[11.989230] (-) TimerEvent: {}
+[12.089981] (-) TimerEvent: {}
+[12.190750] (-) TimerEvent: {}
+[12.291248] (-) TimerEvent: {}
+[12.391842] (-) TimerEvent: {}
+[12.483744] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[12.484180] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/include/rplidar_node.hpp:41\x1b[m\x1b[K,\n'}
+[12.484425] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/standalone_rplidar.cpp:16\x1b[m\x1b[K:\n'}
+[12.484505] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar_protocol.h:59:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[12.484612] (rplidar_ros) StderrLine: {'line': b'   59 |     _u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[12.484689] (rplidar_ros) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.484758] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[12.484826] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/include/rplidar_node.hpp:41\x1b[m\x1b[K,\n'}
+[12.484891] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/standalone_rplidar.cpp:16\x1b[m\x1b[K:\n'}
+[12.484957] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/./sdk/include/rplidar_cmd.h:260:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[12.485023] (rplidar_ros) StderrLine: {'line': b'  260 |     _u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[12.485127] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.493349] (-) TimerEvent: {}
+[12.598361] (-) TimerEvent: {}
+[12.711966] (-) TimerEvent: {}
+[12.834998] (-) TimerEvent: {}
+[12.935579] (-) TimerEvent: {}
+[13.010733] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/standalone_rplidar.cpp:16\x1b[m\x1b[K:\n'}
+[13.010982] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/karim/mako_robot/mako_ws/src/lidar_ros2/include/rplidar_node.hpp:76:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfloat rplidar_ros::getAngle(const rplidar_response_measurement_node_hq_t&)\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K-Wunused-function\x1b[m\x1b[K]\n'}
+[13.011081] (rplidar_ros) StderrLine: {'line': b'   76 | static float \x1b[01;35m\x1b[KgetAngle\x1b[m\x1b[K(const rplidar_response_measurement_node_hq_t& node)\n'}
+[13.011152] (rplidar_ros) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[13.038330] (-) TimerEvent: {}
+[13.139073] (-) TimerEvent: {}
+[13.179107] (rplidar_ros) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable rplidar_composition\x1b[0m\n'}
+[13.239362] (-) TimerEvent: {}
+[13.340272] (-) TimerEvent: {}
+[13.418251] (rplidar_ros) StdoutLine: {'line': b'[100%] Built target rplidar_composition\n'}
+[13.436406] (rplidar_ros) CommandEnded: {'returncode': 0}
+[13.441438] (-) TimerEvent: {}
+[13.531479] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'install'}
+[13.542302] (-) TimerEvent: {}
+[13.557845] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/karim/mako_robot/mako_ws/build/rplidar_ros'], 'cwd': '/home/karim/mako_robot/mako_ws/build/rplidar_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'karim'), ('LC_TIME', 'ar_EG.UTF-8'), ('SSH_AGENT_PID', '1747'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/karim/ros2_ws/install/serv_act_sol_interfaces/lib:/home/karim/ros2_ws/install/robot_interfaces/lib:/home/karim/project_ws/install/ros_project_pkg_cpp_robot_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/karim'), ('OLDPWD', '/home/karim/mako_robot'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('MANAGERPID', '1531'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9a27a7b27a1a7fe215b7c2216046262a'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/karim/project_ws/install:/home/karim/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'karim'), ('JOURNAL_STREAM', '8:35439'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'karim'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/karim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/karim-vm:@/tmp/.ICE-unix/1842,unix/karim-vm:/tmp/.ICE-unix/1842'), ('INVOCATION_ID', '967a31cd3a484c5ebc39176c4a924545'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3f80b3fa_3d99_45de_8b89_8cc96cd29faf'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.507'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/karim/ros2_ws/install/serv_act_sol_pkg:/home/karim/ros2_ws/install/serv_act_sol_interfaces:/home/karim/ros2_ws/install/my_cpp_pkg:/home/karim/ros2_ws/install/robot_interfaces:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/ros-project_pkg-cpp_robot-bringup:/home/karim/project_ws/install/ros-project_pkg-cpp_robot-driver-spawner:/home/karim/project_ws/install/ros_project_pkg_cpp_robot_interfaces:/home/karim/project_ws/install/dev_test_tools:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/karim/mako_robot/mako_ws/build/rplidar_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9a27a7b27a1a7fe215b7c2216046262a'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/karim/ros2_ws/install/serv_act_sol_interfaces/lib/python3.8/site-packages:/home/karim/ros2_ws/install/robot_interfaces/lib/python3.8/site-packages:/home/karim/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver/lib/python3.8/site-packages:/home/karim/project_ws/install/ros_project_pkg_cpp_robot_interfaces/lib/python3.8/site-packages:/home/karim/project_ws/install/dev_test_tools/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/karim/ros2_ws/install/serv_act_sol_pkg:/home/karim/ros2_ws/install/serv_act_sol_interfaces:/home/karim/ros2_ws/install/my_cpp_pkg:/home/karim/ros2_ws/install/robot_interfaces:/home/karim/project_ws/install/ros-project_pkg-cpp_robot-bringup:/home/karim/project_ws/install/ros-project_pkg-cpp_robot-driver-spawner:/home/karim/project_ws/install/ros_project_pkg_cpp_robot_interfaces:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/dev_test_tools:/opt/ros/foxy')]), 'shell': False}
+[13.569964] (rplidar_ros) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.570555] (rplidar_ros) StdoutLine: {'line': b'-- Installing: /home/karim/mako_robot/mako_ws/install/rplidar_ros/lib/rplidar_ros/rplidarNode\n'}
+[13.573218] (rplidar_ros) StdoutLine: {'line': b'-- Set runtime path of "/home/karim/mako_robot/mako_ws/install/rplidar_ros/lib/rplidar_ros/rplidarNode" to ""\n'}
+[13.573641] (rplidar_ros) StdoutLine: {'line': b'-- Installing: /home/karim/mako_robot/mako_ws/install/rplidar_ros/lib/rplidar_ros/rplidarNodeClient\n'}
+[13.576624] (rplidar_ros) StdoutLine: {'line': b'-- Set runtime path of "/home/karim/mako_robot/mako_ws/install/rplidar_ros/lib/rplidar_ros/rplidarNodeClient" to ""\n'}
+[13.577056] (rplidar_ros) StdoutLine: {'line': b'-- Installing: /home/karim/mako_robot/mako_ws/install/rplidar_ros/lib/rplidar_ros/rplidar_composition\n'}
+[13.577797] (rplidar_ros) StdoutLine: {'line': b'-- Set runtime path of "/home/karim/mako_robot/mako_ws/install/rplidar_ros/lib/rplidar_ros/rplidar_composition" to ""\n'}
+[13.580913] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch\n'}
+[13.581978] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/test_rplidar_a3.launch.py\n'}
+[13.582293] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a3.launch.py\n'}
+[13.582981] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/test_rplidar.launch.py\n'}
+[13.583401] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar.launch.py\n'}
+[13.583591] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1.launch.py\n'}
+[13.583740] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar.launch.py\n'}
+[13.583813] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1.launch.py\n'}
+[13.583879] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_tcp.launch.py\n'}
+[13.583941] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_tcp.launch.py\n'}
+[13.584002] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a3.launch.py\n'}
+[13.584082] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/rviz\n'}
+[13.584169] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/rviz/rplidar.rviz\n'}
+[13.584238] (rplidar_ros) StdoutLine: {'line': b'-- Installing: /home/karim/mako_robot/mako_ws/install/rplidar_ros/lib/librplidar_composition_node.so\n'}
+[13.585767] (rplidar_ros) StdoutLine: {'line': b'-- Set runtime path of "/home/karim/mako_robot/mako_ws/install/rplidar_ros/lib/librplidar_composition_node.so" to ""\n'}
+[13.586206] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/include\n'}
+[13.586372] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/include/rplidar_node.hpp\n'}
+[13.586728] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/include/visibility.h\n'}
+[13.586945] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/lib/rplidar_ros/rplidarNode\n'}
+[13.587232] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/lib/rplidar_ros/rplidarNodeClient\n'}
+[13.587564] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/lib/rplidar_ros/rplidar_composition\n'}
+[13.588012] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/ament_index/resource_index/package_run_dependencies/rplidar_ros\n'}
+[13.588277] (rplidar_ros) StdoutLine: {'line': b'-- Installing: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/ament_index/resource_index/parent_prefix_path/rplidar_ros\n'}
+[13.589021] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.sh\n'}
+[13.590634] (rplidar_ros) StdoutLine: {'line': b'-- Installing: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.dsv\n'}
+[13.590738] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/environment/path.sh\n'}
+[13.590806] (rplidar_ros) StdoutLine: {'line': b'-- Installing: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/environment/path.dsv\n'}
+[13.590869] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/local_setup.bash\n'}
+[13.590929] (rplidar_ros) StdoutLine: {'line': b'-- Installing: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/local_setup.sh\n'}
+[13.592744] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/local_setup.zsh\n'}
+[13.592867] (rplidar_ros) StdoutLine: {'line': b'-- Installing: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/local_setup.dsv\n'}
+[13.592944] (rplidar_ros) StdoutLine: {'line': b'-- Installing: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/package.dsv\n'}
+[13.593016] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/ament_index/resource_index/packages/rplidar_ros\n'}
+[13.593469] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[13.593598] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[13.593687] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig.cmake\n'}
+[13.593751] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig-version.cmake\n'}
+[13.593813] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/package.xml\n'}
+[13.596914] (rplidar_ros) CommandEnded: {'returncode': 0}
+[13.642920] (-) TimerEvent: {}
+[13.744106] (-) TimerEvent: {}
+[13.755199] (rplidar_ros) JobEnded: {'identifier': 'rplidar_ros', 'rc': 0}
+[13.767235] (-) EventReactorShutdown: {}
