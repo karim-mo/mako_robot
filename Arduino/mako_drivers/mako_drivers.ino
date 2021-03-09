@@ -18,18 +18,6 @@ byte nf[8]={B00111100, B01000010,B10100101,B10000001,B10111101,B10000001,B010000
 // sad face
 byte sf[8]= {B00111100,B01000010,B10100101,B10000001,B10011001,B10100101,B01000010,B00111100};
 
-void setup() {
-  lc.shutdown(0,false);
-  // Set brightness to a medium value
-  lc.setIntensity(0,1);
-//  lc.shutdown(1,false);
-//  // Set brightness to a medium value
-//  lc.setIntensity(1,1);
-  // Clear the display
-  lc.clearDisplay(0);
-  Serial.begin(9600);
-}
-
 void drawFaces(int state){
   switch(state){
     case 0:
@@ -71,6 +59,20 @@ void drawFaces(int state){
     default:
       return;
   }
+}
+
+void setup() {
+  lc.shutdown(0,false);
+  // Set brightness to a medium value
+  lc.setIntensity(0,1);
+//  lc.shutdown(1,false);
+//  // Set brightness to a medium value
+//  lc.setIntensity(1,1);
+  // Clear the display
+  lc.clearDisplay(0);
+
+  drawFaces(1);
+  Serial.begin(9600);
 }
 
 void loop(){
