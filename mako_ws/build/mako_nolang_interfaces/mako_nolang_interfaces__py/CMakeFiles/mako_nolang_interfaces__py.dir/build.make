@@ -57,8 +57,10 @@ mako_nolang_interfaces__py/CMakeFiles/mako_nolang_interfaces__py: rosidl_generat
 mako_nolang_interfaces__py/CMakeFiles/mako_nolang_interfaces__py: rosidl_generator_py/mako_nolang_interfaces/_mako_nolang_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 mako_nolang_interfaces__py/CMakeFiles/mako_nolang_interfaces__py: rosidl_generator_py/mako_nolang_interfaces/_mako_nolang_interfaces_s.ep.rosidl_typesupport_c.c
 mako_nolang_interfaces__py/CMakeFiles/mako_nolang_interfaces__py: rosidl_generator_py/mako_nolang_interfaces/srv/_led_control.py
+mako_nolang_interfaces__py/CMakeFiles/mako_nolang_interfaces__py: rosidl_generator_py/mako_nolang_interfaces/srv/_arduino_command.py
 mako_nolang_interfaces__py/CMakeFiles/mako_nolang_interfaces__py: rosidl_generator_py/mako_nolang_interfaces/srv/__init__.py
 mako_nolang_interfaces__py/CMakeFiles/mako_nolang_interfaces__py: rosidl_generator_py/mako_nolang_interfaces/srv/_led_control_s.c
+mako_nolang_interfaces__py/CMakeFiles/mako_nolang_interfaces__py: rosidl_generator_py/mako_nolang_interfaces/srv/_arduino_command_s.c
 
 
 rosidl_generator_py/mako_nolang_interfaces/_mako_nolang_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/lib/rosidl_generator_py/rosidl_generator_py
@@ -75,6 +77,7 @@ rosidl_generator_py/mako_nolang_interfaces/_mako_nolang_interfaces_s.ep.rosidl_t
 rosidl_generator_py/mako_nolang_interfaces/_mako_nolang_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/mako_nolang_interfaces/_mako_nolang_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/mako_nolang_interfaces/_mako_nolang_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/mako_nolang_interfaces/srv/LedControl.idl
+rosidl_generator_py/mako_nolang_interfaces/_mako_nolang_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/mako_nolang_interfaces/srv/ArduinoCommand.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
 	cd /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/mako_nolang_interfaces__py && /usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
@@ -87,19 +90,27 @@ rosidl_generator_py/mako_nolang_interfaces/_mako_nolang_interfaces_s.ep.rosidl_t
 rosidl_generator_py/mako_nolang_interfaces/srv/_led_control.py: rosidl_generator_py/mako_nolang_interfaces/_mako_nolang_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mako_nolang_interfaces/srv/_led_control.py
 
+rosidl_generator_py/mako_nolang_interfaces/srv/_arduino_command.py: rosidl_generator_py/mako_nolang_interfaces/_mako_nolang_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mako_nolang_interfaces/srv/_arduino_command.py
+
 rosidl_generator_py/mako_nolang_interfaces/srv/__init__.py: rosidl_generator_py/mako_nolang_interfaces/_mako_nolang_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mako_nolang_interfaces/srv/__init__.py
 
 rosidl_generator_py/mako_nolang_interfaces/srv/_led_control_s.c: rosidl_generator_py/mako_nolang_interfaces/_mako_nolang_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mako_nolang_interfaces/srv/_led_control_s.c
 
+rosidl_generator_py/mako_nolang_interfaces/srv/_arduino_command_s.c: rosidl_generator_py/mako_nolang_interfaces/_mako_nolang_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mako_nolang_interfaces/srv/_arduino_command_s.c
+
 mako_nolang_interfaces__py: mako_nolang_interfaces__py/CMakeFiles/mako_nolang_interfaces__py
 mako_nolang_interfaces__py: rosidl_generator_py/mako_nolang_interfaces/_mako_nolang_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 mako_nolang_interfaces__py: rosidl_generator_py/mako_nolang_interfaces/_mako_nolang_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 mako_nolang_interfaces__py: rosidl_generator_py/mako_nolang_interfaces/_mako_nolang_interfaces_s.ep.rosidl_typesupport_c.c
 mako_nolang_interfaces__py: rosidl_generator_py/mako_nolang_interfaces/srv/_led_control.py
+mako_nolang_interfaces__py: rosidl_generator_py/mako_nolang_interfaces/srv/_arduino_command.py
 mako_nolang_interfaces__py: rosidl_generator_py/mako_nolang_interfaces/srv/__init__.py
 mako_nolang_interfaces__py: rosidl_generator_py/mako_nolang_interfaces/srv/_led_control_s.c
+mako_nolang_interfaces__py: rosidl_generator_py/mako_nolang_interfaces/srv/_arduino_command_s.c
 mako_nolang_interfaces__py: mako_nolang_interfaces__py/CMakeFiles/mako_nolang_interfaces__py.dir/build.make
 
 .PHONY : mako_nolang_interfaces__py

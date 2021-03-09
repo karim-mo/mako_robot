@@ -1,5 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/mako_nolang_interfaces__cpp"
+  "rosidl_generator_cpp/mako_nolang_interfaces/srv/arduino_command.hpp"
+  "rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/arduino_command__builder.hpp"
+  "rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/arduino_command__struct.hpp"
+  "rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/arduino_command__traits.hpp"
   "rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/led_control__builder.hpp"
   "rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/led_control__struct.hpp"
   "rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/led_control__traits.hpp"

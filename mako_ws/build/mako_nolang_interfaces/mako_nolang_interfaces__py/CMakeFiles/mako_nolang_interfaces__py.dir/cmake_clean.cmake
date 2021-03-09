@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/mako_nolang_interfaces/_mako_nolang_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "../rosidl_generator_py/mako_nolang_interfaces/_mako_nolang_interfaces_s.ep.rosidl_typesupport_introspection_c.c"
   "../rosidl_generator_py/mako_nolang_interfaces/srv/__init__.py"
+  "../rosidl_generator_py/mako_nolang_interfaces/srv/_arduino_command.py"
+  "../rosidl_generator_py/mako_nolang_interfaces/srv/_arduino_command_s.c"
   "../rosidl_generator_py/mako_nolang_interfaces/srv/_led_control.py"
   "../rosidl_generator_py/mako_nolang_interfaces/srv/_led_control_s.c"
   "CMakeFiles/mako_nolang_interfaces__py"

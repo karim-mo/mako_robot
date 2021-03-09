@@ -18,17 +18,17 @@ class BrainNode(Node):
                               on_error = self.on_error,
                               on_close = self.on_close)
         self.wsThread = threading.Thread(target = self.ws_run).start()
-        self.call_led_control()
+        #self.call_led_control()
         
         #self.ws.send("Test")
 
-    def call_led_control(self):
+    def call_led_control(self, exp_type):
         client = self.create_client(LedControl, "cmd_matrix")
         while not client.wait_for_service(1.0):
             self.get_logger().warn("Waiting for Server...")
 
         request = LedControl.Request()
-        request.exp_type = "hf"
+        request.exp_type = exp_type
         
 
         future = client.call_async(request)
@@ -38,15 +38,20 @@ class BrainNode(Node):
     def call_led_control_callback(self, future):
         try:
             response = future.result()
-            if response.success != "":
-                self.get_logger().info("Successfully sent led command")
+            if response.success:
+                self.get_logger().info("Successfully sent led command to LED Control")
+            else:
+                self.get_logger().info("Failed to send led command to LED Control")
         except Exception as e:
             self.get_logger().error("Service call failed " + e)
 
     def on_message(self, ws, message):
         self.get_logger().info(message)
-        #x = json.loads(message)
-        #self.get_logger().info(x["pw"])
+        msg = json.loads(message)
+        if(msg["type"] == "led_control"):
+            self.call_led_control(msg["exp_type"])
+
+
 
     def on_error(self, ws, error):
         pass

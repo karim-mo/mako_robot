@@ -15,7 +15,16 @@ def generate_launch_description():
         executable="ledControlNode"
     )
 
+    serial_interface_node = Node(
+        package="mako_py_serial_interface",
+        executable="serialInterfaceNode"
+    )
+
+
+    
     ld.add_action(brain_node)
     ld.add_action(led_control_node)
+    ld.add_action(serial_interface_node)
+
 
     return ld

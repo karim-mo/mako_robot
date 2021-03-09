@@ -1,7 +1,13 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/srv/detail/arduino_command__functions.c.o"
   "CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/srv/detail/led_control__functions.c.o"
   "libmako_nolang_interfaces__rosidl_generator_c.pdb"
   "libmako_nolang_interfaces__rosidl_generator_c.so"
+  "rosidl_generator_c/mako_nolang_interfaces/srv/arduino_command.h"
+  "rosidl_generator_c/mako_nolang_interfaces/srv/detail/arduino_command__functions.c"
+  "rosidl_generator_c/mako_nolang_interfaces/srv/detail/arduino_command__functions.h"
+  "rosidl_generator_c/mako_nolang_interfaces/srv/detail/arduino_command__struct.h"
+  "rosidl_generator_c/mako_nolang_interfaces/srv/detail/arduino_command__type_support.h"
   "rosidl_generator_c/mako_nolang_interfaces/srv/detail/led_control__functions.c"
   "rosidl_generator_c/mako_nolang_interfaces/srv/detail/led_control__functions.h"
   "rosidl_generator_c/mako_nolang_interfaces/srv/detail/led_control__struct.h"

@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            "serialInterfaceNode = mako_py_serial_interface.pi_arduino_interface:main"
         ],
     },
 )

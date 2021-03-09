@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/mako_nolang_interfaces/srv/arduino_command__type_support.cpp.o"
   "CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/mako_nolang_interfaces/srv/led_control__type_support.cpp.o"
   "libmako_nolang_interfaces__rosidl_typesupport_c.pdb"
   "libmako_nolang_interfaces__rosidl_typesupport_c.so"
+  "rosidl_typesupport_c/mako_nolang_interfaces/srv/arduino_command__type_support.cpp"
   "rosidl_typesupport_c/mako_nolang_interfaces/srv/led_control__type_support.cpp"
 )
 

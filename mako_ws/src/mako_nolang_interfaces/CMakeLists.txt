@@ -16,6 +16,7 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/LedControl.srv"
+  "srv/ArduinoCommand.srv"
 )
 
 ament_package()

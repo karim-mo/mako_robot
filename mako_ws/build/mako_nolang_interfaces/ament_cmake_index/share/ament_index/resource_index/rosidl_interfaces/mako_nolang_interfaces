@@ -1,3 +1,7 @@
+srv/ArduinoCommand.idl
+srv/ArduinoCommand.srv
+srv/ArduinoCommand_Request.msg
+srv/ArduinoCommand_Response.msg
 srv/LedControl.idl
 srv/LedControl.srv
 srv/LedControl_Request.msg
