@@ -38,62 +38,247 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/mako_nolang_interfaces")
+  include("/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/mako_nolang_interfaces")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_generator_c.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_generator_c.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_generator_c.so"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/libmako_nolang_interfaces__rosidl_generator_c.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_generator_c.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_generator_c.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_generator_c.so"
+         OLD_RPATH "/opt/ros/foxy/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_generator_c.so")
+    endif()
+  endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/environment" TYPE FILE FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/environment" TYPE FILE FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_introspection_c.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_introspection_c.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_introspection_c.so"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/libmako_nolang_interfaces__rosidl_typesupport_introspection_c.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_introspection_c.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_introspection_c.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_introspection_c.so"
+         OLD_RPATH "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces:/opt/ros/foxy/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_introspection_c.so")
+    endif()
+  endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/environment" TYPE FILE FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/environment" TYPE FILE FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/ament_cmake_environment_hooks/path.dsv")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_c.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_c.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_c.so"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/libmako_nolang_interfaces__rosidl_typesupport_c.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_c.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_c.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_c.so"
+         OLD_RPATH "/opt/ros/foxy/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_c.so")
+    endif()
+  endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces" TYPE FILE FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces" TYPE FILE FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/ament_cmake_environment_hooks/local_setup.sh")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_introspection_cpp.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_introspection_cpp.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_introspection_cpp.so"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/libmako_nolang_interfaces__rosidl_typesupport_introspection_cpp.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_introspection_cpp.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_introspection_cpp.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_introspection_cpp.so"
+         OLD_RPATH "/opt/ros/foxy/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_introspection_cpp.so")
+    endif()
+  endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces" TYPE FILE FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces" TYPE FILE FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/ament_cmake_environment_hooks/local_setup.dsv")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_cpp.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_cpp.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_cpp.so"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/libmako_nolang_interfaces__rosidl_typesupport_cpp.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_cpp.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_cpp.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_cpp.so"
+         OLD_RPATH "/opt/ros/foxy/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmako_nolang_interfaces__rosidl_typesupport_cpp.so")
+    endif()
+  endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces" TYPE FILE FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/mako_nolang_interfaces")
+  execute_process(
+        COMMAND
+        "/usr/bin/python3" "-m" "compileall"
+        "/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/lib/python3.8/site-packages/mako_nolang_interfaces/__init__.py"
+      )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake" TYPE FILE FILES
-    "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/ament_cmake_core/mako_nolang_interfacesConfig.cmake"
-    "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/ament_cmake_core/mako_nolang_interfacesConfig-version.cmake"
-    )
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_generator_cExport.cmake")
+    file(DIFFERENT EXPORT_FILE_CHANGED FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_generator_cExport.cmake"
+         "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/Export/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_generator_cExport.cmake")
+    if(EXPORT_FILE_CHANGED)
+      file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_generator_cExport-*.cmake")
+      if(OLD_CONFIG_FILES)
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_generator_cExport.cmake\" will be replaced.  Removing files [${OLD_CONFIG_FILES}].")
+        file(REMOVE ${OLD_CONFIG_FILES})
+      endif()
+    endif()
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake" TYPE FILE FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/Export/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_generator_cExport.cmake")
+  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake" TYPE FILE FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/Export/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_generator_cExport-noconfig.cmake")
+  endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces" TYPE FILE FILES "/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces/package.xml")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_introspection_cExport.cmake")
+    file(DIFFERENT EXPORT_FILE_CHANGED FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_introspection_cExport.cmake"
+         "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/Export/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_introspection_cExport.cmake")
+    if(EXPORT_FILE_CHANGED)
+      file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_introspection_cExport-*.cmake")
+      if(OLD_CONFIG_FILES)
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_introspection_cExport.cmake\" will be replaced.  Removing files [${OLD_CONFIG_FILES}].")
+        file(REMOVE ${OLD_CONFIG_FILES})
+      endif()
+    endif()
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake" TYPE FILE FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/Export/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_introspection_cExport.cmake")
+  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake" TYPE FILE FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/Export/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake")
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_cExport.cmake")
+    file(DIFFERENT EXPORT_FILE_CHANGED FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_cExport.cmake"
+         "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/Export/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_cExport.cmake")
+    if(EXPORT_FILE_CHANGED)
+      file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_cExport-*.cmake")
+      if(OLD_CONFIG_FILES)
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_cExport.cmake\" will be replaced.  Removing files [${OLD_CONFIG_FILES}].")
+        file(REMOVE ${OLD_CONFIG_FILES})
+      endif()
+    endif()
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake" TYPE FILE FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/Export/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_cExport.cmake")
+  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake" TYPE FILE FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/Export/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_cExport-noconfig.cmake")
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_generator_cppExport.cmake")
+    file(DIFFERENT EXPORT_FILE_CHANGED FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_generator_cppExport.cmake"
+         "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/Export/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_generator_cppExport.cmake")
+    if(EXPORT_FILE_CHANGED)
+      file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_generator_cppExport-*.cmake")
+      if(OLD_CONFIG_FILES)
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_generator_cppExport.cmake\" will be replaced.  Removing files [${OLD_CONFIG_FILES}].")
+        file(REMOVE ${OLD_CONFIG_FILES})
+      endif()
+    endif()
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake" TYPE FILE FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/Export/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_generator_cppExport.cmake")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_introspection_cppExport.cmake")
+    file(DIFFERENT EXPORT_FILE_CHANGED FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_introspection_cppExport.cmake"
+         "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/Export/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_introspection_cppExport.cmake")
+    if(EXPORT_FILE_CHANGED)
+      file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_introspection_cppExport-*.cmake")
+      if(OLD_CONFIG_FILES)
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_introspection_cppExport.cmake\" will be replaced.  Removing files [${OLD_CONFIG_FILES}].")
+        file(REMOVE ${OLD_CONFIG_FILES})
+      endif()
+    endif()
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake" TYPE FILE FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/Export/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_introspection_cppExport.cmake")
+  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake" TYPE FILE FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/Export/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake")
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_cppExport.cmake")
+    file(DIFFERENT EXPORT_FILE_CHANGED FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_cppExport.cmake"
+         "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/Export/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_cppExport.cmake")
+    if(EXPORT_FILE_CHANGED)
+      file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_cppExport-*.cmake")
+      if(OLD_CONFIG_FILES)
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_cppExport.cmake\" will be replaced.  Removing files [${OLD_CONFIG_FILES}].")
+        file(REMOVE ${OLD_CONFIG_FILES})
+      endif()
+    endif()
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake" TYPE FILE FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/Export/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_cppExport.cmake")
+  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mako_nolang_interfaces/cmake" TYPE FILE FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/Export/share/mako_nolang_interfaces/cmake/mako_nolang_interfaces__rosidl_typesupport_cppExport-noconfig.cmake")
+  endif()
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/mako_nolang_interfaces__py/cmake_install.cmake")
+
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

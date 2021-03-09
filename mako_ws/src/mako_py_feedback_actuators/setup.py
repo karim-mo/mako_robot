@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            "ledControlNode = mako_py_feedback_actuators.LED_Control:main"
         ],
     },
 )

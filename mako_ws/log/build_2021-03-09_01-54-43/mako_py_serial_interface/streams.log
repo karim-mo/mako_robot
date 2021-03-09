@@ -1,0 +1,15 @@
+[1.424s] Invoking command in '/home/karim/mako_robot/mako_ws/build/mako_py_serial_interface': PYTHONPATH=/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/karim/mako_robot/mako_ws/install/mako_py_serial_interface --editable --build-directory /home/karim/mako_robot/mako_ws/build/mako_py_serial_interface/build --no-deps install_data --install-dir /home/karim/mako_robot/mako_ws/install/mako_py_serial_interface
+[1.796s] running develop
+[2.064s] running egg_info
+[2.065s] writing mako_py_serial_interface.egg-info/PKG-INFO
+[2.066s] writing dependency_links to mako_py_serial_interface.egg-info/dependency_links.txt
+[2.066s] writing entry points to mako_py_serial_interface.egg-info/entry_points.txt
+[2.067s] writing requirements to mako_py_serial_interface.egg-info/requires.txt
+[2.067s] writing top-level names to mako_py_serial_interface.egg-info/top_level.txt
+[2.103s] reading manifest file 'mako_py_serial_interface.egg-info/SOURCES.txt'
+[2.104s] writing manifest file 'mako_py_serial_interface.egg-info/SOURCES.txt'
+[2.154s] running build_ext
+[2.154s] Creating /home/karim/mako_robot/mako_ws/install/mako_py_serial_interface/lib/python3.8/site-packages/mako-py-serial-interface.egg-link (link to .)
+[2.156s] 
+[2.156s] Installed /home/karim/mako_robot/mako_ws/build/mako_py_serial_interface
+[2.156s] running install_data

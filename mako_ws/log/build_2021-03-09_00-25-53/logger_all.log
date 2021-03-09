@@ -1,0 +1,469 @@
+[0.207s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.207s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f1e0fe05d60>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=6, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f1e0fe05d60>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f1e0fe11310>)
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.214s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/karim/mako_robot/mako_ws'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/dev_test_tools) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/dev_test_tools) by extension 'ignore'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/dev_test_tools) by extension 'ignore_ament_install'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/dev_test_tools) by extensions ['colcon_pkg']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/dev_test_tools) by extension 'colcon_pkg'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/dev_test_tools) by extensions ['colcon_meta']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/dev_test_tools) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/dev_test_tools) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/dev_test_tools) by extension 'ros'
+[0.235s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dev_test_tools' with type 'ros.ament_python' and name 'dev_test_tools'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_ros2) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_ros2) by extension 'ignore_ament_install'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_ros2) by extensions ['colcon_pkg']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_ros2) by extension 'colcon_pkg'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_ros2) by extensions ['colcon_meta']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_ros2) by extension 'colcon_meta'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_ros2) by extensions ['ros']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_ros2) by extension 'ros'
+[0.237s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lidar_ros2' with type 'ros.ament_cmake' and name 'rplidar_ros'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_interfaces) by extension 'ignore'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_interfaces) by extension 'ignore_ament_install'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_interfaces) by extensions ['colcon_pkg']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_interfaces) by extension 'colcon_pkg'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_interfaces) by extensions ['colcon_meta']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_interfaces) by extension 'colcon_meta'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_interfaces) by extensions ['ros']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_interfaces) by extension 'ros'
+[0.238s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mako_nolang_interfaces' with type 'ros.ament_cmake' and name 'mako_nolang_interfaces'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_launch) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_launch) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_launch) by extension 'ignore_ament_install'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_launch) by extensions ['colcon_pkg']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_launch) by extension 'colcon_pkg'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_launch) by extensions ['colcon_meta']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_launch) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_launch) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_launch) by extension 'ros'
+[0.240s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mako_nolang_launch' with type 'ros.ament_cmake' and name 'mako_nolang_launch'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_brain) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_brain) by extension 'ignore'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_brain) by extension 'ignore_ament_install'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_brain) by extensions ['colcon_pkg']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_brain) by extension 'colcon_pkg'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_brain) by extensions ['colcon_meta']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_brain) by extension 'colcon_meta'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_brain) by extensions ['ros']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_brain) by extension 'ros'
+[0.242s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mako_py_brain' with type 'ros.ament_python' and name 'mako_py_brain'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_feedback_actuators) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_feedback_actuators) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_feedback_actuators) by extension 'ignore_ament_install'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_feedback_actuators) by extensions ['colcon_pkg']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_feedback_actuators) by extension 'colcon_pkg'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_feedback_actuators) by extensions ['colcon_meta']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_feedback_actuators) by extension 'colcon_meta'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_feedback_actuators) by extensions ['ros']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_feedback_actuators) by extension 'ros'
+[0.243s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mako_py_feedback_actuators' with type 'ros.ament_python' and name 'mako_py_feedback_actuators'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_serial_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_serial_interface) by extension 'ignore'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_serial_interface) by extension 'ignore_ament_install'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_serial_interface) by extensions ['colcon_pkg']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_serial_interface) by extension 'colcon_pkg'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_serial_interface) by extensions ['colcon_meta']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_serial_interface) by extension 'colcon_meta'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_serial_interface) by extensions ['ros']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_serial_interface) by extension 'ros'
+[0.244s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mako_py_serial_interface' with type 'ros.ament_python' and name 'mako_py_serial_interface'
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'dev_test_tools' build argument 'cmake_args' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'dev_test_tools' build argument 'cmake_target' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'dev_test_tools' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'dev_test_tools' build argument 'cmake_clean_cache' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'dev_test_tools' build argument 'cmake_clean_first' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'dev_test_tools' build argument 'cmake_force_configure' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'dev_test_tools' build argument 'ament_cmake_args' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'dev_test_tools' build argument 'catkin_cmake_args' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'dev_test_tools' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.268s] DEBUG:colcon.colcon_core.verb:Building package 'dev_test_tools' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/karim/mako_robot/mako_ws/build/dev_test_tools', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/karim/mako_robot/mako_ws/install/dev_test_tools', 'merge_install': False, 'path': '/home/karim/mako_robot/mako_ws/src/dev_test_tools', 'symlink_install': False, 'test_result_base': None}
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'mako_nolang_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'mako_nolang_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'mako_nolang_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'mako_nolang_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'mako_nolang_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'mako_nolang_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'mako_nolang_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'mako_nolang_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'mako_nolang_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.272s] DEBUG:colcon.colcon_core.verb:Building package 'mako_nolang_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces', 'merge_install': False, 'path': '/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'mako_nolang_launch' build argument 'cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'mako_nolang_launch' build argument 'cmake_target' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'mako_nolang_launch' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'mako_nolang_launch' build argument 'cmake_clean_cache' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'mako_nolang_launch' build argument 'cmake_clean_first' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'mako_nolang_launch' build argument 'cmake_force_configure' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'mako_nolang_launch' build argument 'ament_cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'mako_nolang_launch' build argument 'catkin_cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'mako_nolang_launch' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.274s] DEBUG:colcon.colcon_core.verb:Building package 'mako_nolang_launch' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/karim/mako_robot/mako_ws/build/mako_nolang_launch', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch', 'merge_install': False, 'path': '/home/karim/mako_robot/mako_ws/src/mako_nolang_launch', 'symlink_install': False, 'test_result_base': None}
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'mako_py_brain' build argument 'cmake_args' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'mako_py_brain' build argument 'cmake_target' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'mako_py_brain' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'mako_py_brain' build argument 'cmake_clean_cache' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'mako_py_brain' build argument 'cmake_clean_first' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'mako_py_brain' build argument 'cmake_force_configure' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'mako_py_brain' build argument 'ament_cmake_args' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'mako_py_brain' build argument 'catkin_cmake_args' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'mako_py_brain' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.278s] DEBUG:colcon.colcon_core.verb:Building package 'mako_py_brain' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/karim/mako_robot/mako_ws/build/mako_py_brain', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/karim/mako_robot/mako_ws/install/mako_py_brain', 'merge_install': False, 'path': '/home/karim/mako_robot/mako_ws/src/mako_py_brain', 'symlink_install': False, 'test_result_base': None}
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'mako_py_feedback_actuators' build argument 'cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'mako_py_feedback_actuators' build argument 'cmake_target' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'mako_py_feedback_actuators' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'mako_py_feedback_actuators' build argument 'cmake_clean_cache' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'mako_py_feedback_actuators' build argument 'cmake_clean_first' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'mako_py_feedback_actuators' build argument 'cmake_force_configure' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'mako_py_feedback_actuators' build argument 'ament_cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'mako_py_feedback_actuators' build argument 'catkin_cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'mako_py_feedback_actuators' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.281s] DEBUG:colcon.colcon_core.verb:Building package 'mako_py_feedback_actuators' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/karim/mako_robot/mako_ws/build/mako_py_feedback_actuators', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators', 'merge_install': False, 'path': '/home/karim/mako_robot/mako_ws/src/mako_py_feedback_actuators', 'symlink_install': False, 'test_result_base': None}
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'mako_py_serial_interface' build argument 'cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'mako_py_serial_interface' build argument 'cmake_target' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'mako_py_serial_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'mako_py_serial_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'mako_py_serial_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'mako_py_serial_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'mako_py_serial_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'mako_py_serial_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'mako_py_serial_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.285s] DEBUG:colcon.colcon_core.verb:Building package 'mako_py_serial_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/karim/mako_robot/mako_ws/build/mako_py_serial_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface', 'merge_install': False, 'path': '/home/karim/mako_robot/mako_ws/src/mako_py_serial_interface', 'symlink_install': False, 'test_result_base': None}
+[0.289s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_args' from command line to 'None'
+[0.289s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target' from command line to 'None'
+[0.289s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.289s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.289s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.289s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.289s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.289s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.289s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.289s] DEBUG:colcon.colcon_core.verb:Building package 'rplidar_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/karim/mako_robot/mako_ws/build/rplidar_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/karim/mako_robot/mako_ws/install/rplidar_ros', 'merge_install': False, 'path': '/home/karim/mako_robot/mako_ws/src/lidar_ros2', 'symlink_install': False, 'test_result_base': None}
+[0.290s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.293s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.293s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/karim/mako_robot/mako_ws/src/dev_test_tools' with build type 'ament_python'
+[0.293s] Level 1:colcon.colcon_core.shell:create_environment_hook('dev_test_tools', 'ament_prefix_path')
+[0.299s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.299s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/dev_test_tools/share/dev_test_tools/hook/ament_prefix_path.ps1'
+[0.300s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/karim/mako_robot/mako_ws/install/dev_test_tools/share/dev_test_tools/hook/ament_prefix_path.dsv'
+[0.301s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/dev_test_tools/share/dev_test_tools/hook/ament_prefix_path.sh'
+[0.303s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.303s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.309s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.314s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces' with build type 'ament_cmake'
+[0.316s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces'
+[0.318s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.318s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.340s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.344s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/karim/mako_robot/mako_ws/src/mako_nolang_launch' with build type 'ament_cmake'
+[0.345s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/karim/mako_robot/mako_ws/src/mako_nolang_launch'
+[0.346s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.346s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.350s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.356s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/karim/mako_robot/mako_ws/src/mako_py_brain' with build type 'ament_python'
+[0.357s] Level 1:colcon.colcon_core.shell:create_environment_hook('mako_py_brain', 'ament_prefix_path')
+[0.358s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/mako_py_brain/share/mako_py_brain/hook/ament_prefix_path.ps1'
+[0.360s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/karim/mako_robot/mako_ws/install/mako_py_brain/share/mako_py_brain/hook/ament_prefix_path.dsv'
+[0.361s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/mako_py_brain/share/mako_py_brain/hook/ament_prefix_path.sh'
+[0.362s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.362s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.366s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.371s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/karim/mako_robot/mako_ws/src/mako_py_feedback_actuators' with build type 'ament_python'
+[0.372s] Level 1:colcon.colcon_core.shell:create_environment_hook('mako_py_feedback_actuators', 'ament_prefix_path')
+[0.373s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/share/mako_py_feedback_actuators/hook/ament_prefix_path.ps1'
+[0.375s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/share/mako_py_feedback_actuators/hook/ament_prefix_path.dsv'
+[0.376s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/share/mako_py_feedback_actuators/hook/ament_prefix_path.sh'
+[0.378s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.378s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.384s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.391s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/karim/mako_robot/mako_ws/src/mako_py_serial_interface' with build type 'ament_python'
+[0.391s] Level 1:colcon.colcon_core.shell:create_environment_hook('mako_py_serial_interface', 'ament_prefix_path')
+[0.394s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface/share/mako_py_serial_interface/hook/ament_prefix_path.ps1'
+[0.397s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface/share/mako_py_serial_interface/hook/ament_prefix_path.dsv'
+[0.398s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface/share/mako_py_serial_interface/hook/ament_prefix_path.sh'
+[0.400s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.400s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.405s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.716s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/karim/mako_robot/mako_ws/src/dev_test_tools'
+[0.717s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.717s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.721s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.734s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/dev_test_tools:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface:/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators:/home/karim/mako_robot/mako_ws/install/mako_py_brain:/home/karim/mako_robot/mako_ws/install/dev_test_tools:/opt/ros/foxy /usr/bin/cmake --build /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces -- -j6 -l6
+[0.749s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/karim/mako_robot/mako_ws/build/mako_nolang_launch': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/dev_test_tools:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface:/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators:/home/karim/mako_robot/mako_ws/install/mako_py_brain:/home/karim/mako_robot/mako_ws/install/dev_test_tools:/opt/ros/foxy /usr/bin/cmake --build /home/karim/mako_robot/mako_ws/build/mako_nolang_launch -- -j6 -l6
+[1.035s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/karim/mako_robot/mako_ws/src/mako_py_brain'
+[1.037s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.037s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.041s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[1.335s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/karim/mako_robot/mako_ws/src/mako_py_feedback_actuators'
+[1.336s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.337s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.341s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[1.353s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/dev_test_tools:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface:/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators:/home/karim/mako_robot/mako_ws/install/mako_py_brain:/home/karim/mako_robot/mako_ws/install/dev_test_tools:/opt/ros/foxy /usr/bin/cmake --build /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces -- -j6 -l6
+[1.360s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/karim/mako_robot/mako_ws/build/mako_nolang_launch' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/dev_test_tools:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface:/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators:/home/karim/mako_robot/mako_ws/install/mako_py_brain:/home/karim/mako_robot/mako_ws/install/dev_test_tools:/opt/ros/foxy /usr/bin/cmake --build /home/karim/mako_robot/mako_ws/build/mako_nolang_launch -- -j6 -l6
+[1.682s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/karim/mako_robot/mako_ws/src/mako_py_serial_interface'
+[1.684s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.684s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.689s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[1.701s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/karim/mako_robot/mako_ws/src/dev_test_tools': PYTHONPATH=/home/karim/mako_robot/mako_ws/install/dev_test_tools/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/dev_test_tools build --build-base /home/karim/mako_robot/mako_ws/build/dev_test_tools/build install --prefix /home/karim/mako_robot/mako_ws/install/dev_test_tools --record /home/karim/mako_robot/mako_ws/build/dev_test_tools/install.log --single-version-externally-managed
+[1.708s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/karim/mako_robot/mako_ws/src/mako_py_brain': PYTHONPATH=/home/karim/mako_robot/mako_ws/install/mako_py_brain/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mako_py_brain build --build-base /home/karim/mako_robot/mako_ws/build/mako_py_brain/build install --prefix /home/karim/mako_robot/mako_ws/install/mako_py_brain --record /home/karim/mako_robot/mako_ws/build/mako_py_brain/install.log --single-version-externally-managed
+[1.715s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/karim/mako_robot/mako_ws/src/mako_py_feedback_actuators': PYTHONPATH=/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mako_py_feedback_actuators build --build-base /home/karim/mako_robot/mako_ws/build/mako_py_feedback_actuators/build install --prefix /home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators --record /home/karim/mako_robot/mako_ws/build/mako_py_feedback_actuators/install.log --single-version-externally-managed
+[1.750s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/dev_test_tools:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface:/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators:/home/karim/mako_robot/mako_ws/install/mako_py_brain:/home/karim/mako_robot/mako_ws/install/dev_test_tools:/opt/ros/foxy /usr/bin/cmake --install /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces
+[1.759s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/karim/mako_robot/mako_ws/build/mako_nolang_launch': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/dev_test_tools:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface:/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators:/home/karim/mako_robot/mako_ws/install/mako_py_brain:/home/karim/mako_robot/mako_ws/install/dev_test_tools:/opt/ros/foxy /usr/bin/cmake --install /home/karim/mako_robot/mako_ws/build/mako_nolang_launch
+[1.769s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/karim/mako_robot/mako_ws/src/mako_py_serial_interface': PYTHONPATH=/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mako_py_serial_interface build --build-base /home/karim/mako_robot/mako_ws/build/mako_py_serial_interface/build install --prefix /home/karim/mako_robot/mako_ws/install/mako_py_serial_interface --record /home/karim/mako_robot/mako_ws/build/mako_py_serial_interface/install.log --single-version-externally-managed
+[1.789s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mako_nolang_launch)
+[1.804s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch' for CMake module files
+[1.805s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch' for CMake config files
+[1.806s] Level 1:colcon.colcon_core.shell:create_environment_hook('mako_nolang_launch', 'cmake_prefix_path')
+[1.806s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/hook/cmake_prefix_path.ps1'
+[1.809s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/hook/cmake_prefix_path.dsv'
+[1.810s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/hook/cmake_prefix_path.sh'
+[1.814s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/karim/mako_robot/mako_ws/build/mako_nolang_launch' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/dev_test_tools:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface:/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators:/home/karim/mako_robot/mako_ws/install/mako_py_brain:/home/karim/mako_robot/mako_ws/install/dev_test_tools:/opt/ros/foxy /usr/bin/cmake --install /home/karim/mako_robot/mako_ws/build/mako_nolang_launch
+[1.815s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/bin'
+[1.815s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/lib/pkgconfig/mako_nolang_launch.pc'
+[1.815s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/lib/python3.8/site-packages'
+[1.816s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/package.ps1'
+[1.817s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/package.dsv'
+[1.818s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/package.sh'
+[1.819s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/package.bash'
+[1.820s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/package.zsh'
+[1.821s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/colcon-core/packages/mako_nolang_launch)
+[1.827s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mako_nolang_interfaces)
+[1.828s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces' for CMake module files
+[1.830s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/dev_test_tools:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface:/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators:/home/karim/mako_robot/mako_ws/install/mako_py_brain:/home/karim/mako_robot/mako_ws/install/dev_test_tools:/opt/ros/foxy /usr/bin/cmake --install /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces
+[1.831s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces' for CMake config files
+[1.831s] Level 1:colcon.colcon_core.shell:create_environment_hook('mako_nolang_interfaces', 'cmake_prefix_path')
+[1.832s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/hook/cmake_prefix_path.ps1'
+[1.834s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/hook/cmake_prefix_path.dsv'
+[1.834s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/hook/cmake_prefix_path.sh'
+[1.841s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/bin'
+[1.841s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/lib/pkgconfig/mako_nolang_interfaces.pc'
+[1.842s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/lib/python3.8/site-packages'
+[1.844s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/package.ps1'
+[1.844s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/package.dsv'
+[1.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/package.sh'
+[1.846s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/package.bash'
+[1.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/package.zsh'
+[1.848s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/colcon-core/packages/mako_nolang_interfaces)
+[1.893s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mako_nolang_launch)
+[1.894s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch' for CMake module files
+[1.895s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch' for CMake config files
+[1.896s] Level 1:colcon.colcon_core.shell:create_environment_hook('mako_nolang_launch', 'cmake_prefix_path')
+[1.897s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/hook/cmake_prefix_path.ps1'
+[1.901s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/hook/cmake_prefix_path.dsv'
+[1.902s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/hook/cmake_prefix_path.sh'
+[1.903s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/bin'
+[1.904s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/lib/pkgconfig/mako_nolang_launch.pc'
+[1.904s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/lib/python3.8/site-packages'
+[1.904s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/package.ps1'
+[1.905s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/package.dsv'
+[1.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/package.sh'
+[1.907s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/package.bash'
+[1.908s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/package.zsh'
+[1.908s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/colcon-core/packages/mako_nolang_launch)
+[1.910s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/karim/mako_robot/mako_ws/src/lidar_ros2' with build type 'ament_cmake'
+[1.910s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/karim/mako_robot/mako_ws/src/lidar_ros2'
+[1.912s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.912s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.920s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[1.926s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mako_nolang_interfaces)
+[1.928s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces' for CMake module files
+[1.928s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces' for CMake config files
+[1.929s] Level 1:colcon.colcon_core.shell:create_environment_hook('mako_nolang_interfaces', 'cmake_prefix_path')
+[1.930s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/hook/cmake_prefix_path.ps1'
+[1.933s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/hook/cmake_prefix_path.dsv'
+[1.934s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/hook/cmake_prefix_path.sh'
+[1.936s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/bin'
+[1.936s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/lib/pkgconfig/mako_nolang_interfaces.pc'
+[1.937s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/lib/python3.8/site-packages'
+[1.957s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/package.ps1'
+[1.959s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/package.dsv'
+[1.960s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/package.sh'
+[1.961s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/package.bash'
+[1.962s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/package.zsh'
+[1.962s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/colcon-core/packages/mako_nolang_interfaces)
+[1.975s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/karim/mako_robot/mako_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/dev_test_tools:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface:/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators:/home/karim/mako_robot/mako_ws/install/mako_py_brain:/home/karim/mako_robot/mako_ws/install/dev_test_tools:/opt/ros/foxy /usr/bin/cmake --build /home/karim/mako_robot/mako_ws/build/rplidar_ros -- -j6 -l6
+[2.206s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/dev_test_tools' for CMake module files
+[2.207s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/dev_test_tools' for CMake config files
+[2.208s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/dev_test_tools/lib'
+[2.208s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/dev_test_tools/bin'
+[2.209s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/dev_test_tools/lib/pkgconfig/dev_test_tools.pc'
+[2.209s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/dev_test_tools/lib/python3.8/site-packages'
+[2.209s] Level 1:colcon.colcon_core.shell:create_environment_hook('dev_test_tools', 'pythonpath')
+[2.210s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/dev_test_tools/share/dev_test_tools/hook/pythonpath.ps1'
+[2.211s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/karim/mako_robot/mako_ws/install/dev_test_tools/share/dev_test_tools/hook/pythonpath.dsv'
+[2.211s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/dev_test_tools/share/dev_test_tools/hook/pythonpath.sh'
+[2.212s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dev_test_tools)
+[2.213s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/dev_test_tools/share/dev_test_tools/package.ps1'
+[2.214s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/karim/mako_robot/mako_ws/install/dev_test_tools/share/dev_test_tools/package.dsv'
+[2.215s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/dev_test_tools/share/dev_test_tools/package.sh'
+[2.216s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/dev_test_tools/share/dev_test_tools/package.bash'
+[2.216s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/dev_test_tools/share/dev_test_tools/package.zsh'
+[2.217s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/karim/mako_robot/mako_ws/install/dev_test_tools/share/colcon-core/packages/dev_test_tools)
+[2.219s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/karim/mako_robot/mako_ws/src/dev_test_tools' returned '0': PYTHONPATH=/home/karim/mako_robot/mako_ws/install/dev_test_tools/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/dev_test_tools build --build-base /home/karim/mako_robot/mako_ws/build/dev_test_tools/build install --prefix /home/karim/mako_robot/mako_ws/install/dev_test_tools --record /home/karim/mako_robot/mako_ws/build/dev_test_tools/install.log --single-version-externally-managed
+[2.271s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators' for CMake module files
+[2.271s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators' for CMake config files
+[2.272s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/lib'
+[2.272s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/bin'
+[2.272s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/lib/pkgconfig/mako_py_feedback_actuators.pc'
+[2.272s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/lib/python3.8/site-packages'
+[2.272s] Level 1:colcon.colcon_core.shell:create_environment_hook('mako_py_feedback_actuators', 'pythonpath')
+[2.273s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/share/mako_py_feedback_actuators/hook/pythonpath.ps1'
+[2.273s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/share/mako_py_feedback_actuators/hook/pythonpath.dsv'
+[2.274s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/share/mako_py_feedback_actuators/hook/pythonpath.sh'
+[2.276s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/karim/mako_robot/mako_ws/src/mako_py_feedback_actuators' returned '0': PYTHONPATH=/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mako_py_feedback_actuators build --build-base /home/karim/mako_robot/mako_ws/build/mako_py_feedback_actuators/build install --prefix /home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators --record /home/karim/mako_robot/mako_ws/build/mako_py_feedback_actuators/install.log --single-version-externally-managed
+[2.280s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mako_py_feedback_actuators)
+[2.282s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/share/mako_py_feedback_actuators/package.ps1'
+[2.292s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/share/mako_py_feedback_actuators/package.dsv'
+[2.293s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/share/mako_py_feedback_actuators/package.sh'
+[2.294s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/share/mako_py_feedback_actuators/package.bash'
+[2.294s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/share/mako_py_feedback_actuators/package.zsh'
+[2.295s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/share/colcon-core/packages/mako_py_feedback_actuators)
+[2.307s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/karim/mako_robot/mako_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/dev_test_tools:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface:/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators:/home/karim/mako_robot/mako_ws/install/mako_py_brain:/home/karim/mako_robot/mako_ws/install/dev_test_tools:/opt/ros/foxy /usr/bin/cmake --build /home/karim/mako_robot/mako_ws/build/rplidar_ros -- -j6 -l6
+[2.335s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_py_brain' for CMake module files
+[2.336s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_py_brain' for CMake config files
+[2.336s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/karim/mako_robot/mako_ws/src/mako_py_brain' returned '0': PYTHONPATH=/home/karim/mako_robot/mako_ws/install/mako_py_brain/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mako_py_brain build --build-base /home/karim/mako_robot/mako_ws/build/mako_py_brain/build install --prefix /home/karim/mako_robot/mako_ws/install/mako_py_brain --record /home/karim/mako_robot/mako_ws/build/mako_py_brain/install.log --single-version-externally-managed
+[2.338s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_py_brain/lib'
+[2.338s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_py_brain/bin'
+[2.339s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_py_brain/lib/pkgconfig/mako_py_brain.pc'
+[2.339s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_py_brain/lib/python3.8/site-packages'
+[2.339s] Level 1:colcon.colcon_core.shell:create_environment_hook('mako_py_brain', 'pythonpath')
+[2.340s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/mako_py_brain/share/mako_py_brain/hook/pythonpath.ps1'
+[2.342s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/karim/mako_robot/mako_ws/install/mako_py_brain/share/mako_py_brain/hook/pythonpath.dsv'
+[2.343s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/mako_py_brain/share/mako_py_brain/hook/pythonpath.sh'
+[2.345s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mako_py_brain)
+[2.348s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_py_brain/share/mako_py_brain/package.ps1'
+[2.349s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/karim/mako_robot/mako_ws/install/mako_py_brain/share/mako_py_brain/package.dsv'
+[2.350s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_py_brain/share/mako_py_brain/package.sh'
+[2.352s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_py_brain/share/mako_py_brain/package.bash'
+[2.352s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_py_brain/share/mako_py_brain/package.zsh'
+[2.353s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/karim/mako_robot/mako_ws/install/mako_py_brain/share/colcon-core/packages/mako_py_brain)
+[2.379s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface' for CMake module files
+[2.380s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface' for CMake config files
+[2.380s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface/lib'
+[2.381s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface/bin'
+[2.381s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface/lib/pkgconfig/mako_py_serial_interface.pc'
+[2.381s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface/lib/python3.8/site-packages'
+[2.381s] Level 1:colcon.colcon_core.shell:create_environment_hook('mako_py_serial_interface', 'pythonpath')
+[2.382s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface/share/mako_py_serial_interface/hook/pythonpath.ps1'
+[2.382s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface/share/mako_py_serial_interface/hook/pythonpath.dsv'
+[2.383s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/karim/mako_robot/mako_ws/src/mako_py_serial_interface' returned '0': PYTHONPATH=/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mako_py_serial_interface build --build-base /home/karim/mako_robot/mako_ws/build/mako_py_serial_interface/build install --prefix /home/karim/mako_robot/mako_ws/install/mako_py_serial_interface --record /home/karim/mako_robot/mako_ws/build/mako_py_serial_interface/install.log --single-version-externally-managed
+[2.384s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface/share/mako_py_serial_interface/hook/pythonpath.sh'
+[2.385s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mako_py_serial_interface)
+[2.385s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface/share/mako_py_serial_interface/package.ps1'
+[2.386s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface/share/mako_py_serial_interface/package.dsv'
+[2.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface/share/mako_py_serial_interface/package.sh'
+[2.399s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface/share/mako_py_serial_interface/package.bash'
+[2.400s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface/share/mako_py_serial_interface/package.zsh'
+[2.401s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface/share/colcon-core/packages/mako_py_serial_interface)
+[2.477s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/karim/mako_robot/mako_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/dev_test_tools:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface:/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators:/home/karim/mako_robot/mako_ws/install/mako_py_brain:/home/karim/mako_robot/mako_ws/install/dev_test_tools:/opt/ros/foxy /usr/bin/cmake --install /home/karim/mako_robot/mako_ws/build/rplidar_ros
+[2.508s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[2.510s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/rplidar_ros' for CMake module files
+[2.515s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/rplidar_ros' for CMake config files
+[2.519s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/karim/mako_robot/mako_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/dev_test_tools:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface:/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators:/home/karim/mako_robot/mako_ws/install/mako_py_brain:/home/karim/mako_robot/mako_ws/install/dev_test_tools:/opt/ros/foxy /usr/bin/cmake --install /home/karim/mako_robot/mako_ws/build/rplidar_ros
+[2.520s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[2.521s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[2.524s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[2.525s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[2.526s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/rplidar_ros/lib'
+[2.526s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'ld_library_path_lib')
+[2.527s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.ps1'
+[2.528s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.dsv'
+[2.529s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.sh'
+[2.529s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/rplidar_ros/bin'
+[2.530s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[2.530s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/rplidar_ros/lib/python3.8/site-packages'
+[2.532s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[2.532s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[2.533s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/package.sh'
+[2.534s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/package.bash'
+[2.536s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[2.537s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[2.630s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[2.631s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/rplidar_ros' for CMake module files
+[2.631s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/rplidar_ros' for CMake config files
+[2.632s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[2.632s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[2.633s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[2.634s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[2.635s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/rplidar_ros/lib'
+[2.636s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'ld_library_path_lib')
+[2.636s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.ps1'
+[2.637s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.dsv'
+[2.637s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.sh'
+[2.638s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/rplidar_ros/bin'
+[2.638s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[2.639s] Level 1:colcon.colcon_core.environment:checking '/home/karim/mako_robot/mako_ws/install/rplidar_ros/lib/python3.8/site-packages'
+[2.640s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[2.642s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[2.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/package.sh'
+[2.643s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/package.bash'
+[2.644s] INFO:colcon.colcon_core.shell:Creating package script '/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[2.645s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/karim/mako_robot/mako_ws/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[2.646s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.647s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.648s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.648s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.660s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.661s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.661s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.700s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.702s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/karim/mako_robot/mako_ws/install/local_setup.ps1'
+[2.703s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/karim/mako_robot/mako_ws/install/_local_setup_util_ps1.py'
+[2.705s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/karim/mako_robot/mako_ws/install/setup.ps1'
+[2.710s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/karim/mako_robot/mako_ws/install/local_setup.sh'
+[2.713s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/karim/mako_robot/mako_ws/install/_local_setup_util_sh.py'
+[2.714s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/karim/mako_robot/mako_ws/install/setup.sh'
+[2.718s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/karim/mako_robot/mako_ws/install/local_setup.bash'
+[2.719s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/karim/mako_robot/mako_ws/install/setup.bash'
+[2.724s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/karim/mako_robot/mako_ws/install/local_setup.zsh'
+[2.725s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/karim/mako_robot/mako_ws/install/setup.zsh'

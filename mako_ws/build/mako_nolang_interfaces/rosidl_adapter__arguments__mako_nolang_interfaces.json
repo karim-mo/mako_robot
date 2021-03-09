@@ -1,0 +1,6 @@
+{
+  "package_name": "mako_nolang_interfaces",
+  "non_idl_tuples": [
+    "/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces:srv/LedControl.srv"
+  ]
+}

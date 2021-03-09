@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/libmako_nolang_interfaces__rosidl_typesupport_fastrtps_cpp.so" "TARGETS" "mako_nolang_interfaces__rosidl_typesupport_fastrtps_cpp" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

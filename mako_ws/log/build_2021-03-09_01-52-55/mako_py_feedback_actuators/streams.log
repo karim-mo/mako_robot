@@ -1,0 +1,15 @@
+[1.371s] Invoking command in '/home/karim/mako_robot/mako_ws/build/mako_py_feedback_actuators': PYTHONPATH=/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators --editable --build-directory /home/karim/mako_robot/mako_ws/build/mako_py_feedback_actuators/build --no-deps install_data --install-dir /home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators
+[1.761s] running develop
+[1.974s] running egg_info
+[1.976s] writing mako_py_feedback_actuators.egg-info/PKG-INFO
+[1.977s] writing dependency_links to mako_py_feedback_actuators.egg-info/dependency_links.txt
+[1.977s] writing entry points to mako_py_feedback_actuators.egg-info/entry_points.txt
+[1.988s] writing requirements to mako_py_feedback_actuators.egg-info/requires.txt
+[1.989s] writing top-level names to mako_py_feedback_actuators.egg-info/top_level.txt
+[2.033s] reading manifest file 'mako_py_feedback_actuators.egg-info/SOURCES.txt'
+[2.043s] writing manifest file 'mako_py_feedback_actuators.egg-info/SOURCES.txt'
+[2.100s] running build_ext
+[2.100s] Creating /home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/lib/python3.8/site-packages/mako-py-feedback-actuators.egg-link (link to .)
+[2.101s] 
+[2.101s] Installed /home/karim/mako_robot/mako_ws/build/mako_py_feedback_actuators
+[2.101s] running install_data

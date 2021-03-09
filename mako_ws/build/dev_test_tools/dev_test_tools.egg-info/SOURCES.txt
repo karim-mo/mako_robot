@@ -11,7 +11,11 @@ setup.py
 dev_test_tools/__init__.py
 dev_test_tools/cam_test.py
 dev_test_tools/lidar_test.py
+dev_test_tools.egg-info/PKG-INFO
+dev_test_tools.egg-info/SOURCES.txt
+dev_test_tools.egg-info/dependency_links.txt
+dev_test_tools.egg-info/entry_points.txt
+dev_test_tools.egg-info/requires.txt
+dev_test_tools.egg-info/top_level.txt
+dev_test_tools.egg-info/zip-safe
 resource/dev_test_tools
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py

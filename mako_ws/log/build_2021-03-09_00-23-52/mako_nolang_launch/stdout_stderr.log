@@ -1,0 +1,23 @@
+-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/karim/mako_robot/mako_ws/build/mako_nolang_launch
+-- Install configuration: ""
+-- Installing: /home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/launch
+-- Installing: /home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/launch/mako_launch.launch.py
+-- Installing: /home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/ament_index/resource_index/package_run_dependencies/mako_nolang_launch
+-- Installing: /home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/ament_index/resource_index/parent_prefix_path/mako_nolang_launch
+-- Up-to-date: /home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/environment/ament_prefix_path.sh
+-- Installing: /home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/environment/path.sh
+-- Installing: /home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/environment/path.dsv
+-- Up-to-date: /home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/local_setup.bash
+-- Up-to-date: /home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/local_setup.sh
+-- Up-to-date: /home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/local_setup.zsh
+-- Installing: /home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/local_setup.dsv
+-- Installing: /home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/package.dsv
+-- Up-to-date: /home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/ament_index/resource_index/packages/mako_nolang_launch
+-- Up-to-date: /home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/cmake/mako_nolang_launchConfig.cmake
+-- Up-to-date: /home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/cmake/mako_nolang_launchConfig-version.cmake
+-- Installing: /home/karim/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/package.xml

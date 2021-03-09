@@ -1,3 +1,13 @@
 {
-    "cmake.configureOnOpen": false
+    "cmake.configureOnOpen": false,
+    "window.menuBarVisibility": "toggle",
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": true,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": true,
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": false,
+    "python.autoComplete.extraPaths": [
+        "~/mako_robot/mako_ws/install/mako_nolang_interfaces/lib/python3.8/site-packages/mako_nolang_interfaces"
+    ]
 }

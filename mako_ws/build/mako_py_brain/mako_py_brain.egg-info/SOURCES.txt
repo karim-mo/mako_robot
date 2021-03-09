@@ -10,7 +10,11 @@ setup.py
 ../../build/mako_py_brain/mako_py_brain.egg-info/zip-safe
 mako_py_brain/__init__.py
 mako_py_brain/brain.py
+mako_py_brain.egg-info/PKG-INFO
+mako_py_brain.egg-info/SOURCES.txt
+mako_py_brain.egg-info/dependency_links.txt
+mako_py_brain.egg-info/entry_points.txt
+mako_py_brain.egg-info/requires.txt
+mako_py_brain.egg-info/top_level.txt
+mako_py_brain.egg-info/zip-safe
 resource/mako_py_brain
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py

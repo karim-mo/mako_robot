@@ -1,0 +1,1 @@
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake
