@@ -4,6 +4,7 @@ const wss = new WebSocket.Server({ port: 9000 }, () => {
 });
 wss.on("connection", function connection(ws) {
     console.log("Connection incoming");
+    ws.send('{"type":"welcome","message":"Connection Successful"}');
     ws.on("message", (data) => {
       console.log(data);
       wss.broadcast(data);

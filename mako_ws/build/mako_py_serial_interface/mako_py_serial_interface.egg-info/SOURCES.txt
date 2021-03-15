@@ -10,7 +10,11 @@ setup.py
 ../../build/mako_py_serial_interface/mako_py_serial_interface.egg-info/zip-safe
 mako_py_serial_interface/__init__.py
 mako_py_serial_interface/pi_arduino_interface.py
+mako_py_serial_interface.egg-info/PKG-INFO
+mako_py_serial_interface.egg-info/SOURCES.txt
+mako_py_serial_interface.egg-info/dependency_links.txt
+mako_py_serial_interface.egg-info/entry_points.txt
+mako_py_serial_interface.egg-info/requires.txt
+mako_py_serial_interface.egg-info/top_level.txt
+mako_py_serial_interface.egg-info/zip-safe
 resource/mako_py_serial_interface
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py

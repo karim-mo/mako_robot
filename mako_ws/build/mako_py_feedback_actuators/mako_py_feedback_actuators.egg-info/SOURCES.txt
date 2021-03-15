@@ -11,7 +11,11 @@ setup.py
 mako_py_feedback_actuators/LED_Control.py
 mako_py_feedback_actuators/Servo_Control.py
 mako_py_feedback_actuators/__init__.py
+mako_py_feedback_actuators.egg-info/PKG-INFO
+mako_py_feedback_actuators.egg-info/SOURCES.txt
+mako_py_feedback_actuators.egg-info/dependency_links.txt
+mako_py_feedback_actuators.egg-info/entry_points.txt
+mako_py_feedback_actuators.egg-info/requires.txt
+mako_py_feedback_actuators.egg-info/top_level.txt
+mako_py_feedback_actuators.egg-info/zip-safe
 resource/mako_py_feedback_actuators
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py
