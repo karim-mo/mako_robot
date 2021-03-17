@@ -1,3 +1,5 @@
+msg/MakoServerMessage.idl
+msg/MakoServerMessage.msg
 srv/ArduinoCommand.idl
 srv/ArduinoCommand.srv
 srv/ArduinoCommand_Request.msg

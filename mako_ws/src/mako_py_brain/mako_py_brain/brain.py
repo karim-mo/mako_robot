@@ -5,12 +5,15 @@ import json
 from rclpy.node import Node
 from functools import partial
 from mako_nolang_interfaces.srv import LedControl
+from mako_nolang_interfaces.msg import MakoServerMessage
  
 class BrainNode(Node):
     def __init__(self):
         super().__init__("BrainNode")
         self.get_logger().info("Brain node started")
         self.get_logger().info("Connecting to mako server..")
+        self.serverMsgSubscriber = self.create_subscription(MakoServerMessage, "server_msg", self.onServerMessage, 10)
+        self.moduleMsgPublisher = self.create_publisher(MakoServerMessage, "module_msg", 10)
         websocket.enableTrace(True)
         self.ws = websocket.WebSocketApp("ws://localhost:9000",
                               on_open = self.on_open,
@@ -21,6 +24,12 @@ class BrainNode(Node):
         #self.call_led_control()
         
         #self.ws.send("Test")
+
+    def onServerMessage(self, msg):
+        self.get_logger().info(str(msg))
+        if(msg.type == "module_request"):
+            self.ws.send('{' + '"type":"{0}","message":"{1}"'.format(str(msg.type), str(msg.message)) + '}')
+        
 
     def call_led_control(self, exp_type):
         client = self.create_client(LedControl, "cmd_matrix")
@@ -50,6 +59,12 @@ class BrainNode(Node):
         msg = json.loads(message)
         if(msg["type"] == "led_control"):
             self.call_led_control(msg["exp_type"])
+        # if(msg["type"] == "module_response"):
+        #     _msg = MakoServerMessage()
+        #     _msg.type = msg["type"]
+        #     _msg.message = msg["message"]
+        #     _msg.module_name = msg["module_name"]
+        #     self.moduleMsgPublisher.publish(_msg)
 
 
 

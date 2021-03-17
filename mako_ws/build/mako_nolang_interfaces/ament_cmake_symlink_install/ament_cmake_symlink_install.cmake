@@ -355,6 +355,9 @@ ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolan
 # install(DIRECTORY "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_py/mako_nolang_interfaces/srv/" "DESTINATION" "lib/python3.8/site-packages/mako_nolang_interfaces/srv" "PATTERN" "*.py")
 ament_cmake_symlink_install_directory("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" DIRECTORY "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_py/mako_nolang_interfaces/srv/" "DESTINATION" "lib/python3.8/site-packages/mako_nolang_interfaces/srv" "PATTERN" "*.py")
 
+# install(DIRECTORY "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_py/mako_nolang_interfaces/msg/" "DESTINATION" "lib/python3.8/site-packages/mako_nolang_interfaces/msg" "PATTERN" "*.py")
+ament_cmake_symlink_install_directory("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" DIRECTORY "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_py/mako_nolang_interfaces/msg/" "DESTINATION" "lib/python3.8/site-packages/mako_nolang_interfaces/msg" "PATTERN" "*.py")
+
 # install("TARGETS" "mako_nolang_interfaces__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "lib/python3.8/site-packages/mako_nolang_interfaces")
 include("/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
@@ -373,6 +376,9 @@ ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolan
 # install(FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces/srv/ArduinoCommand.idl" "DESTINATION" "share/mako_nolang_interfaces/srv")
 ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces/srv/ArduinoCommand.idl" "DESTINATION" "share/mako_nolang_interfaces/srv")
 
+# install(FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces/msg/MakoServerMessage.idl" "DESTINATION" "share/mako_nolang_interfaces/msg")
+ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces/msg/MakoServerMessage.idl" "DESTINATION" "share/mako_nolang_interfaces/msg")
+
 # install(FILES "/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces/srv/LedControl.srv" "DESTINATION" "share/mako_nolang_interfaces/srv")
 ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" FILES "/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces/srv/LedControl.srv" "DESTINATION" "share/mako_nolang_interfaces/srv")
 
@@ -390,6 +396,9 @@ ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolan
 
 # install(FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_cmake/srv/ArduinoCommand_Response.msg" "DESTINATION" "share/mako_nolang_interfaces/srv")
 ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_cmake/srv/ArduinoCommand_Response.msg" "DESTINATION" "share/mako_nolang_interfaces/srv")
+
+# install(FILES "/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces/msg/MakoServerMessage.msg" "DESTINATION" "share/mako_nolang_interfaces/msg")
+ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" FILES "/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces/msg/MakoServerMessage.msg" "DESTINATION" "share/mako_nolang_interfaces/msg")
 
 # install(FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/mako_nolang_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/mako_nolang_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

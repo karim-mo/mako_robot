@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_py/mako_nolang_interfaces/msg/_mako_server_message_s.c
+Python.h
+-
+stdbool.h
+-
+numpy/ndarrayobject.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_py/mako_nolang_interfaces/msg/numpy/ndarrayobject.h
+rosidl_runtime_c/visibility_control.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_py/mako_nolang_interfaces/msg/rosidl_runtime_c/visibility_control.h
+mako_nolang_interfaces/msg/detail/mako_server_message__struct.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_py/mako_nolang_interfaces/msg/mako_nolang_interfaces/msg/detail/mako_server_message__struct.h
+mako_nolang_interfaces/msg/detail/mako_server_message__functions.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_py/mako_nolang_interfaces/msg/mako_nolang_interfaces/msg/detail/mako_server_message__functions.h
+rosidl_runtime_c/string.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_py/mako_nolang_interfaces/msg/rosidl_runtime_c/string.h
+rosidl_runtime_c/string_functions.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_py/mako_nolang_interfaces/msg/rosidl_runtime_c/string_functions.h
+
 /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_py/mako_nolang_interfaces/srv/_arduino_command_s.c
 Python.h
 -
@@ -637,6 +655,28 @@ cpython/unicodeobject.h
 /usr/include/python3.8/warnings.h
 
 /usr/include/python3.8/weakrefobject.h
+
+rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_server_message__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+rosidl_generator_c/mako_nolang_interfaces/msg/detail/rosidl_runtime_c/visibility_control.h
+mako_nolang_interfaces/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_nolang_interfaces/msg/rosidl_generator_c__visibility_control.h
+mako_nolang_interfaces/msg/detail/mako_server_message__struct.h
+rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_nolang_interfaces/msg/detail/mako_server_message__struct.h
+
+rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_server_message__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+rosidl_runtime_c/string.h
+rosidl_generator_c/mako_nolang_interfaces/msg/detail/rosidl_runtime_c/string.h
 
 rosidl_generator_c/mako_nolang_interfaces/msg/rosidl_generator_c__visibility_control.h
 

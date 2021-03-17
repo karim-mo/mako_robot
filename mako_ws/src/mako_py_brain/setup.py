@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "BrainNode = mako_py_brain.brain:main"
+            "BrainNode = mako_py_brain.brain:main",
+            "ctrl_panel_node = mako_py_brain.control_panel:main"
         ],
     },
 )

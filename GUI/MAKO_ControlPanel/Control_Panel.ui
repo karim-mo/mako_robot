@@ -28,6 +28,9 @@
   <property name="styleSheet">
    <string notr="true">background-color: qlineargradient(spread:pad, x1:0.130095, y1:0.131, x2:1, y2:1, stop:0.253731 rgba(0, 171, 255, 255), stop:1 rgba(255, 255, 255, 255));</string>
   </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QGroupBox" name="grpBox">
     <property name="geometry">
@@ -50,6 +53,9 @@
       <height>900</height>
      </size>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(0,36,61,255);</string>
+    </property>
     <property name="title">
      <string>MAKO's Educational Modules Control</string>
     </property>
@@ -62,8 +68,16 @@
        <height>141</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
+      <string notr="true">background-color: 'white';
+font-size:20px;</string>
      </property>
      <property name="text">
       <string>Emotion Recognition</string>
@@ -78,8 +92,18 @@
        <height>141</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
+      <string notr="true">background-color: 'white';
+font-size:20px;</string>
      </property>
      <property name="text">
       <string>Faces Recognition</string>
@@ -94,8 +118,18 @@
        <height>141</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
+      <string notr="true">background-color: 'white';
+font-size:20px;</string>
      </property>
      <property name="text">
       <string>Spatial Prepositions</string>
@@ -111,7 +145,8 @@
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
+      <string notr="true">background-color: 'white';
+font-size:20px;</string>
      </property>
      <property name="text">
       <string>Greetings</string>
@@ -127,10 +162,11 @@
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
+      <string notr="true">background-color: 'white';
+font-size:20px;</string>
      </property>
      <property name="text">
-      <string>Reading </string>
+      <string>Social Stories</string>
      </property>
     </widget>
     <widget class="QPushButton" name="btnLang">
@@ -143,7 +179,8 @@
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
+      <string notr="true">background-color: 'white';
+font-size:20px;</string>
      </property>
      <property name="text">
       <string>WH Questions</string>
@@ -159,10 +196,11 @@
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
+      <string notr="true">background-color: 'white';
+font-size:20px;</string>
      </property>
      <property name="text">
-      <string>Mini Games</string>
+      <string>Puzzle Games</string>
      </property>
     </widget>
     <widget class="QPushButton" name="btnRobotCntrl">
@@ -175,7 +213,8 @@
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
+      <string notr="true">background-color: 'white';
+font-size:20px;</string>
      </property>
      <property name="text">
       <string>MAKO Movement Game</string>
@@ -191,10 +230,11 @@
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
+      <string notr="true">background-color: 'white';
+font-size:20px;</string>
      </property>
      <property name="text">
-      <string>MAKO Faces Quiz Game</string>
+      <string>MAKO Faces Quiz</string>
      </property>
     </widget>
     <widget class="QPushButton" name="btnRobotQuiz">
@@ -207,7 +247,8 @@
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
+      <string notr="true">background-color: 'white';
+font-size:20px;</string>
      </property>
      <property name="text">
       <string>MAKO Turn Taking 
@@ -224,11 +265,45 @@ Emotion Quiz</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);
-background-color: rgb(239, 41, 41);</string>
+      <string notr="true">background-color: rgb(150, 0, 0);
+font-size:20px;</string>
      </property>
      <property name="text">
       <string>Stop Current Module</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblStatus">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>640</y>
+       <width>111</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgba(0,36,61,255);</string>
+     </property>
+     <property name="text">
+      <string>Current Status:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblCurrentStatus">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>640</y>
+       <width>321</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgba(0,36,61,255);</string>
+     </property>
+     <property name="text">
+      <string>No Module Currently Running</string>
      </property>
     </widget>
    </widget>

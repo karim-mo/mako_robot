@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/mako_server_message__type_support.c
+stddef.h
+-
+mako_nolang_interfaces/msg/detail/mako_server_message__rosidl_typesupport_introspection_c.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/mako_nolang_interfaces/msg/detail/mako_server_message__rosidl_typesupport_introspection_c.h
+mako_nolang_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/mako_nolang_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+rosidl_typesupport_introspection_c/field_types.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/rosidl_typesupport_introspection_c/field_types.h
+rosidl_typesupport_introspection_c/identifier.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/rosidl_typesupport_introspection_c/identifier.h
+rosidl_typesupport_introspection_c/message_introspection.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/rosidl_typesupport_introspection_c/message_introspection.h
+mako_nolang_interfaces/msg/detail/mako_server_message__functions.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/mako_nolang_interfaces/msg/detail/mako_server_message__functions.h
+mako_nolang_interfaces/msg/detail/mako_server_message__struct.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/mako_nolang_interfaces/msg/detail/mako_server_message__struct.h
+rosidl_runtime_c/string_functions.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/rosidl_runtime_c/string_functions.h
+
 /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/arduino_command__type_support.c
 stddef.h
 -
@@ -130,6 +150,28 @@ rosidl_typesupport_introspection_c/message_introspection.h
 
 /opt/ros/foxy/include/rosidl_typesupport_introspection_c/visibility_control.h
 
+rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_server_message__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+rosidl_generator_c/mako_nolang_interfaces/msg/detail/rosidl_runtime_c/visibility_control.h
+mako_nolang_interfaces/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_nolang_interfaces/msg/rosidl_generator_c__visibility_control.h
+mako_nolang_interfaces/msg/detail/mako_server_message__struct.h
+rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_nolang_interfaces/msg/detail/mako_server_message__struct.h
+
+rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_server_message__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+rosidl_runtime_c/string.h
+rosidl_generator_c/mako_nolang_interfaces/msg/detail/rosidl_runtime_c/string.h
+
 rosidl_generator_c/mako_nolang_interfaces/msg/rosidl_generator_c__visibility_control.h
 
 rosidl_generator_c/mako_nolang_interfaces/srv/detail/arduino_command__functions.h
@@ -175,6 +217,14 @@ stdint.h
 -
 rosidl_runtime_c/string.h
 rosidl_generator_c/mako_nolang_interfaces/srv/detail/rosidl_runtime_c/string.h
+
+rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/mako_server_message__rosidl_typesupport_introspection_c.h
+rosidl_runtime_c/message_type_support_struct.h
+rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/rosidl_runtime_c/message_type_support_struct.h
+rosidl_typesupport_interface/macros.h
+rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/rosidl_typesupport_interface/macros.h
+mako_nolang_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/mako_nolang_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
 
 rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
 
