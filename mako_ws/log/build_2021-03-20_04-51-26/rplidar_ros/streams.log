@@ -1,0 +1,47 @@
+[1.667s] Invoking command in '/home/karim/mako_robot/mako_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/dev_test_tools:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface:/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators:/home/karim/mako_robot/mako_ws/install/mako_py_brain:/home/karim/mako_robot/mako_ws/install/dev_test_tools:/opt/ros/foxy /usr/bin/cmake --build /home/karim/mako_robot/mako_ws/build/rplidar_ros -- -j6 -l6
+[2.606s] [ 11%] Built target rplidarNodeClient
+[2.670s] [ 50%] Built target rplidar_composition_node
+[2.693s] [ 88%] Built target rplidarNode
+[2.895s] [100%] Built target rplidar_composition
+[2.951s] Invoked command in '/home/karim/mako_robot/mako_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/dev_test_tools:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface:/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators:/home/karim/mako_robot/mako_ws/install/mako_py_brain:/home/karim/mako_robot/mako_ws/install/dev_test_tools:/opt/ros/foxy /usr/bin/cmake --build /home/karim/mako_robot/mako_ws/build/rplidar_ros -- -j6 -l6
+[3.455s] Invoking command in '/home/karim/mako_robot/mako_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/dev_test_tools:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface:/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators:/home/karim/mako_robot/mako_ws/install/mako_py_brain:/home/karim/mako_robot/mako_ws/install/dev_test_tools:/opt/ros/foxy /usr/bin/cmake --install /home/karim/mako_robot/mako_ws/build/rplidar_ros
+[3.601s] -- Install configuration: ""
+[3.601s] -- Execute custom install script
+[3.659s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/lib/rplidar_ros/rplidarNode
+[3.659s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/lib/rplidar_ros/rplidarNodeClient
+[3.711s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/lib/rplidar_ros/rplidar_composition
+[3.711s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar.launch.py
+[3.711s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a3.launch.py
+[3.711s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1.launch.py
+[3.711s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_tcp.launch.py
+[3.711s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/test_rplidar.launch.py
+[3.712s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/test_rplidar_a3.launch.py
+[3.712s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar.launch.py
+[3.722s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a3.launch.py
+[3.723s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1.launch.py
+[3.723s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_tcp.launch.py
+[3.734s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/rviz/rplidar.rviz
+[3.801s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/lib/librplidar_composition_node.so
+[3.807s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/include/rplidar_node.hpp
+[3.828s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/include/visibility.h
+[3.844s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/lib/rplidar_ros/rplidarNode
+[3.861s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/lib/rplidar_ros/rplidarNodeClient
+[3.878s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/lib/rplidar_ros/rplidar_composition
+[3.892s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/ament_index/resource_index/package_run_dependencies/rplidar_ros
+[3.911s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/ament_index/resource_index/parent_prefix_path/rplidar_ros
+[3.931s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.sh
+[3.932s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.dsv
+[3.932s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/environment/path.sh
+[3.932s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/environment/path.dsv
+[3.977s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/local_setup.bash
+[3.977s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/local_setup.sh
+[4.000s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/local_setup.zsh
+[4.000s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/local_setup.dsv
+[4.000s] -- Symlinking: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/package.dsv
+[4.047s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/ament_index/resource_index/packages/rplidar_ros
+[4.062s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.082s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.090s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig.cmake
+[4.090s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig-version.cmake
+[4.091s] -- Up-to-date symlink: /home/karim/mako_robot/mako_ws/install/rplidar_ros/share/rplidar_ros/package.xml
+[4.206s] Invoked command in '/home/karim/mako_robot/mako_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karim/project_ws/install/ros_project_pkg_py_robot_driver:/home/karim/project_ws/install/dev_test_tools:/home/karim/ros2_ws/install/my_py_pkg:/home/karim/mako_robot/mako_ws/install/mako_py_serial_interface:/home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators:/home/karim/mako_robot/mako_ws/install/mako_py_brain:/home/karim/mako_robot/mako_ws/install/dev_test_tools:/opt/ros/foxy /usr/bin/cmake --install /home/karim/mako_robot/mako_ws/build/rplidar_ros

@@ -2,25 +2,69 @@ import rclpy
 import sys
 import os
 import threading
+import time
 from rclpy.node import Node
 from functools import partial
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtCore import *
 from mako_nolang_interfaces.msg import MakoServerMessage
 
+# This is a nightmare.
+class ControlPanelNode(Node, QObject):
+    finished = pyqtSignal()
+    progress = pyqtSignal(str)
 
-class ControlPanelNode(Node):
     def __init__(self):
+        rclpy.init(args=None)
+        QObject.__init__(self)
         super().__init__("ctrl_panel_node")
         self.get_logger().info("Control Panel Node Started")
+        self.serverMsgPublisher = self.create_publisher(
+            MakoServerMessage, "server_msg", 10)
+        self.moduleMsgSubscriber = self.create_subscription(
+            MakoServerMessage, "module_msg", self.onModuleMessage, 10)
+
+    def onModuleMessage(self, msg):
+        self.get_logger().info(str(msg))
+        if(msg.message == "Request Received"):
+            try:
+                name = ""
+                name += msg.module_name[0]
+                for i, c in enumerate(msg.module_name):
+                    if(i == 0):
+                        continue
+                    if(str.isupper(c)):
+                        name += " "
+                    name += c
+                self.progress.emit(name)
+            except Exception as e:
+                self.get_logger().error(str(e))
+
+    def run(self):
+        rclpy.spin(self)
+        rclpy.shutdown()
+        self.finished.emit()
+
+
+class ControlPanelGUI(Node):
+    def __init__(self):
         self.moduleOn = False
-        self.serverMsgPublisher = self.create_publisher(MakoServerMessage, "server_msg", 10)
-        #self.moduleMsgSubscriber = self.create_subscription(MakoServerMessage, "module_msg", self.onModuleMessage, 10)
         self.app = QtWidgets.QApplication(sys.argv)
         self.MainWindow = QtWidgets.QMainWindow()
         self.setupUi()
         self.MainWindow.show()
-        sys.exit(self.app.exec_())
+        self.Run_ROS_Thread()
 
+    def Run_ROS_Thread(self):
+        self.thread = QThread()
+        self.ctrl_panel_node = ControlPanelNode()
+        self.ctrl_panel_node.moveToThread(self.thread)
+        self.thread.started.connect(self.ctrl_panel_node.run)
+        self.ctrl_panel_node.finished.connect(self.thread.quit)
+        self.ctrl_panel_node.finished.connect(self.ctrl_panel_node.deleteLater)
+        self.thread.finished.connect(self.thread.deleteLater)
+        self.ctrl_panel_node.progress.connect(self.onModuleMessage)
+        self.thread.start()
 
     def setupUi(self):
         self.MainWindow.setObjectName("MainWindow")
@@ -153,35 +197,24 @@ class ControlPanelNode(Node):
         self.lblCurrentStatus.setText(_translate(
             "MainWindow", "No Module Currently Running"))
 
-
     def initUI(self):
         self.btnEmotion.clicked.connect(self.btnEmotionClick)
         self.btnStop.clicked.connect(self.btnStopClick)
 
-        
-    # def onModuleMessage(self, msg):
-    #     self.get_logger().info(str(msg))
-    #     if(msg.message == "Request Received"):
-    #         self.get_logger().info("xd")
-    #         name = ""
-    #         name += msg.module_name[0]
-    #         for i, c in enumerate(msg.module_name, start=1):
-    #             if(str.isupper(c)):
-    #                 name += " "
-    #             name += c
-
-    #         self.lblCurrentStatus.setText(name + "is running")
-    #         self.lblCurrentStatus.adjustSize()
+    def onModuleMessage(self, msg):
+        time.sleep(0.5)
+        self.lblCurrentStatus.setText(str(msg) + " is running")
+        self.lblCurrentStatus.adjustSize()
 
     def btnStopClick(self):
         if(not self.moduleOn):
             return
         self.moduleOn = False
-        self.get_logger().info("Sending Stop Signal to Server..")
+        self.ctrl_panel_node.get_logger().info("Sending Stop Signal to Server..")
         msg = MakoServerMessage()
         msg.type = "module_request"
         msg.message = "WaitMenu"
-        self.serverMsgPublisher.publish(msg)
+        self.ctrl_panel_node.serverMsgPublisher.publish(msg)
         self.lblCurrentStatus.setText("No Module Currently Running")
         self.lblCurrentStatus.adjustSize()
 
@@ -189,24 +222,22 @@ class ControlPanelNode(Node):
         if(self.moduleOn):
             return
         self.moduleOn = True
-        self.get_logger().info("Sending Emotion Module Signal to Server..")
+        self.ctrl_panel_node.get_logger().info(
+            "Sending Emotion Module Signal to Server..")
         msg = MakoServerMessage()
         msg.type = "module_request"
         msg.message = "EmotionModule"
-        self.serverMsgPublisher.publish(msg)
-        self.lblCurrentStatus.setText("Emotion module is running")
+        self.ctrl_panel_node.serverMsgPublisher.publish(msg)
+        self.lblCurrentStatus.setText("Sending signal to MAKO")
         self.lblCurrentStatus.adjustSize()
-        
-
-def ros_spin(node):
-    rclpy.spin(node)
-    rclpy.shutdown()
 
 
 def main(args=None):
-    rclpy.init(args=args)
-    node = ControlPanelNode()
-    ros_thread = threading.Thread(target=partial(ros_spin, node))
+    node = ControlPanelGUI()
+    #ros_thread = threading.Thread(target=partial(ros_spin, node))
+    # rclpy.spin(node)
+    # rclpy.shutdown()
+    sys.exit(node.app.exec_())
 
 
 if __name__ == "__main__":

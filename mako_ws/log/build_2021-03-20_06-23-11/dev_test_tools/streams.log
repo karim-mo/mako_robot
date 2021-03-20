@@ -1,0 +1,18 @@
+[0.859s] Invoking command in '/home/karim/mako_robot/mako_ws/build/dev_test_tools': PYTHONPATH=/home/karim/mako_robot/mako_ws/install/dev_test_tools/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/karim/mako_robot/mako_ws/install/dev_test_tools --editable --build-directory /home/karim/mako_robot/mako_ws/build/dev_test_tools/build --no-deps install_data --install-dir /home/karim/mako_robot/mako_ws/install/dev_test_tools
+[1.439s] running develop
+[2.534s] running egg_info
+[2.535s] writing dev_test_tools.egg-info/PKG-INFO
+[2.541s] writing dependency_links to dev_test_tools.egg-info/dependency_links.txt
+[2.597s] writing entry points to dev_test_tools.egg-info/entry_points.txt
+[2.598s] writing requirements to dev_test_tools.egg-info/requires.txt
+[2.598s] writing top-level names to dev_test_tools.egg-info/top_level.txt
+[2.708s] reading manifest file 'dev_test_tools.egg-info/SOURCES.txt'
+[2.713s] writing manifest file 'dev_test_tools.egg-info/SOURCES.txt'
+[2.785s] running build_ext
+[2.787s] Creating /home/karim/mako_robot/mako_ws/install/dev_test_tools/lib/python3.8/site-packages/dev-test-tools.egg-link (link to .)
+[2.789s] Installing camTestNode script to /home/karim/mako_robot/mako_ws/install/dev_test_tools/lib/dev_test_tools
+[2.789s] Installing lidarTestNode script to /home/karim/mako_robot/mako_ws/install/dev_test_tools/lib/dev_test_tools
+[2.792s] 
+[2.793s] Installed /home/karim/mako_robot/mako_ws/build/dev_test_tools
+[2.793s] running install_data
+[2.838s] Invoked command in '/home/karim/mako_robot/mako_ws/build/dev_test_tools' returned '0': PYTHONPATH=/home/karim/mako_robot/mako_ws/install/dev_test_tools/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/karim/mako_robot/mako_ws/install/dev_test_tools --editable --build-directory /home/karim/mako_robot/mako_ws/build/dev_test_tools/build --no-deps install_data --install-dir /home/karim/mako_robot/mako_ws/install/dev_test_tools

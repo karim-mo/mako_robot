@@ -26,7 +26,7 @@ class SerialInterfaceNode(Node):
                 elif(request.led_exp_type == "hf"):
                     self.ser.write(bytes('C', 'utf-8'))
             except Exception as e:
-                self.get_logger().error(e)
+                self.get_logger().error(str(e))
 
         response.success = True
         return response

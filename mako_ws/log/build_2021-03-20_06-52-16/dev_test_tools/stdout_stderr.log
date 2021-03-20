@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing dev_test_tools.egg-info/PKG-INFO
+writing dependency_links to dev_test_tools.egg-info/dependency_links.txt
+writing entry points to dev_test_tools.egg-info/entry_points.txt
+writing requirements to dev_test_tools.egg-info/requires.txt
+writing top-level names to dev_test_tools.egg-info/top_level.txt
+reading manifest file 'dev_test_tools.egg-info/SOURCES.txt'
+writing manifest file 'dev_test_tools.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/karim/mako_robot/mako_ws/install/dev_test_tools/lib/python3.8/site-packages/dev-test-tools.egg-link (link to .)
+Installing camTestNode script to /home/karim/mako_robot/mako_ws/install/dev_test_tools/lib/dev_test_tools
+Installing lidarTestNode script to /home/karim/mako_robot/mako_ws/install/dev_test_tools/lib/dev_test_tools
+
+Installed /home/karim/mako_robot/mako_ws/build/dev_test_tools
+running install_data

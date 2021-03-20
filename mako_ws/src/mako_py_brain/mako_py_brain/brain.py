@@ -2,6 +2,10 @@ import rclpy
 import threading
 import websocket
 import json
+import pyttsx3
+import time
+import os
+#from gtts import *
 from rclpy.node import Node
 from functools import partial
 from mako_nolang_interfaces.srv import LedControl
@@ -14,21 +18,28 @@ class BrainNode(Node):
         self.get_logger().info("Connecting to mako server..")
         self.serverMsgSubscriber = self.create_subscription(MakoServerMessage, "server_msg", self.onServerMessage, 10)
         self.moduleMsgPublisher = self.create_publisher(MakoServerMessage, "module_msg", 10)
-        websocket.enableTrace(True)
-        self.ws = websocket.WebSocketApp("ws://localhost:9000",
-                              on_open = self.on_open,
-                              on_message = self.on_message,
-                              on_error = self.on_error,
-                              on_close = self.on_close)
-        self.wsThread = threading.Thread(target = self.ws_run).start()
-        #self.call_led_control()
-        
-        #self.ws.send("Test")
+        try:
+            self.engine = pyttsx3.init(driverName="espeak")
+            #self.engine.setProperty('volume', )
+            self.engine.setProperty('rate', self.engine.getProperty('rate') - 40)
+            self.engine.setProperty('voice', 'english_rp')
+            websocket.enableTrace(True)
+            self.ws = websocket.WebSocketApp("ws://localhost:9000",
+                                on_open = self.on_open,
+                                on_message = self.on_message,
+                                on_error = self.on_error,
+                                on_close = self.on_close)
+            self.wsThread = threading.Thread(target = self.ws_run).start()
+        except Exception as e:
+            self.get_logger().error(str(e))
 
     def onServerMessage(self, msg):
         self.get_logger().info(str(msg))
         if(msg.type == "module_request"):
-            self.ws.send('{' + '"type":"{0}","message":"{1}"'.format(str(msg.type), str(msg.message)) + '}')
+            try:
+                self.ws.send('{' + '"type":"{0}","message":"{1}"'.format(str(msg.type), str(msg.message)) + '}')
+            except Exception as e:
+                self.get_logger().error(str(e))
         
 
     def call_led_control(self, exp_type):
@@ -55,16 +66,25 @@ class BrainNode(Node):
             self.get_logger().error("Service call failed " + e)
 
     def on_message(self, ws, message):
-        self.get_logger().info(message)
-        msg = json.loads(message)
-        if(msg["type"] == "led_control"):
-            self.call_led_control(msg["exp_type"])
-        # if(msg["type"] == "module_response"):
-        #     _msg = MakoServerMessage()
-        #     _msg.type = msg["type"]
-        #     _msg.message = msg["message"]
-        #     _msg.module_name = msg["module_name"]
-        #     self.moduleMsgPublisher.publish(_msg)
+        try:
+            self.get_logger().info(message)
+            msg = json.loads(message)
+            if(msg["type"] == "welcome"):
+                # self.engine.say('Hello, I am MAKO')
+                # self.engine.runAndWait() # might need a thread
+                # self.engine.say('Amazing!')
+                # self.engine.runAndWait() # might need a thread
+                pass
+            if(msg["type"] == "led_control"):
+                self.call_led_control(msg["exp_type"])
+            if(msg["type"] == "module_response"):
+                _msg = MakoServerMessage()
+                _msg.type = msg["type"]
+                _msg.message = msg["message"]
+                _msg.module_name = msg["module_name"]
+                self.moduleMsgPublisher.publish(_msg)
+        except Exception as e:
+            self.get_logger().error("An Error Occurred While Parsing Server Message, Error: " + str(e))
 
 
 
