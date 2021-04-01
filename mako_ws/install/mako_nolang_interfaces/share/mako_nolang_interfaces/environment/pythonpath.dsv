@@ -1,1 +1,1 @@
-/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/ament_cmake_environment_hooks/pythonpath.dsv
+prepend-non-duplicate;PYTHONPATH;lib/python3.8/site-packages

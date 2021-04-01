@@ -1,0 +1,20 @@
+running egg_info
+writing ../../build/mako_py_brain/mako_py_brain.egg-info/PKG-INFO
+writing dependency_links to ../../build/mako_py_brain/mako_py_brain.egg-info/dependency_links.txt
+writing entry points to ../../build/mako_py_brain/mako_py_brain.egg-info/entry_points.txt
+writing requirements to ../../build/mako_py_brain/mako_py_brain.egg-info/requires.txt
+writing top-level names to ../../build/mako_py_brain/mako_py_brain.egg-info/top_level.txt
+reading manifest file '../../build/mako_py_brain/mako_py_brain.egg-info/SOURCES.txt'
+writing manifest file '../../build/mako_py_brain/mako_py_brain.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_brain/lib/python3.8/site-packages/mako_py_brain-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/mako_py_brain/mako_py_brain.egg-info to /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_brain/lib/python3.8/site-packages/mako_py_brain-0.0.0-py3.8.egg-info
+running install_scripts
+Installing BrainNode script to /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_brain/lib/mako_py_brain
+Installing ctrl_panel_node script to /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_brain/lib/mako_py_brain
+writing list of installed files to '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_py_brain/install.log'

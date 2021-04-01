@@ -1,1 +1,1 @@
-/home/karim/mako_robot/mako_ws/build/mako_nolang_launch/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/mako_nolang_launch
+mako_py_brain;mako_py_feedback_actuators;mako_py_serial_interface;ament_lint_auto;ament_lint_common

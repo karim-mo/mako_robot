@@ -1,0 +1,14 @@
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/launch/mako_launch.launch.py
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_nolang_launch/share/ament_index/resource_index/package_run_dependencies/mako_nolang_launch
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_nolang_launch/share/ament_index/resource_index/parent_prefix_path/mako_nolang_launch
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/environment/ament_prefix_path.dsv
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/environment/path.dsv
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/local_setup.bash
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/local_setup.sh
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/local_setup.zsh
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/local_setup.dsv
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/package.dsv
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_nolang_launch/share/ament_index/resource_index/packages/mako_nolang_launch
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/cmake/mako_nolang_launchConfig.cmake
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/cmake/mako_nolang_launchConfig-version.cmake
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_nolang_launch/share/mako_nolang_launch/package.xml

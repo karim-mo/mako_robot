@@ -1,1 +1,2 @@
-/home/karim/mako_robot/mako_ws/build/mako_nolang_launch/ament_cmake_environment_hooks/local_setup.dsv
+source;share/mako_nolang_launch/environment/ament_prefix_path.sh
+source;share/mako_nolang_launch/environment/path.sh

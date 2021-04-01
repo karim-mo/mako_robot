@@ -8,12 +8,14 @@ import math
 class lidarTestNode(Node):
     def __init__(self):
         super().__init__("lidarTestNode")
+        self.get_logger().info("lidar started")
         self.sub = self.create_subscription(
             LaserScan, "scan", self.readData, 10)
 
     def readData(self, msg):
         print(str(msg.angle_min) + "  " +
-              str(msg.angle_max) + "  " + str(math.ceil((msg.angle_max - msg.angle_min) / msg.angle_increment)) + "  " + str(len(msg.ranges)) + "  " + str(msg.angle_increment))
+              str(msg.angle_max) + "  " + str(math.ceil((msg.angle_max - msg.angle_min) / msg.angle_increment)) 
+              + "  " + str(len(msg.ranges)) + "  " + str(msg.angle_increment))
         time.sleep(3)
 
 

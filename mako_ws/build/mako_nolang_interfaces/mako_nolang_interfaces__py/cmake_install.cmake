@@ -1,8 +1,8 @@
-# Install script for directory: /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/mako_nolang_interfaces__py
+# Install script for directory: /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_nolang_interfaces/mako_nolang_interfaces__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_nolang_interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/karim/mako_robot/mako_ws/src/lidar_ros2/include/rplidar_node.hpp
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/src/lidar_ros2/include/rplidar_node.hpp
 rclcpp/clock.hpp
 -
 rclcpp/rclcpp.hpp
@@ -26,33 +26,33 @@ visibility.h
 chrono
 -
 
-/home/karim/mako_robot/mako_ws/src/lidar_ros2/include/visibility.h
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/src/lidar_ros2/include/visibility.h
 
-/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/include/rplidar.h
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/src/lidar_ros2/sdk/include/rplidar.h
 vector
 -
 hal/types.h
-/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/include/hal/types.h
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/src/lidar_ros2/sdk/include/hal/types.h
 rplidar_protocol.h
-/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/include/rplidar_protocol.h
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/src/lidar_ros2/sdk/include/rplidar_protocol.h
 rplidar_cmd.h
-/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/include/rplidar_cmd.h
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/src/lidar_ros2/sdk/include/rplidar_cmd.h
 rplidar_driver.h
-/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/include/rplidar_driver.h
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/src/lidar_ros2/sdk/include/rplidar_driver.h
 
-/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/include/rplidar_cmd.h
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/src/lidar_ros2/sdk/include/rplidar_cmd.h
 rplidar_protocol.h
-/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/include/rplidar_protocol.h
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/src/lidar_ros2/sdk/include/rplidar_protocol.h
 
-/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/include/rplidar_driver.h
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/src/lidar_ros2/sdk/include/rplidar_driver.h
 
-/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/include/rplidar_protocol.h
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/src/lidar_ros2/sdk/include/rplidar_protocol.h
 
-/home/karim/mako_robot/mako_ws/src/lidar_ros2/sdk/src/hal/types.h
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/src/lidar_ros2/sdk/src/hal/types.h
 stdint.h
 -
 
-/home/karim/mako_robot/mako_ws/src/lidar_ros2/src/standalone_rplidar.cpp
+/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/src/lidar_ros2/src/standalone_rplidar.cpp
 memory
 -
 rplidar_node.hpp

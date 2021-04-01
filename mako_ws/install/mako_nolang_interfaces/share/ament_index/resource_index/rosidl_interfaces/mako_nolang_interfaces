@@ -1,1 +1,10 @@
-/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/mako_nolang_interfaces
+msg/MakoServerMessage.idl
+msg/MakoServerMessage.msg
+srv/ArduinoCommand.idl
+srv/ArduinoCommand.srv
+srv/ArduinoCommand_Request.msg
+srv/ArduinoCommand_Response.msg
+srv/LedControl.idl
+srv/LedControl.srv
+srv/LedControl_Request.msg
+srv/LedControl_Response.msg

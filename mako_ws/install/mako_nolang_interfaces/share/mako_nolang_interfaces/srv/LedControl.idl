@@ -1,1 +1,15 @@
-/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces/srv/LedControl.idl
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from mako_nolang_interfaces/srv/LedControl.srv
+// generated code does not contain a copyright notice
+
+
+module mako_nolang_interfaces {
+  module srv {
+    struct LedControl_Request {
+      string exp_type;
+    };
+    struct LedControl_Response {
+      boolean success;
+    };
+  };
+};

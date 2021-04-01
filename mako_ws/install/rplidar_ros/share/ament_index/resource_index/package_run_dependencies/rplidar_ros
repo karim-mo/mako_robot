@@ -1,1 +1,1 @@
-/home/karim/mako_robot/mako_ws/build/rplidar_ros/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/rplidar_ros
+rclcpp;sensor_msgs;std_srvs;rclcpp_components
