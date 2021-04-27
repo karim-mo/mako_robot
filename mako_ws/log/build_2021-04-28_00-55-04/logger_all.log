@@ -1,0 +1,211 @@
+[0.549s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'mako_py_camera']
+[0.549s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fc27ef49d00>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['mako_py_camera'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=3, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fc27ef49d00>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fc27eed82b0>)
+[0.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.568s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.568s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.568s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.568s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.568s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.568s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/dev_test_tools) by extensions ['ignore', 'ignore_ament_install']
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/dev_test_tools) by extension 'ignore'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/dev_test_tools) by extension 'ignore_ament_install'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/dev_test_tools) by extensions ['colcon_pkg']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/dev_test_tools) by extension 'colcon_pkg'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/dev_test_tools) by extensions ['colcon_meta']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/dev_test_tools) by extension 'colcon_meta'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/dev_test_tools) by extensions ['ros']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/dev_test_tools) by extension 'ros'
+[0.619s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dev_test_tools' with type 'ros.ament_python' and name 'dev_test_tools'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_ros2) by extension 'ignore'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_ros2) by extension 'ignore_ament_install'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_ros2) by extensions ['colcon_pkg']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_ros2) by extension 'colcon_pkg'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_ros2) by extensions ['colcon_meta']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_ros2) by extension 'colcon_meta'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_ros2) by extensions ['ros']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_ros2) by extension 'ros'
+[0.623s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lidar_ros2' with type 'ros.ament_cmake' and name 'rplidar_ros'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_interfaces) by extension 'ignore'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_interfaces) by extension 'ignore_ament_install'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_interfaces) by extensions ['colcon_pkg']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_interfaces) by extension 'colcon_pkg'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_interfaces) by extensions ['colcon_meta']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_interfaces) by extension 'colcon_meta'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_interfaces) by extensions ['ros']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_interfaces) by extension 'ros'
+[0.626s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mako_nolang_interfaces' with type 'ros.ament_cmake' and name 'mako_nolang_interfaces'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_launch) by extensions ['ignore', 'ignore_ament_install']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_launch) by extension 'ignore'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_launch) by extension 'ignore_ament_install'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_launch) by extensions ['colcon_pkg']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_launch) by extension 'colcon_pkg'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_launch) by extensions ['colcon_meta']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_launch) by extension 'colcon_meta'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_launch) by extensions ['ros']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_nolang_launch) by extension 'ros'
+[0.631s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mako_nolang_launch' with type 'ros.ament_cmake' and name 'mako_nolang_launch'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_brain) by extensions ['ignore', 'ignore_ament_install']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_brain) by extension 'ignore'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_brain) by extension 'ignore_ament_install'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_brain) by extensions ['colcon_pkg']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_brain) by extension 'colcon_pkg'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_brain) by extensions ['colcon_meta']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_brain) by extension 'colcon_meta'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_brain) by extensions ['ros']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_brain) by extension 'ros'
+[0.635s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mako_py_brain' with type 'ros.ament_python' and name 'mako_py_brain'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_camera) by extension 'ignore'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_camera) by extension 'ignore_ament_install'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_camera) by extensions ['colcon_pkg']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_camera) by extension 'colcon_pkg'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_camera) by extensions ['colcon_meta']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_camera) by extension 'colcon_meta'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_camera) by extensions ['ros']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_camera) by extension 'ros'
+[0.638s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mako_py_camera' with type 'ros.ament_python' and name 'mako_py_camera'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_feedback_actuators) by extensions ['ignore', 'ignore_ament_install']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_feedback_actuators) by extension 'ignore'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_feedback_actuators) by extension 'ignore_ament_install'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_feedback_actuators) by extensions ['colcon_pkg']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_feedback_actuators) by extension 'colcon_pkg'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_feedback_actuators) by extensions ['colcon_meta']
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_feedback_actuators) by extension 'colcon_meta'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_feedback_actuators) by extensions ['ros']
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_feedback_actuators) by extension 'ros'
+[0.642s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mako_py_feedback_actuators' with type 'ros.ament_python' and name 'mako_py_feedback_actuators'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_lidar) by extensions ['ignore', 'ignore_ament_install']
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_lidar) by extension 'ignore'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_lidar) by extension 'ignore_ament_install'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_lidar) by extensions ['colcon_pkg']
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_lidar) by extension 'colcon_pkg'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_lidar) by extensions ['colcon_meta']
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_lidar) by extension 'colcon_meta'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_lidar) by extensions ['ros']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_lidar) by extension 'ros'
+[0.646s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mako_py_lidar' with type 'ros.ament_python' and name 'mako_py_lidar'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_serial_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_serial_interface) by extension 'ignore'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_serial_interface) by extension 'ignore_ament_install'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_serial_interface) by extensions ['colcon_pkg']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_serial_interface) by extension 'colcon_pkg'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_serial_interface) by extensions ['colcon_meta']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_serial_interface) by extension 'colcon_meta'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_serial_interface) by extensions ['ros']
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/mako_py_serial_interface) by extension 'ros'
+[0.650s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mako_py_serial_interface' with type 'ros.ament_python' and name 'mako_py_serial_interface'
+[0.650s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.650s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.651s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.651s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.651s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.707s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dev_test_tools' in 'src/dev_test_tools'
+[0.707s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'mako_nolang_interfaces' in 'src/mako_nolang_interfaces'
+[0.707s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'mako_py_brain' in 'src/mako_py_brain'
+[0.707s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'mako_py_lidar' in 'src/mako_py_lidar'
+[0.707s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'rplidar_ros' in 'src/lidar_ros2'
+[0.707s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'mako_py_feedback_actuators' in 'src/mako_py_feedback_actuators'
+[0.707s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'mako_py_serial_interface' in 'src/mako_py_serial_interface'
+[0.708s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'mako_nolang_launch' in 'src/mako_nolang_launch'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'mako_py_camera' build argument 'cmake_args' from command line to 'None'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'mako_py_camera' build argument 'cmake_target' from command line to 'None'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'mako_py_camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'mako_py_camera' build argument 'cmake_clean_cache' from command line to 'False'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'mako_py_camera' build argument 'cmake_clean_first' from command line to 'False'
+[0.718s] Level 5:colcon.colcon_core.verb:set package 'mako_py_camera' build argument 'cmake_force_configure' from command line to 'False'
+[0.718s] Level 5:colcon.colcon_core.verb:set package 'mako_py_camera' build argument 'ament_cmake_args' from command line to 'None'
+[0.718s] Level 5:colcon.colcon_core.verb:set package 'mako_py_camera' build argument 'catkin_cmake_args' from command line to 'None'
+[0.718s] Level 5:colcon.colcon_core.verb:set package 'mako_py_camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.718s] DEBUG:colcon.colcon_core.verb:Building package 'mako_py_camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_py_camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_camera', 'merge_install': False, 'path': '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/src/mako_py_camera', 'symlink_install': False, 'test_result_base': None}
+[0.719s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.725s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.726s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/src/mako_py_camera' with build type 'ament_python'
+[0.726s] Level 1:colcon.colcon_core.shell:create_environment_hook('mako_py_camera', 'ament_prefix_path')
+[0.737s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.737s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_camera/share/mako_py_camera/hook/ament_prefix_path.ps1'
+[0.739s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_camera/share/mako_py_camera/hook/ament_prefix_path.dsv'
+[0.740s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_camera/share/mako_py_camera/hook/ament_prefix_path.sh'
+[0.743s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.744s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.754s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[1.476s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/src/mako_py_camera'
+[1.478s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.479s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.489s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[1.512s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/src/mako_py_camera': PYTHONPATH=/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mako_py_camera build --build-base /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_py_camera/build install --prefix /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_camera --record /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_py_camera/install.log --single-version-externally-managed
+[2.523s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/src/mako_py_camera' returned '0': PYTHONPATH=/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mako_py_camera build --build-base /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_py_camera/build install --prefix /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_camera --record /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_py_camera/install.log --single-version-externally-managed
+[2.531s] Level 1:colcon.colcon_core.environment:checking '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_camera' for CMake module files
+[2.533s] Level 1:colcon.colcon_core.environment:checking '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_camera' for CMake config files
+[2.536s] Level 1:colcon.colcon_core.environment:checking '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_camera/lib'
+[2.536s] Level 1:colcon.colcon_core.environment:checking '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_camera/bin'
+[2.537s] Level 1:colcon.colcon_core.environment:checking '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_camera/lib/pkgconfig/mako_py_camera.pc'
+[2.537s] Level 1:colcon.colcon_core.environment:checking '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_camera/lib/python3.8/site-packages'
+[2.537s] Level 1:colcon.colcon_core.shell:create_environment_hook('mako_py_camera', 'pythonpath')
+[2.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_camera/share/mako_py_camera/hook/pythonpath.ps1'
+[2.542s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_camera/share/mako_py_camera/hook/pythonpath.dsv'
+[2.543s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_camera/share/mako_py_camera/hook/pythonpath.sh'
+[2.544s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mako_py_camera)
+[2.547s] INFO:colcon.colcon_core.shell:Creating package script '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_camera/share/mako_py_camera/package.ps1'
+[2.551s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_camera/share/mako_py_camera/package.dsv'
+[2.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_camera/share/mako_py_camera/package.sh'
+[2.556s] INFO:colcon.colcon_core.shell:Creating package script '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_camera/share/mako_py_camera/package.bash'
+[2.560s] INFO:colcon.colcon_core.shell:Creating package script '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_camera/share/mako_py_camera/package.zsh'
+[2.564s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_camera/share/colcon-core/packages/mako_py_camera)
+[2.565s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.567s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.567s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.567s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.596s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.597s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.597s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.637s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.639s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/local_setup.ps1'
+[2.643s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/_local_setup_util_ps1.py'
+[2.651s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/setup.ps1'
+[2.666s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/local_setup.sh'
+[2.669s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/_local_setup_util_sh.py'
+[2.672s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/setup.sh'
+[2.686s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/local_setup.bash'
+[2.689s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/setup.bash'
+[2.702s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/local_setup.zsh'
+[2.704s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/setup.zsh'
