@@ -11,6 +11,10 @@ class lidarTestNode(Node):
         self.get_logger().info("lidar started")
         self.sub = self.create_subscription(
             LaserScan, "scan", self.readData, 10)
+        self.subscriper = self.create_subscription(
+            LaserScan, "scan", self.can_move, 10)
+        self.get_logger().info("lidar started")
+
 
     def readData(self, msg):
         print(str(msg.angle_min) + "  " +
@@ -21,7 +25,7 @@ class lidarTestNode(Node):
         for i in range(len(msg.ranges)):
             x[i] = msg.ranges[i]*100
 
-        r = len(msg.ranges)
+         r = len(msg.ranges)
         #printing the reading of the forward, left, right and backward in cm
         print("forward")
         print("----------------------------------")

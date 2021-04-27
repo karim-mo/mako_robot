@@ -1,0 +1,33 @@
+[1.145s] Invoking command in '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/src/mako_py_lidar': PYTHONPATH=/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_lidar/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mako_py_lidar build --build-base /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_py_lidar/build install --prefix /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_lidar --record /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_py_lidar/install.log --single-version-externally-managed
+[3.721s] running egg_info
+[3.722s] creating ../../build/mako_py_lidar/mako_py_lidar.egg-info
+[3.723s] writing ../../build/mako_py_lidar/mako_py_lidar.egg-info/PKG-INFO
+[3.724s] writing dependency_links to ../../build/mako_py_lidar/mako_py_lidar.egg-info/dependency_links.txt
+[3.725s] writing entry points to ../../build/mako_py_lidar/mako_py_lidar.egg-info/entry_points.txt
+[3.726s] writing requirements to ../../build/mako_py_lidar/mako_py_lidar.egg-info/requires.txt
+[3.727s] writing top-level names to ../../build/mako_py_lidar/mako_py_lidar.egg-info/top_level.txt
+[3.796s] writing manifest file '../../build/mako_py_lidar/mako_py_lidar.egg-info/SOURCES.txt'
+[4.044s] reading manifest file '../../build/mako_py_lidar/mako_py_lidar.egg-info/SOURCES.txt'
+[4.052s] writing manifest file '../../build/mako_py_lidar/mako_py_lidar.egg-info/SOURCES.txt'
+[4.052s] running build
+[4.052s] running build_py
+[4.053s] creating /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_py_lidar/build
+[4.053s] creating /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_py_lidar/build/lib
+[4.053s] creating /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_py_lidar/build/lib/mako_py_lidar
+[4.054s] copying mako_py_lidar/__init__.py -> /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_py_lidar/build/lib/mako_py_lidar
+[4.054s] running install
+[4.065s] running install_lib
+[4.078s] creating /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_lidar/lib/python3.8/site-packages/mako_py_lidar
+[4.079s] copying /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_py_lidar/build/lib/mako_py_lidar/__init__.py -> /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_lidar/lib/python3.8/site-packages/mako_py_lidar
+[4.080s] byte-compiling /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_lidar/lib/python3.8/site-packages/mako_py_lidar/__init__.py to __init__.cpython-38.pyc
+[4.086s] running install_data
+[4.089s] creating /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_lidar/share/ament_index
+[4.089s] creating /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_lidar/share/ament_index/resource_index
+[4.090s] creating /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_lidar/share/ament_index/resource_index/packages
+[4.090s] copying resource/mako_py_lidar -> /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_lidar/share/ament_index/resource_index/packages
+[4.091s] copying package.xml -> /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_lidar/share/mako_py_lidar
+[4.091s] running install_egg_info
+[4.114s] Copying ../../build/mako_py_lidar/mako_py_lidar.egg-info to /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_lidar/lib/python3.8/site-packages/mako_py_lidar-0.0.0-py3.8.egg-info
+[4.116s] running install_scripts
+[4.218s] writing list of installed files to '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_py_lidar/install.log'
+[4.286s] Invoked command in '/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/src/mako_py_lidar' returned '0': PYTHONPATH=/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_lidar/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mako_py_lidar build --build-base /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_py_lidar/build install --prefix /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/install/mako_py_lidar --record /home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_py_lidar/install.log --single-version-externally-managed
