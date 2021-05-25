@@ -198,8 +198,9 @@ class ControlPanelGUI(Node):
             "MainWindow", "No Module Currently Running"))
 
     def initUI(self):
-        self.btnEmotion.clicked.connect(self.btnEmotionClick)
         self.btnStop.clicked.connect(self.btnStopClick)
+        self.btnEmotion.clicked.connect(self.btnEmotionClick)
+        self.btnFace.clicked.connect(self.btnFaceClick)
 
     def onModuleMessage(self, msg):
         time.sleep(0.5)
@@ -227,6 +228,19 @@ class ControlPanelGUI(Node):
         msg = MakoServerMessage()
         msg.type = "module_request"
         msg.message = "EmotionModule"
+        self.ctrl_panel_node.serverMsgPublisher.publish(msg)
+        self.lblCurrentStatus.setText("Sending signal to MAKO")
+        self.lblCurrentStatus.adjustSize()
+    
+    def btnFaceClick(self):
+        if(self.moduleOn):
+            return
+        self.moduleOn = True
+        self.ctrl_panel_node.get_logger().info(
+            "Sending Faces Recognition Module Signal to Server..")
+        msg = MakoServerMessage()
+        msg.type = "module_request"
+        msg.message = "FacesModule"
         self.ctrl_panel_node.serverMsgPublisher.publish(msg)
         self.lblCurrentStatus.setText("Sending signal to MAKO")
         self.lblCurrentStatus.adjustSize()

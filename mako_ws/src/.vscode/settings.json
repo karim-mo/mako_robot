@@ -9,5 +9,8 @@
     "editor.renderControlCharacters": false,
     "python.autoComplete.extraPaths": [
         "~/mako_robot/mako_ws/install/mako_nolang_interfaces/lib/python3.8/site-packages/mako_nolang_interfaces"
+    ],
+    "python.analysis.extraPaths": [
+        "~/mako_robot/mako_ws/install/mako_nolang_interfaces/lib/python3.8/site-packages/mako_nolang_interfaces"
     ]
 }

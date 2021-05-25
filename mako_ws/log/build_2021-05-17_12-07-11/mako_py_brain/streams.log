@@ -1,0 +1,18 @@
+[1.160s] Invoking command in '/home/karim/mako_robot/mako_ws/build/mako_py_brain': PYTHONPATH=/home/karim/mako_robot/mako_ws/install/mako_py_brain/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/karim/mako_robot/mako_ws/install/mako_py_brain --editable --build-directory /home/karim/mako_robot/mako_ws/build/mako_py_brain/build --no-deps install_data --install-dir /home/karim/mako_robot/mako_ws/install/mako_py_brain
+[2.120s] running develop
+[2.460s] running egg_info
+[2.461s] writing mako_py_brain.egg-info/PKG-INFO
+[2.461s] writing dependency_links to mako_py_brain.egg-info/dependency_links.txt
+[2.486s] writing entry points to mako_py_brain.egg-info/entry_points.txt
+[2.486s] writing requirements to mako_py_brain.egg-info/requires.txt
+[2.486s] writing top-level names to mako_py_brain.egg-info/top_level.txt
+[2.781s] reading manifest file 'mako_py_brain.egg-info/SOURCES.txt'
+[2.804s] writing manifest file 'mako_py_brain.egg-info/SOURCES.txt'
+[3.058s] running build_ext
+[3.060s] Creating /home/karim/mako_robot/mako_ws/install/mako_py_brain/lib/python3.8/site-packages/mako-py-brain.egg-link (link to .)
+[3.062s] Installing BrainNode script to /home/karim/mako_robot/mako_ws/install/mako_py_brain/lib/mako_py_brain
+[3.063s] Installing ctrl_panel_node script to /home/karim/mako_robot/mako_ws/install/mako_py_brain/lib/mako_py_brain
+[3.064s] 
+[3.064s] Installed /home/karim/mako_robot/mako_ws/build/mako_py_brain
+[3.064s] running install_data
+[3.119s] Invoked command in '/home/karim/mako_robot/mako_ws/build/mako_py_brain' returned '0': PYTHONPATH=/home/karim/mako_robot/mako_ws/install/mako_py_brain/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/karim/mako_robot/mako_ws/install/mako_py_brain --editable --build-directory /home/karim/mako_robot/mako_ws/build/mako_py_brain/build --no-deps install_data --install-dir /home/karim/mako_robot/mako_ws/install/mako_py_brain
