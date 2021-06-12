@@ -2,6 +2,7 @@ import rclpy
 import serial
 from rclpy.node import Node
 from mako_nolang_interfaces.srv import ArduinoCommand
+from mako_nolang_interfaces.msg import MakoServerMessage
  
  
 class SerialInterfaceNode(Node):
@@ -13,6 +14,8 @@ class SerialInterfaceNode(Node):
             self.ser.flush()
         except Exception as e:
             self.get_logger().error(str(e))
+        self.serverMsgPublisher = self.create_publisher(
+            MakoServerMessage, "server_msg", 10)
         self.ledToArduino = self.create_service(ArduinoCommand, "arduino_control", self.arduinoControl)
     
     def arduinoControl(self, request, response):
@@ -25,6 +28,9 @@ class SerialInterfaceNode(Node):
                     self.ser.write(bytes('B', 'utf-8'))
                 elif(request.led_exp_type == "hf"):
                     self.ser.write(bytes('C', 'utf-8'))
+                msg = MakoServerMessage()
+                msg.type = "led_response"
+                self.serverMsgPublisher.publish(msg)
             except Exception as e:
                 self.get_logger().error(str(e))
 

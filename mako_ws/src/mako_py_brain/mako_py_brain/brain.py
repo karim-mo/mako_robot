@@ -41,6 +41,14 @@ class BrainNode(Node):
                 self.ws.send('{' + '"type":"{0}","message":"{1}"'.format(str(msg.type), str(msg.message)) + '}')
             except Exception as e:
                 self.get_logger().error(str(e))
+        if(msg.type == "led_response"):
+            _msg = MakoServerMessage()
+            _msg.type = "led_response"
+            _msg.message = "led_complete"
+            try:
+                self.ws.send('{' + '"type":"{0}","message":"{1}"'.format(str(_msg.type), str(_msg.message)) + '}')
+            except Exception as e:
+                self.get_logger().error(str(e))
         
 
     def call_led_control(self, exp_type):
@@ -88,6 +96,7 @@ class BrainNode(Node):
             if(msg["type"] == "tts_request"):
                 self.engine.say(msg["message"])
                 self.engine.runAndWait()
+                # Implement run and wait with a timer = file length when all files are recorded 
                 _msg = MakoServerMessage()
                 _msg.type = "tts_response"
                 _msg.message = "tts_complete"
