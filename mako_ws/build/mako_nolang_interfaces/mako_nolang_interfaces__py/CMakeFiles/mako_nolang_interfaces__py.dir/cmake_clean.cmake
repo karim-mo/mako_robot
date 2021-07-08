@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/mako_nolang_interfaces/srv/_arduino_command_s.c"
   "../rosidl_generator_py/mako_nolang_interfaces/srv/_led_control.py"
   "../rosidl_generator_py/mako_nolang_interfaces/srv/_led_control_s.c"
+  "../rosidl_generator_py/mako_nolang_interfaces/srv/_tts_command.py"
+  "../rosidl_generator_py/mako_nolang_interfaces/srv/_tts_command_s.c"
   "CMakeFiles/mako_nolang_interfaces__py"
 )
 

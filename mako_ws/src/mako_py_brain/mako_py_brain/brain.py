@@ -10,6 +10,7 @@ from mutagen.mp3 import MP3
 from rclpy.node import Node
 from functools import partial
 from mako_nolang_interfaces.srv import LedControl
+from mako_nolang_interfaces.srv import TTSCommand
 from mako_nolang_interfaces.msg import MakoServerMessage
  
 class BrainNode(Node):
@@ -73,6 +74,20 @@ class BrainNode(Node):
                 self.get_logger().info("Failed to send led command to LED Control")
         except Exception as e:
             self.get_logger().error("Service call failed " + e)
+    
+    def tts_done_callback(self, future):
+        try:
+            response = future.result()
+            if response.done:
+                self.get_logger().info("Placeholder success")
+                _msg = MakoServerMessage()
+                _msg.type = "tts_response"
+                _msg.message = "tts_complete"
+                self.ws.send('{' + '"type":"{0}","message":"{1}"'.format(str(_msg.type), str(_msg.message)) + '}')
+            else:
+                self.get_logger().info("Placeholder fail")
+        except Exception as e:
+            self.get_logger().error("Service failed " + e)
 
     def on_message(self, ws, message):
         try:
@@ -94,16 +109,30 @@ class BrainNode(Node):
                 _msg.module_name = msg["module_name"]
                 self.moduleMsgPublisher.publish(_msg)
             if(msg["type"] == "tts_request"):
-                self.engine.say(msg["message"])
-                self.engine.runAndWait()
-                # Implement run and wait with a timer = file length when all files are recorded 
-                _msg = MakoServerMessage()
-                _msg.type = "tts_response"
-                _msg.message = "tts_complete"
-                try:
-                    self.ws.send('{' + '"type":"{0}","message":"{1}"'.format(str(_msg.type), str(_msg.message)) + '}')
-                except Exception as e:
-                    self.get_logger().error(str(e))
+                client = self.create_client(TTSCommand, "ttsEngine")
+                while not client.wait_for_service(1.0):
+                    self.get_logger().warn("Waiting for Server...")
+
+                request = TTSCommand.Request()
+                request.message = msg["message"]
+                
+
+                future = client.call_async(request)
+                future.add_done_callback(
+                    partial(self.tts_done_callback))
+            # legacy TTS
+            # if(msg["type"] == "tts_request"):
+            #     self.engine.say(msg["message"])
+            #     self.engine.runAndWait()
+            #     # Implement run and wait with a timer = file length when all files are recorded 
+            #     _msg = MakoServerMessage()
+            #     _msg.type = "tts_response"
+            #     _msg.message = "tts_complete"
+            #     try:
+            #         self.ws.send('{' + '"type":"{0}","message":"{1}"'.format(str(_msg.type), str(_msg.message)) + '}')
+            #     except Exception as e:
+            #         self.get_logger().error(str(e))
+
                 
                 
         except Exception as e:

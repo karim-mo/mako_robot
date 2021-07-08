@@ -72,6 +72,7 @@ rosidl_generator_c/mako_nolang_interfaces/srv/led_control.h: /opt/ros/foxy/share
 rosidl_generator_c/mako_nolang_interfaces/srv/led_control.h: /opt/ros/foxy/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/mako_nolang_interfaces/srv/led_control.h: rosidl_adapter/mako_nolang_interfaces/srv/LedControl.idl
 rosidl_generator_c/mako_nolang_interfaces/srv/led_control.h: rosidl_adapter/mako_nolang_interfaces/srv/ArduinoCommand.idl
+rosidl_generator_c/mako_nolang_interfaces/srv/led_control.h: rosidl_adapter/mako_nolang_interfaces/srv/TTSCommand.idl
 rosidl_generator_c/mako_nolang_interfaces/srv/led_control.h: rosidl_adapter/mako_nolang_interfaces/msg/MakoServerMessage.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_c__arguments.json
@@ -97,6 +98,18 @@ rosidl_generator_c/mako_nolang_interfaces/srv/detail/arduino_command__struct.h: 
 rosidl_generator_c/mako_nolang_interfaces/srv/detail/arduino_command__type_support.h: rosidl_generator_c/mako_nolang_interfaces/srv/led_control.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/mako_nolang_interfaces/srv/detail/arduino_command__type_support.h
 
+rosidl_generator_c/mako_nolang_interfaces/srv/tts_command.h: rosidl_generator_c/mako_nolang_interfaces/srv/led_control.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/mako_nolang_interfaces/srv/tts_command.h
+
+rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.h: rosidl_generator_c/mako_nolang_interfaces/srv/led_control.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.h
+
+rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__struct.h: rosidl_generator_c/mako_nolang_interfaces/srv/led_control.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__struct.h
+
+rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__type_support.h: rosidl_generator_c/mako_nolang_interfaces/srv/led_control.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__type_support.h
+
 rosidl_generator_c/mako_nolang_interfaces/msg/mako_server_message.h: rosidl_generator_c/mako_nolang_interfaces/srv/led_control.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/mako_nolang_interfaces/msg/mako_server_message.h
 
@@ -114,6 +127,9 @@ rosidl_generator_c/mako_nolang_interfaces/srv/detail/led_control__functions.c: r
 
 rosidl_generator_c/mako_nolang_interfaces/srv/detail/arduino_command__functions.c: rosidl_generator_c/mako_nolang_interfaces/srv/led_control.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/mako_nolang_interfaces/srv/detail/arduino_command__functions.c
+
+rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.c: rosidl_generator_c/mako_nolang_interfaces/srv/led_control.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.c
 
 rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_server_message__functions.c: rosidl_generator_c/mako_nolang_interfaces/srv/led_control.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_server_message__functions.c
@@ -144,9 +160,22 @@ CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mak
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/srv/detail/arduino_command__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_c/mako_nolang_interfaces/srv/detail/arduino_command__functions.c -o CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/srv/detail/arduino_command__functions.c.s
 
+CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.c.o: CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.c.o: rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.c.o   -c /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.c
+
+CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.c > CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.c.i
+
+CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.c -o CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.c.s
+
 CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_server_message__functions.c.o: CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_server_message__functions.c.o: rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_server_message__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_server_message__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_server_message__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_server_message__functions.c.o   -c /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_server_message__functions.c
 
 CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_server_message__functions.c.i: cmake_force
@@ -161,6 +190,7 @@ CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mak
 mako_nolang_interfaces__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/srv/detail/led_control__functions.c.o" \
 "CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/srv/detail/arduino_command__functions.c.o" \
+"CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.c.o" \
 "CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_server_message__functions.c.o"
 
 # External object files for target mako_nolang_interfaces__rosidl_generator_c
@@ -168,12 +198,13 @@ mako_nolang_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 libmako_nolang_interfaces__rosidl_generator_c.so: CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/srv/detail/led_control__functions.c.o
 libmako_nolang_interfaces__rosidl_generator_c.so: CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/srv/detail/arduino_command__functions.c.o
+libmako_nolang_interfaces__rosidl_generator_c.so: CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.c.o
 libmako_nolang_interfaces__rosidl_generator_c.so: CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_server_message__functions.c.o
 libmako_nolang_interfaces__rosidl_generator_c.so: CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/build.make
 libmako_nolang_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/librosidl_runtime_c.so
 libmako_nolang_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/librcutils.so
 libmako_nolang_interfaces__rosidl_generator_c.so: CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libmako_nolang_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libmako_nolang_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -193,12 +224,17 @@ CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/depend: rosidl_generat
 CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/mako_nolang_interfaces/srv/detail/arduino_command__functions.h
 CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/mako_nolang_interfaces/srv/detail/arduino_command__struct.h
 CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/mako_nolang_interfaces/srv/detail/arduino_command__type_support.h
+CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/mako_nolang_interfaces/srv/tts_command.h
+CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.h
+CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__struct.h
+CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__type_support.h
 CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/mako_nolang_interfaces/msg/mako_server_message.h
 CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_server_message__functions.h
 CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_server_message__struct.h
 CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_server_message__type_support.h
 CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/mako_nolang_interfaces/srv/detail/led_control__functions.c
 CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/mako_nolang_interfaces/srv/detail/arduino_command__functions.c
+CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.c
 CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/mako_nolang_interfaces/msg/detail/mako_server_message__functions.c
 	cd /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces /home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/depend

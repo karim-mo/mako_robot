@@ -376,6 +376,9 @@ ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolan
 # install(FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces/srv/ArduinoCommand.idl" "DESTINATION" "share/mako_nolang_interfaces/srv")
 ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces/srv/ArduinoCommand.idl" "DESTINATION" "share/mako_nolang_interfaces/srv")
 
+# install(FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces/srv/TTSCommand.idl" "DESTINATION" "share/mako_nolang_interfaces/srv")
+ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces/srv/TTSCommand.idl" "DESTINATION" "share/mako_nolang_interfaces/srv")
+
 # install(FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces/msg/MakoServerMessage.idl" "DESTINATION" "share/mako_nolang_interfaces/msg")
 ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces/msg/MakoServerMessage.idl" "DESTINATION" "share/mako_nolang_interfaces/msg")
 
@@ -396,6 +399,15 @@ ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolan
 
 # install(FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_cmake/srv/ArduinoCommand_Response.msg" "DESTINATION" "share/mako_nolang_interfaces/srv")
 ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_cmake/srv/ArduinoCommand_Response.msg" "DESTINATION" "share/mako_nolang_interfaces/srv")
+
+# install(FILES "/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces/srv/TTSCommand.srv" "DESTINATION" "share/mako_nolang_interfaces/srv")
+ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" FILES "/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces/srv/TTSCommand.srv" "DESTINATION" "share/mako_nolang_interfaces/srv")
+
+# install(FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_cmake/srv/TTSCommand_Request.msg" "DESTINATION" "share/mako_nolang_interfaces/srv")
+ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_cmake/srv/TTSCommand_Request.msg" "DESTINATION" "share/mako_nolang_interfaces/srv")
+
+# install(FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_cmake/srv/TTSCommand_Response.msg" "DESTINATION" "share/mako_nolang_interfaces/srv")
+ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_cmake/srv/TTSCommand_Response.msg" "DESTINATION" "share/mako_nolang_interfaces/srv")
 
 # install(FILES "/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces/msg/MakoServerMessage.msg" "DESTINATION" "share/mako_nolang_interfaces/msg")
 ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" FILES "/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces/msg/MakoServerMessage.msg" "DESTINATION" "share/mako_nolang_interfaces/msg")

@@ -59,6 +59,9 @@ CMakeFiles/mako_nolang_interfaces: rosidl_cmake/srv/LedControl_Response.msg
 CMakeFiles/mako_nolang_interfaces: /home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces/srv/ArduinoCommand.srv
 CMakeFiles/mako_nolang_interfaces: rosidl_cmake/srv/ArduinoCommand_Request.msg
 CMakeFiles/mako_nolang_interfaces: rosidl_cmake/srv/ArduinoCommand_Response.msg
+CMakeFiles/mako_nolang_interfaces: /home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces/srv/TTSCommand.srv
+CMakeFiles/mako_nolang_interfaces: rosidl_cmake/srv/TTSCommand_Request.msg
+CMakeFiles/mako_nolang_interfaces: rosidl_cmake/srv/TTSCommand_Response.msg
 CMakeFiles/mako_nolang_interfaces: /home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces/msg/MakoServerMessage.msg
 
 

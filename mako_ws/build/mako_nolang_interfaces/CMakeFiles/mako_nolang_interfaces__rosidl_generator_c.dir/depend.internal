@@ -28,3 +28,12 @@ CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mak
  rosidl_generator_c/mako_nolang_interfaces/msg/rosidl_generator_c__visibility_control.h
  rosidl_generator_c/mako_nolang_interfaces/srv/detail/led_control__functions.h
  rosidl_generator_c/mako_nolang_interfaces/srv/detail/led_control__struct.h
+CMakeFiles/mako_nolang_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.c.o
+ /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.c
+ /opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence.h
+ /opt/ros/foxy/include/rosidl_runtime_c/string.h
+ /opt/ros/foxy/include/rosidl_runtime_c/string_functions.h
+ /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
+ rosidl_generator_c/mako_nolang_interfaces/msg/rosidl_generator_c__visibility_control.h
+ rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.h
+ rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__struct.h

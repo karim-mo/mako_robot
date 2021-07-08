@@ -107,3 +107,6 @@ CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosi
  rosidl_generator_c/mako_nolang_interfaces/srv/detail/led_control__functions.h
  rosidl_generator_c/mako_nolang_interfaces/srv/detail/led_control__struct.h
  rosidl_generator_c/mako_nolang_interfaces/srv/detail/led_control__type_support.h
+ rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__functions.h
+ rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__struct.h
+ rosidl_generator_c/mako_nolang_interfaces/srv/detail/tts_command__type_support.h

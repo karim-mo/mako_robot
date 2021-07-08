@@ -16,6 +16,10 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/led_control__builder.hpp" "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_cpp/mako_nolang_interfaces/srv/led_control.hpp"
   "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/led_control__struct.hpp" "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_cpp/mako_nolang_interfaces/srv/led_control.hpp"
   "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/led_control__traits.hpp" "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_cpp/mako_nolang_interfaces/srv/led_control.hpp"
+  "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/tts_command__builder.hpp" "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_cpp/mako_nolang_interfaces/srv/led_control.hpp"
+  "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/tts_command__struct.hpp" "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_cpp/mako_nolang_interfaces/srv/led_control.hpp"
+  "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/tts_command__traits.hpp" "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_cpp/mako_nolang_interfaces/srv/led_control.hpp"
+  "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_cpp/mako_nolang_interfaces/srv/tts_command.hpp" "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_cpp/mako_nolang_interfaces/srv/led_control.hpp"
   )
 
 

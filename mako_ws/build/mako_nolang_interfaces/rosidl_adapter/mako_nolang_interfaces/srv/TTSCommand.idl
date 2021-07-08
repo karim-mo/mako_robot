@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from mako_nolang_interfaces/srv/TTSCommand.srv
+// generated code does not contain a copyright notice
+
+
+module mako_nolang_interfaces {
+  module srv {
+    struct TTSCommand_Request {
+      string message;
+    };
+    struct TTSCommand_Response {
+      boolean done;
+    };
+  };
+};

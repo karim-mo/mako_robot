@@ -11,6 +11,7 @@ setup.py
 mako_py_brain/__init__.py
 mako_py_brain/brain.py
 mako_py_brain/control_panel.py
+mako_py_brain/tts.py
 mako_py_brain.egg-info/PKG-INFO
 mako_py_brain.egg-info/SOURCES.txt
 mako_py_brain.egg-info/dependency_links.txt
