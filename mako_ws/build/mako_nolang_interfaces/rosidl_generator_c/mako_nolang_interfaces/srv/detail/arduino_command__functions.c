@@ -11,6 +11,7 @@
 // Include directives for member types
 // Member `cmd_type`
 // Member `led_exp_type`
+// Member `servo_expression`
 #include "rosidl_runtime_c/string_functions.h"
 
 bool
@@ -29,6 +30,11 @@ mako_nolang_interfaces__srv__ArduinoCommand_Request__init(mako_nolang_interfaces
     mako_nolang_interfaces__srv__ArduinoCommand_Request__fini(msg);
     return false;
   }
+  // servo_expression
+  if (!rosidl_runtime_c__String__init(&msg->servo_expression)) {
+    mako_nolang_interfaces__srv__ArduinoCommand_Request__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -42,6 +48,8 @@ mako_nolang_interfaces__srv__ArduinoCommand_Request__fini(mako_nolang_interfaces
   rosidl_runtime_c__String__fini(&msg->cmd_type);
   // led_exp_type
   rosidl_runtime_c__String__fini(&msg->led_exp_type);
+  // servo_expression
+  rosidl_runtime_c__String__fini(&msg->servo_expression);
 }
 
 mako_nolang_interfaces__srv__ArduinoCommand_Request *

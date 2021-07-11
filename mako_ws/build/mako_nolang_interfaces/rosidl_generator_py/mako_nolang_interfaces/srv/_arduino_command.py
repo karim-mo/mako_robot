@@ -55,14 +55,17 @@ class ArduinoCommand_Request(metaclass=Metaclass_ArduinoCommand_Request):
     __slots__ = [
         '_cmd_type',
         '_led_exp_type',
+        '_servo_expression',
     ]
 
     _fields_and_field_types = {
         'cmd_type': 'string',
         'led_exp_type': 'string',
+        'servo_expression': 'string',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
@@ -73,6 +76,7 @@ class ArduinoCommand_Request(metaclass=Metaclass_ArduinoCommand_Request):
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.cmd_type = kwargs.get('cmd_type', str())
         self.led_exp_type = kwargs.get('led_exp_type', str())
+        self.servo_expression = kwargs.get('servo_expression', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -107,6 +111,8 @@ class ArduinoCommand_Request(metaclass=Metaclass_ArduinoCommand_Request):
             return False
         if self.led_exp_type != other.led_exp_type:
             return False
+        if self.servo_expression != other.servo_expression:
+            return False
         return True
 
     @classmethod
@@ -139,6 +145,19 @@ class ArduinoCommand_Request(metaclass=Metaclass_ArduinoCommand_Request):
                 isinstance(value, str), \
                 "The 'led_exp_type' field must be of type 'str'"
         self._led_exp_type = value
+
+    @property
+    def servo_expression(self):
+        """Message field 'servo_expression'."""
+        return self._servo_expression
+
+    @servo_expression.setter
+    def servo_expression(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, str), \
+                "The 'servo_expression' field must be of type 'str'"
+        self._servo_expression = value
 
 
 # Import statements for member types

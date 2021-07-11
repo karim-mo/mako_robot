@@ -33,6 +33,23 @@ class SerialInterfaceNode(Node):
                 self.serverMsgPublisher.publish(msg)
             except Exception as e:
                 self.get_logger().error(str(e))
+        if(request.cmd_type == "Servo"):
+            self.get_logger().info(request.led_exp_type)
+            try:
+                if(request.servo_expression == "right_up"):
+                    self.ser.write(bytes('F', 'utf-8'))
+                    self.ser.write(bytes('T', 'utf-8'))
+                elif(request.servo_expression == "left_up"):
+                    self.ser.write(bytes('H', 'utf-8'))
+                    self.ser.write(bytes('U', 'utf-8'))
+                elif(request.servo_expression == "right_reset"):
+                    self.ser.write(bytes('G', 'utf-8'))
+                    self.ser.write(bytes('R', 'utf-8'))
+                elif(request.servo_expression == "left_reset"):
+                    self.ser.write(bytes('J', 'utf-8'))
+                    self.ser.write(bytes('Y', 'utf-8'))
+            except Exception as e:
+                self.get_logger().error(str(e))
 
         response.success = True
         return response

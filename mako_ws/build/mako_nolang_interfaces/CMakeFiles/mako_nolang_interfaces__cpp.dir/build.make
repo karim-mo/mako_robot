@@ -57,6 +57,10 @@ CMakeFiles/mako_nolang_interfaces__cpp: rosidl_generator_cpp/mako_nolang_interfa
 CMakeFiles/mako_nolang_interfaces__cpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/led_control__builder.hpp
 CMakeFiles/mako_nolang_interfaces__cpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/led_control__struct.hpp
 CMakeFiles/mako_nolang_interfaces__cpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/led_control__traits.hpp
+CMakeFiles/mako_nolang_interfaces__cpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/servo_control.hpp
+CMakeFiles/mako_nolang_interfaces__cpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/servo_control__builder.hpp
+CMakeFiles/mako_nolang_interfaces__cpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/servo_control__struct.hpp
+CMakeFiles/mako_nolang_interfaces__cpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/servo_control__traits.hpp
 CMakeFiles/mako_nolang_interfaces__cpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/arduino_command.hpp
 CMakeFiles/mako_nolang_interfaces__cpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/arduino_command__builder.hpp
 CMakeFiles/mako_nolang_interfaces__cpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/arduino_command__struct.hpp
@@ -87,6 +91,7 @@ rosidl_generator_cpp/mako_nolang_interfaces/srv/led_control.hpp: /opt/ros/foxy/s
 rosidl_generator_cpp/mako_nolang_interfaces/srv/led_control.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/mako_nolang_interfaces/srv/led_control.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/mako_nolang_interfaces/srv/led_control.hpp: rosidl_adapter/mako_nolang_interfaces/srv/LedControl.idl
+rosidl_generator_cpp/mako_nolang_interfaces/srv/led_control.hpp: rosidl_adapter/mako_nolang_interfaces/srv/ServoControl.idl
 rosidl_generator_cpp/mako_nolang_interfaces/srv/led_control.hpp: rosidl_adapter/mako_nolang_interfaces/srv/ArduinoCommand.idl
 rosidl_generator_cpp/mako_nolang_interfaces/srv/led_control.hpp: rosidl_adapter/mako_nolang_interfaces/srv/TTSCommand.idl
 rosidl_generator_cpp/mako_nolang_interfaces/srv/led_control.hpp: rosidl_adapter/mako_nolang_interfaces/msg/MakoServerMessage.idl
@@ -101,6 +106,18 @@ rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/led_control__struct.hpp: 
 
 rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/led_control__traits.hpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/led_control.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/led_control__traits.hpp
+
+rosidl_generator_cpp/mako_nolang_interfaces/srv/servo_control.hpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/led_control.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mako_nolang_interfaces/srv/servo_control.hpp
+
+rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/servo_control__builder.hpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/led_control.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/servo_control__builder.hpp
+
+rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/servo_control__struct.hpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/led_control.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/servo_control__struct.hpp
+
+rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/servo_control__traits.hpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/led_control.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/servo_control__traits.hpp
 
 rosidl_generator_cpp/mako_nolang_interfaces/srv/arduino_command.hpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/led_control.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mako_nolang_interfaces/srv/arduino_command.hpp
@@ -143,6 +160,10 @@ mako_nolang_interfaces__cpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/led
 mako_nolang_interfaces__cpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/led_control__builder.hpp
 mako_nolang_interfaces__cpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/led_control__struct.hpp
 mako_nolang_interfaces__cpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/led_control__traits.hpp
+mako_nolang_interfaces__cpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/servo_control.hpp
+mako_nolang_interfaces__cpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/servo_control__builder.hpp
+mako_nolang_interfaces__cpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/servo_control__struct.hpp
+mako_nolang_interfaces__cpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/servo_control__traits.hpp
 mako_nolang_interfaces__cpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/arduino_command.hpp
 mako_nolang_interfaces__cpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/arduino_command__builder.hpp
 mako_nolang_interfaces__cpp: rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/arduino_command__struct.hpp

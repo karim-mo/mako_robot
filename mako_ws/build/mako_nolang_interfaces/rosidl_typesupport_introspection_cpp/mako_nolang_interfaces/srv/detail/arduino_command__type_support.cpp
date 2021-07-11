@@ -37,7 +37,7 @@ void ArduinoCommand_Request_fini_function(void * message_memory)
   typed_message->~ArduinoCommand_Request();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember ArduinoCommand_Request_message_member_array[2] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember ArduinoCommand_Request_message_member_array[3] = {
   {
     "cmd_type",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
@@ -67,13 +67,28 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ArduinoComman
     nullptr,  // get_const(index) function pointer
     nullptr,  // get(index) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "servo_expression",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(mako_nolang_interfaces::srv::ArduinoCommand_Request, servo_expression),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers ArduinoCommand_Request_message_members = {
   "mako_nolang_interfaces::srv",  // message namespace
   "ArduinoCommand_Request",  // message name
-  2,  // number of fields
+  3,  // number of fields
   sizeof(mako_nolang_interfaces::srv::ArduinoCommand_Request),
   ArduinoCommand_Request_message_member_array,  // message members
   ArduinoCommand_Request_init_function,  // function to initialize message memory (memory has to be allocated)

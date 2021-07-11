@@ -34,8 +34,8 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // cmd_type, led_exp_type
-#include "rosidl_runtime_c/string_functions.h"  // cmd_type, led_exp_type
+#include "rosidl_runtime_c/string.h"  // cmd_type, led_exp_type, servo_expression
+#include "rosidl_runtime_c/string_functions.h"  // cmd_type, led_exp_type, servo_expression
 
 // forward declare type support functions
 
@@ -68,6 +68,20 @@ static bool _ArduinoCommand_Request__cdr_serialize(
   // Field name: led_exp_type
   {
     const rosidl_runtime_c__String * str = &ros_message->led_exp_type;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
+    }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
+  }
+
+  // Field name: servo_expression
+  {
+    const rosidl_runtime_c__String * str = &ros_message->servo_expression;
     if (str->capacity == 0 || str->capacity <= str->size) {
       fprintf(stderr, "string capacity not greater than size\n");
       return false;
@@ -123,6 +137,22 @@ static bool _ArduinoCommand_Request__cdr_deserialize(
     }
   }
 
+  // Field name: servo_expression
+  {
+    std::string tmp;
+    cdr >> tmp;
+    if (!ros_message->servo_expression.data) {
+      rosidl_runtime_c__String__init(&ros_message->servo_expression);
+    }
+    bool succeeded = rosidl_runtime_c__String__assign(
+      &ros_message->servo_expression,
+      tmp.c_str());
+    if (!succeeded) {
+      fprintf(stderr, "failed to assign string into field 'servo_expression'\n");
+      return false;
+    }
+  }
+
   return true;
 }
 
@@ -148,6 +178,10 @@ size_t get_serialized_size_mako_nolang_interfaces__srv__ArduinoCommand_Request(
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message->led_exp_type.size + 1);
+  // field.name servo_expression
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->servo_expression.size + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -184,6 +218,17 @@ size_t max_serialized_size_mako_nolang_interfaces__srv__ArduinoCommand_Request(
     }
   }
   // member: led_exp_type
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+  // member: servo_expression
   {
     size_t array_size = 1;
 

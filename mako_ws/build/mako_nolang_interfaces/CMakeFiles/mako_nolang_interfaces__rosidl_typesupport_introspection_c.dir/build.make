@@ -66,11 +66,15 @@ rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/led_control
 rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/led_control__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em
 rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/led_control__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
 rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/led_control__rosidl_typesupport_introspection_c.h: rosidl_adapter/mako_nolang_interfaces/srv/LedControl.idl
+rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/led_control__rosidl_typesupport_introspection_c.h: rosidl_adapter/mako_nolang_interfaces/srv/ServoControl.idl
 rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/led_control__rosidl_typesupport_introspection_c.h: rosidl_adapter/mako_nolang_interfaces/srv/ArduinoCommand.idl
 rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/led_control__rosidl_typesupport_introspection_c.h: rosidl_adapter/mako_nolang_interfaces/srv/TTSCommand.idl
 rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/led_control__rosidl_typesupport_introspection_c.h: rosidl_adapter/mako_nolang_interfaces/msg/MakoServerMessage.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
 	/usr/bin/python3 /opt/ros/foxy/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_introspection_c__arguments.json
+
+rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/servo_control__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/led_control__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/servo_control__rosidl_typesupport_introspection_c.h
 
 rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/arduino_command__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/led_control__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/arduino_command__rosidl_typesupport_introspection_c.h
@@ -83,6 +87,9 @@ rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/mako_server
 
 rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/led_control__type_support.c: rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/led_control__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/led_control__type_support.c
+
+rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/servo_control__type_support.c: rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/led_control__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/servo_control__type_support.c
 
 rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/arduino_command__type_support.c: rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/led_control__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/arduino_command__type_support.c
@@ -106,9 +113,22 @@ CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/led_control__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/led_control__type_support.c -o CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/led_control__type_support.c.s
 
+CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/servo_control__type_support.c.o: CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/servo_control__type_support.c.o: rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/servo_control__type_support.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/servo_control__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/servo_control__type_support.c.o   -c /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/servo_control__type_support.c
+
+CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/servo_control__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/servo_control__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/servo_control__type_support.c > CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/servo_control__type_support.c.i
+
+CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/servo_control__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/servo_control__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/servo_control__type_support.c -o CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/servo_control__type_support.c.s
+
 CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/arduino_command__type_support.c.o: CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/arduino_command__type_support.c.o: rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/arduino_command__type_support.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/arduino_command__type_support.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/arduino_command__type_support.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/arduino_command__type_support.c.o   -c /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/arduino_command__type_support.c
 
 CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/arduino_command__type_support.c.i: cmake_force
@@ -121,7 +141,7 @@ CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl
 
 CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/tts_command__type_support.c.o: CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/tts_command__type_support.c.o: rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/tts_command__type_support.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/tts_command__type_support.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/tts_command__type_support.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/tts_command__type_support.c.o   -c /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/tts_command__type_support.c
 
 CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/tts_command__type_support.c.i: cmake_force
@@ -134,7 +154,7 @@ CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl
 
 CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/mako_server_message__type_support.c.o: CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/mako_server_message__type_support.c.o: rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/mako_server_message__type_support.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/mako_server_message__type_support.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/mako_server_message__type_support.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/mako_server_message__type_support.c.o   -c /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/mako_server_message__type_support.c
 
 CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/mako_server_message__type_support.c.i: cmake_force
@@ -148,6 +168,7 @@ CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl
 # Object files for target mako_nolang_interfaces__rosidl_typesupport_introspection_c
 mako_nolang_interfaces__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/led_control__type_support.c.o" \
+"CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/servo_control__type_support.c.o" \
 "CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/arduino_command__type_support.c.o" \
 "CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/tts_command__type_support.c.o" \
 "CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/mako_server_message__type_support.c.o"
@@ -156,6 +177,7 @@ mako_nolang_interfaces__rosidl_typesupport_introspection_c_OBJECTS = \
 mako_nolang_interfaces__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
 libmako_nolang_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/led_control__type_support.c.o
+libmako_nolang_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/servo_control__type_support.c.o
 libmako_nolang_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/arduino_command__type_support.c.o
 libmako_nolang_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/tts_command__type_support.c.o
 libmako_nolang_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/mako_server_message__type_support.c.o
@@ -165,7 +187,7 @@ libmako_nolang_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/
 libmako_nolang_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/librosidl_runtime_c.so
 libmako_nolang_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/librcutils.so
 libmako_nolang_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libmako_nolang_interfaces__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C shared library libmako_nolang_interfaces__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -178,10 +200,12 @@ CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/clean:
 .PHONY : CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/clean
 
 CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/led_control__rosidl_typesupport_introspection_c.h
+CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/servo_control__rosidl_typesupport_introspection_c.h
 CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/arduino_command__rosidl_typesupport_introspection_c.h
 CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/tts_command__rosidl_typesupport_introspection_c.h
 CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/mako_server_message__rosidl_typesupport_introspection_c.h
 CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/led_control__type_support.c
+CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/servo_control__type_support.c
 CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/arduino_command__type_support.c
 CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mako_nolang_interfaces/srv/detail/tts_command__type_support.c
 CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mako_nolang_interfaces/msg/detail/mako_server_message__type_support.c

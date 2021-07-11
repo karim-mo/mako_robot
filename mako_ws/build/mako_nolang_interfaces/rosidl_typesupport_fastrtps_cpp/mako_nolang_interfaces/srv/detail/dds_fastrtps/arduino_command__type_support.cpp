@@ -36,6 +36,8 @@ cdr_serialize(
   cdr << ros_message.cmd_type;
   // Member: led_exp_type
   cdr << ros_message.led_exp_type;
+  // Member: servo_expression
+  cdr << ros_message.servo_expression;
   return true;
 }
 
@@ -50,6 +52,9 @@ cdr_deserialize(
 
   // Member: led_exp_type
   cdr >> ros_message.led_exp_type;
+
+  // Member: servo_expression
+  cdr >> ros_message.servo_expression;
 
   return true;
 }
@@ -75,6 +80,10 @@ get_serialized_size(
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message.led_exp_type.size() + 1);
+  // Member: servo_expression
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.servo_expression.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -107,6 +116,18 @@ max_serialized_size_ArduinoCommand_Request(
   }
 
   // Member: led_exp_type
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+
+  // Member: servo_expression
   {
     size_t array_size = 1;
 

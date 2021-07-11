@@ -10,6 +10,7 @@ from mutagen.mp3 import MP3
 from rclpy.node import Node
 from functools import partial
 from mako_nolang_interfaces.srv import LedControl
+from mako_nolang_interfaces.srv import ServoControl
 from mako_nolang_interfaces.srv import TTSCommand
 from mako_nolang_interfaces.msg import MakoServerMessage
  
@@ -74,6 +75,16 @@ class BrainNode(Node):
                 self.get_logger().info("Failed to send led command to LED Control")
         except Exception as e:
             self.get_logger().error("Service call failed " + e)
+
+    def call_servo_control_callback(self, future):
+        try:
+            response = future.result()
+            if response.success:
+                self.get_logger().info("Successfully sent servo command to Servo Control")
+            else:
+                self.get_logger().info("Failed to send servo command to Servo Control")
+        except Exception as e:
+            self.get_logger().error("Service call failed " + e)
     
     def tts_done_callback(self, future):
         try:
@@ -102,6 +113,18 @@ class BrainNode(Node):
             
             if(msg["type"] == "led_control"):
                 self.call_led_control(msg["exp_type"])
+            if(msg["type"] == "servo_control"):
+                client = self.create_client(ServoControl, "cmd_servo")
+                while not client.wait_for_service(1.0):
+                    self.get_logger().warn("Waiting for Server...")
+
+                request = ServoControl.Request()
+                request.expression = msg["expression"]
+                
+
+                future = client.call_async(request)
+                future.add_done_callback(
+                    partial(self.call_servo_control_callback))
             if(msg["type"] == "module_response"):
                 _msg = MakoServerMessage()
                 _msg.type = msg["type"]

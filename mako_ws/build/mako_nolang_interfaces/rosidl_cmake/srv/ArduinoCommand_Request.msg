@@ -18,3 +18,4 @@
 
 string cmd_type
 string led_exp_type
+string servo_expression

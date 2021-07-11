@@ -11,10 +11,14 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/led_control__builder.hpp"
   "rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/led_control__struct.hpp"
   "rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/led_control__traits.hpp"
+  "rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/servo_control__builder.hpp"
+  "rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/servo_control__struct.hpp"
+  "rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/servo_control__traits.hpp"
   "rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/tts_command__builder.hpp"
   "rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/tts_command__struct.hpp"
   "rosidl_generator_cpp/mako_nolang_interfaces/srv/detail/tts_command__traits.hpp"
   "rosidl_generator_cpp/mako_nolang_interfaces/srv/led_control.hpp"
+  "rosidl_generator_cpp/mako_nolang_interfaces/srv/servo_control.hpp"
   "rosidl_generator_cpp/mako_nolang_interfaces/srv/tts_command.hpp"
 )
 

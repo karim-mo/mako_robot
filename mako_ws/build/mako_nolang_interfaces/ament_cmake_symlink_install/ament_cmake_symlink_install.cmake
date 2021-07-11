@@ -373,6 +373,9 @@ include("/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/ament_cmake
 # install(FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces/srv/LedControl.idl" "DESTINATION" "share/mako_nolang_interfaces/srv")
 ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces/srv/LedControl.idl" "DESTINATION" "share/mako_nolang_interfaces/srv")
 
+# install(FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces/srv/ServoControl.idl" "DESTINATION" "share/mako_nolang_interfaces/srv")
+ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces/srv/ServoControl.idl" "DESTINATION" "share/mako_nolang_interfaces/srv")
+
 # install(FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces/srv/ArduinoCommand.idl" "DESTINATION" "share/mako_nolang_interfaces/srv")
 ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces/srv/ArduinoCommand.idl" "DESTINATION" "share/mako_nolang_interfaces/srv")
 
@@ -390,6 +393,15 @@ ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolan
 
 # install(FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_cmake/srv/LedControl_Response.msg" "DESTINATION" "share/mako_nolang_interfaces/srv")
 ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_cmake/srv/LedControl_Response.msg" "DESTINATION" "share/mako_nolang_interfaces/srv")
+
+# install(FILES "/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces/srv/ServoControl.srv" "DESTINATION" "share/mako_nolang_interfaces/srv")
+ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" FILES "/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces/srv/ServoControl.srv" "DESTINATION" "share/mako_nolang_interfaces/srv")
+
+# install(FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_cmake/srv/ServoControl_Request.msg" "DESTINATION" "share/mako_nolang_interfaces/srv")
+ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_cmake/srv/ServoControl_Request.msg" "DESTINATION" "share/mako_nolang_interfaces/srv")
+
+# install(FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_cmake/srv/ServoControl_Response.msg" "DESTINATION" "share/mako_nolang_interfaces/srv")
+ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" FILES "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_cmake/srv/ServoControl_Response.msg" "DESTINATION" "share/mako_nolang_interfaces/srv")
 
 # install(FILES "/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces/srv/ArduinoCommand.srv" "DESTINATION" "share/mako_nolang_interfaces/srv")
 ament_cmake_symlink_install_files("/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces" FILES "/home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces/srv/ArduinoCommand.srv" "DESTINATION" "share/mako_nolang_interfaces/srv")

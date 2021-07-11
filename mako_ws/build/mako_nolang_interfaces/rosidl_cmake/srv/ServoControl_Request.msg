@@ -1,0 +1,7 @@
+# Available strings for the servos are
+# right_up
+# right_reset
+# left_up
+# left_reset
+
+string expression

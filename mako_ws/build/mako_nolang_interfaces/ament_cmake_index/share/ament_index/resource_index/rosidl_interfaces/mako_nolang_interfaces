@@ -8,6 +8,10 @@ srv/LedControl.idl
 srv/LedControl.srv
 srv/LedControl_Request.msg
 srv/LedControl_Response.msg
+srv/ServoControl.idl
+srv/ServoControl.srv
+srv/ServoControl_Request.msg
+srv/ServoControl_Response.msg
 srv/TTSCommand.idl
 srv/TTSCommand.srv
 srv/TTSCommand_Request.msg

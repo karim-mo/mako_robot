@@ -83,6 +83,21 @@ bool mako_nolang_interfaces__srv__arduino_command__request__convert_from_py(PyOb
     Py_DECREF(encoded_field);
     Py_DECREF(field);
   }
+  {  // servo_expression
+    PyObject * field = PyObject_GetAttrString(_pymsg, "servo_expression");
+    if (!field) {
+      return false;
+    }
+    assert(PyUnicode_Check(field));
+    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
+    if (!encoded_field) {
+      Py_DECREF(field);
+      return false;
+    }
+    rosidl_runtime_c__String__assign(&ros_message->servo_expression, PyBytes_AS_STRING(encoded_field));
+    Py_DECREF(encoded_field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -133,6 +148,23 @@ PyObject * mako_nolang_interfaces__srv__arduino_command__request__convert_to_py(
     }
     {
       int rc = PyObject_SetAttrString(_pymessage, "led_exp_type", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // servo_expression
+    PyObject * field = NULL;
+    field = PyUnicode_DecodeUTF8(
+      ros_message->servo_expression.data,
+      strlen(ros_message->servo_expression.data),
+      "strict");
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "servo_expression", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

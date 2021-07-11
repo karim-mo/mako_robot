@@ -20,16 +20,32 @@ namespace srv
 namespace builder
 {
 
+class Init_ArduinoCommand_Request_servo_expression
+{
+public:
+  explicit Init_ArduinoCommand_Request_servo_expression(::mako_nolang_interfaces::srv::ArduinoCommand_Request & msg)
+  : msg_(msg)
+  {}
+  ::mako_nolang_interfaces::srv::ArduinoCommand_Request servo_expression(::mako_nolang_interfaces::srv::ArduinoCommand_Request::_servo_expression_type arg)
+  {
+    msg_.servo_expression = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::mako_nolang_interfaces::srv::ArduinoCommand_Request msg_;
+};
+
 class Init_ArduinoCommand_Request_led_exp_type
 {
 public:
   explicit Init_ArduinoCommand_Request_led_exp_type(::mako_nolang_interfaces::srv::ArduinoCommand_Request & msg)
   : msg_(msg)
   {}
-  ::mako_nolang_interfaces::srv::ArduinoCommand_Request led_exp_type(::mako_nolang_interfaces::srv::ArduinoCommand_Request::_led_exp_type_type arg)
+  Init_ArduinoCommand_Request_servo_expression led_exp_type(::mako_nolang_interfaces::srv::ArduinoCommand_Request::_led_exp_type_type arg)
   {
     msg_.led_exp_type = std::move(arg);
-    return std::move(msg_);
+    return Init_ArduinoCommand_Request_servo_expression(msg_);
   }
 
 private:
