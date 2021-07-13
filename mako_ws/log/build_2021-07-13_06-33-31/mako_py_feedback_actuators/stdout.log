@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing mako_py_feedback_actuators.egg-info/PKG-INFO
+writing dependency_links to mako_py_feedback_actuators.egg-info/dependency_links.txt
+writing entry points to mako_py_feedback_actuators.egg-info/entry_points.txt
+writing requirements to mako_py_feedback_actuators.egg-info/requires.txt
+writing top-level names to mako_py_feedback_actuators.egg-info/top_level.txt
+reading manifest file 'mako_py_feedback_actuators.egg-info/SOURCES.txt'
+writing manifest file 'mako_py_feedback_actuators.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/lib/python3.8/site-packages/mako-py-feedback-actuators.egg-link (link to .)
+Installing ledControlNode script to /home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/lib/mako_py_feedback_actuators
+Installing servoControlNode script to /home/karim/mako_robot/mako_ws/install/mako_py_feedback_actuators/lib/mako_py_feedback_actuators
+
+Installed /home/karim/mako_robot/mako_ws/build/mako_py_feedback_actuators
+running install_data

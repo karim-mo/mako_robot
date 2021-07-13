@@ -83,9 +83,22 @@ CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_in
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_servo_control_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_py/mako_nolang_interfaces/srv/_servo_control_s.c -o CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_servo_control_s.c.s
 
+CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_motor_control_s.c.o: CMakeFiles/mako_nolang_interfaces__python.dir/flags.make
+CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_motor_control_s.c.o: rosidl_generator_py/mako_nolang_interfaces/srv/_motor_control_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_motor_control_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_motor_control_s.c.o   -c /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_py/mako_nolang_interfaces/srv/_motor_control_s.c
+
+CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_motor_control_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_motor_control_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_py/mako_nolang_interfaces/srv/_motor_control_s.c > CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_motor_control_s.c.i
+
+CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_motor_control_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_motor_control_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_py/mako_nolang_interfaces/srv/_motor_control_s.c -o CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_motor_control_s.c.s
+
 CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_arduino_command_s.c.o: CMakeFiles/mako_nolang_interfaces__python.dir/flags.make
 CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_arduino_command_s.c.o: rosidl_generator_py/mako_nolang_interfaces/srv/_arduino_command_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_arduino_command_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_arduino_command_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_arduino_command_s.c.o   -c /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_py/mako_nolang_interfaces/srv/_arduino_command_s.c
 
 CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_arduino_command_s.c.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_in
 
 CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_tts_command_s.c.o: CMakeFiles/mako_nolang_interfaces__python.dir/flags.make
 CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_tts_command_s.c.o: rosidl_generator_py/mako_nolang_interfaces/srv/_tts_command_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_tts_command_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_tts_command_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_tts_command_s.c.o   -c /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_py/mako_nolang_interfaces/srv/_tts_command_s.c
 
 CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_tts_command_s.c.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_in
 
 CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/msg/_mako_server_message_s.c.o: CMakeFiles/mako_nolang_interfaces__python.dir/flags.make
 CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/msg/_mako_server_message_s.c.o: rosidl_generator_py/mako_nolang_interfaces/msg/_mako_server_message_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/msg/_mako_server_message_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/msg/_mako_server_message_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/msg/_mako_server_message_s.c.o   -c /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_generator_py/mako_nolang_interfaces/msg/_mako_server_message_s.c
 
 CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/msg/_mako_server_message_s.c.i: cmake_force
@@ -126,6 +139,7 @@ CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_in
 mako_nolang_interfaces__python_OBJECTS = \
 "CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_led_control_s.c.o" \
 "CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_servo_control_s.c.o" \
+"CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_motor_control_s.c.o" \
 "CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_arduino_command_s.c.o" \
 "CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_tts_command_s.c.o" \
 "CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/msg/_mako_server_message_s.c.o"
@@ -135,6 +149,7 @@ mako_nolang_interfaces__python_EXTERNAL_OBJECTS =
 
 rosidl_generator_py/mako_nolang_interfaces/libmako_nolang_interfaces__python.so: CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_led_control_s.c.o
 rosidl_generator_py/mako_nolang_interfaces/libmako_nolang_interfaces__python.so: CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_servo_control_s.c.o
+rosidl_generator_py/mako_nolang_interfaces/libmako_nolang_interfaces__python.so: CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_motor_control_s.c.o
 rosidl_generator_py/mako_nolang_interfaces/libmako_nolang_interfaces__python.so: CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_arduino_command_s.c.o
 rosidl_generator_py/mako_nolang_interfaces/libmako_nolang_interfaces__python.so: CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/srv/_tts_command_s.c.o
 rosidl_generator_py/mako_nolang_interfaces/libmako_nolang_interfaces__python.so: CMakeFiles/mako_nolang_interfaces__python.dir/rosidl_generator_py/mako_nolang_interfaces/msg/_mako_server_message_s.c.o
@@ -147,7 +162,7 @@ rosidl_generator_py/mako_nolang_interfaces/libmako_nolang_interfaces__python.so:
 rosidl_generator_py/mako_nolang_interfaces/libmako_nolang_interfaces__python.so: /opt/ros/foxy/lib/librcpputils.so
 rosidl_generator_py/mako_nolang_interfaces/libmako_nolang_interfaces__python.so: /opt/ros/foxy/lib/librcutils.so
 rosidl_generator_py/mako_nolang_interfaces/libmako_nolang_interfaces__python.so: CMakeFiles/mako_nolang_interfaces__python.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library rosidl_generator_py/mako_nolang_interfaces/libmako_nolang_interfaces__python.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C shared library rosidl_generator_py/mako_nolang_interfaces/libmako_nolang_interfaces__python.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mako_nolang_interfaces__python.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -11,6 +11,9 @@
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/led_control__functions.h
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/led_control__struct.h
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/led_control__type_support.h
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/motor_control__functions.h
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/motor_control__struct.h
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/motor_control__type_support.h
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/servo_control__functions.h
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/servo_control__struct.h
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/servo_control__type_support.h
@@ -18,6 +21,7 @@
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/tts_command__struct.h
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/tts_command__type_support.h
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/led_control.h
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/motor_control.h
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/servo_control.h
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/tts_command.h
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/environment/library_path.sh
@@ -26,6 +30,7 @@
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/arduino_command__rosidl_typesupport_fastrtps_c.h
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/led_control__rosidl_typesupport_fastrtps_c.h
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/motor_control__rosidl_typesupport_fastrtps_c.h
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/servo_control__rosidl_typesupport_fastrtps_c.h
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/tts_command__rosidl_typesupport_fastrtps_c.h
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/lib/libmako_nolang_interfaces__rosidl_typesupport_fastrtps_c.so
@@ -33,6 +38,7 @@
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/arduino_command__rosidl_typesupport_fastrtps_cpp.hpp
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/led_control__rosidl_typesupport_fastrtps_cpp.hpp
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/motor_control__rosidl_typesupport_fastrtps_cpp.hpp
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/servo_control__rosidl_typesupport_fastrtps_cpp.hpp
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/tts_command__rosidl_typesupport_fastrtps_cpp.hpp
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/lib/libmako_nolang_interfaces__rosidl_typesupport_fastrtps_cpp.so
@@ -40,6 +46,7 @@
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/arduino_command__rosidl_typesupport_introspection_c.h
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/led_control__rosidl_typesupport_introspection_c.h
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/motor_control__rosidl_typesupport_introspection_c.h
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/servo_control__rosidl_typesupport_introspection_c.h
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/tts_command__rosidl_typesupport_introspection_c.h
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/msg/detail/mako_server_message__builder.hpp
@@ -53,6 +60,9 @@
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/led_control__builder.hpp
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/led_control__struct.hpp
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/led_control__traits.hpp
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/motor_control__builder.hpp
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/motor_control__struct.hpp
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/motor_control__traits.hpp
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/servo_control__builder.hpp
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/servo_control__struct.hpp
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/servo_control__traits.hpp
@@ -60,11 +70,13 @@
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/tts_command__struct.hpp
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/tts_command__traits.hpp
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/led_control.hpp
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/motor_control.hpp
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/servo_control.hpp
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/tts_command.hpp
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/msg/detail/mako_server_message__rosidl_typesupport_introspection_cpp.hpp
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/arduino_command__rosidl_typesupport_introspection_cpp.hpp
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/led_control__rosidl_typesupport_introspection_cpp.hpp
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/motor_control__rosidl_typesupport_introspection_cpp.hpp
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/servo_control__rosidl_typesupport_introspection_cpp.hpp
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/include/mako_nolang_interfaces/srv/detail/tts_command__rosidl_typesupport_introspection_cpp.hpp
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/environment/pythonpath.sh
@@ -73,6 +85,7 @@
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/lib/python3.8/site-packages/mako_nolang_interfaces/srv/__init__.py
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/lib/python3.8/site-packages/mako_nolang_interfaces/srv/_arduino_command.py
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/lib/python3.8/site-packages/mako_nolang_interfaces/srv/_led_control.py
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/lib/python3.8/site-packages/mako_nolang_interfaces/srv/_motor_control.py
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/lib/python3.8/site-packages/mako_nolang_interfaces/srv/_servo_control.py
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/lib/python3.8/site-packages/mako_nolang_interfaces/srv/_tts_command.py
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/lib/python3.8/site-packages/mako_nolang_interfaces/msg/__init__.py
@@ -83,6 +96,7 @@
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/lib/libmako_nolang_interfaces__python.so
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/srv/LedControl.idl
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/srv/ServoControl.idl
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/srv/MotorControl.idl
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/srv/ArduinoCommand.idl
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/srv/TTSCommand.idl
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/msg/MakoServerMessage.idl
@@ -92,6 +106,9 @@
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/srv/ServoControl.srv
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/srv/ServoControl_Request.msg
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/srv/ServoControl_Response.msg
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/srv/MotorControl.srv
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/srv/MotorControl_Request.msg
+/home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/srv/MotorControl_Response.msg
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/srv/ArduinoCommand.srv
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/srv/ArduinoCommand_Request.msg
 /home/karim/mako_robot/mako_ws/install/mako_nolang_interfaces/share/mako_nolang_interfaces/srv/ArduinoCommand_Response.msg

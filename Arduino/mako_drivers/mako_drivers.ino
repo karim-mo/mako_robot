@@ -1,11 +1,26 @@
 #include <LedControl.h>
 #include "binary.h"
-#include <pt.h>  
+//#include <pt.h>  
+#include <Servo.h>
 
 
-static struct pt pt1;
+//static struct pt pt1;
 
 LedControl lc = LedControl(2,3,4,1);
+
+
+Servo rightArmPinky;  
+Servo rightArmIndex;
+
+Servo leftArmThumb;
+
+Servo rightArmElbow;
+Servo leftArmElbow;
+
+int rightArmElbowPos = 0;
+int rightArmFingersPos = 0;
+int leftArmFingersPos = 0;
+int leftArmElbowPos = 0;
 
 
 byte neutral0[8] = {
@@ -185,31 +200,106 @@ enum State{
 int _state = Neutral;
 
 
-static int serialRead(struct pt *pt, int interval) {
-  static unsigned long timestamp = 0;
-  PT_BEGIN(pt);
-  while(1) {
-    PT_WAIT_UNTIL(pt, millis() - timestamp > interval );
-    timestamp = millis();
-    int state = Serial.read();
-    if(state == 'A'){
-      _state = Neutral;
-    }
-    if(state == 'B'){
-      _state = Happy;
-    }
-    if(state == 'C'){
-      _state = Sad;
-    }
-    if(state == 'D'){
-      _state = Angry;
-    }
-    if(state == 'E'){
-      _state = Fear;
-    }
+void openRightArmFingers(){
+  for (rightArmFingersPos = 0; rightArmFingersPos <= 100; rightArmFingersPos += 1) { 
+    rightArmPinky.write(rightArmFingersPos);
+    rightArmIndex.write(rightArmFingersPos);                     
+    delay(10);                       
   }
-  PT_END(pt);
+
+  Serial.write("Opened Right Arm Fingers\n");
+  
 }
+
+void closeRightArmFingers(){
+  for (rightArmFingersPos = 100; rightArmFingersPos >= 0; rightArmFingersPos -= 1) { 
+    rightArmPinky.write(rightArmFingersPos);    
+    rightArmIndex.write(rightArmFingersPos);                  
+    delay(10);                       
+  }
+  Serial.write("Closed Right Arm Fingers\n");
+}
+
+void closeLeftArmFingers(){
+  for (leftArmFingersPos = 0; leftArmFingersPos <= 180; leftArmFingersPos += 1) { 
+    leftArmThumb.write(leftArmFingersPos);
+    delay(10);                       
+  }
+
+  Serial.write("Closed Left Arm Fingers\n");
+  
+}
+
+void openLeftArmFingers(){
+  for (leftArmFingersPos = 180; leftArmFingersPos >= 0; leftArmFingersPos -= 1) { 
+    leftArmThumb.write(leftArmFingersPos);    
+    delay(10);                       
+  }
+  Serial.write("Opened Left Arm Fingers\n");
+}
+
+
+void lowerRightArmElbow(){
+  for (rightArmElbowPos = 0; rightArmElbowPos <= 200; rightArmElbowPos += 1) { 
+    rightArmElbow.write(rightArmElbowPos);
+    delay(10);                       
+  }
+
+  Serial.write("Lowered Right Arm Elbow\n");
+  
+}
+
+void raiseRightArmElbow(){
+  for (rightArmElbowPos = 200; rightArmElbowPos >= 0; rightArmElbowPos -= 1) { 
+    rightArmElbow.write(rightArmElbowPos);    
+    delay(10);                       
+  }
+  Serial.write("Raised Right Arm Elbow\n");
+}
+
+void lowerLeftArmElbow(){
+  for (leftArmElbowPos = 0; leftArmElbowPos <= 200; leftArmElbowPos += 1) { 
+    leftArmElbow.write(leftArmElbowPos);
+    delay(10);                       
+  }
+
+  Serial.write("Lowered Left Arm Elbow\n");
+  
+}
+
+void raiseLeftArmElbow(){
+  for (leftArmElbowPos = 200; leftArmElbowPos >= 0; leftArmElbowPos -= 1) { 
+    leftArmElbow.write(leftArmElbowPos);    
+    delay(10);                       
+  }
+  Serial.write("Raised Left Arm Elbow\n");
+}
+
+//static int serialRead(struct pt *pt, int interval) {
+//  static unsigned long timestamp = 0;
+//  PT_BEGIN(pt);
+//  while(1) {
+//    PT_WAIT_UNTIL(pt, millis() - timestamp > interval );
+//    timestamp = millis();
+//    int state = Serial.read();
+//    if(state == 'A'){
+//      _state = Neutral;
+//    }
+//    if(state == 'B'){
+//      _state = Happy;
+//    }
+//    if(state == 'C'){
+//      _state = Sad;
+//    }
+//    if(state == 'D'){
+//      _state = Angry;
+//    }
+//    if(state == 'E'){
+//      _state = Fear;
+//    }
+//  }
+//  PT_END(pt);
+//}
 
 void drawNeutralFrame(int frame){
   switch(frame){
@@ -452,13 +542,60 @@ void drawScaredFace(){
 void setup() {
   lc.shutdown(0,false);
   lc.setIntensity(0,0);
-  lc.clearDisplay(0);  
+  lc.clearDisplay(0);
+
+  rightArmElbow.attach(3);
+  rightArmPinky.attach(4);  
+  rightArmIndex.attach(5);
+  leftArmElbow.attach(7);
+  leftArmThumb.attach(8);
 
   Serial.begin(9600);
 }
 
 void loop(){
-  serialRead(&pt1, 0);
+  //serialRead(&pt1, 0);
+  int state = Serial.read();
+  
+  if(state == 'A'){
+    _state = Neutral;
+  }
+  if(state == 'B'){
+    _state = Happy;
+  }
+  if(state == 'C'){
+    _state = Sad;
+  }
+  if(state == 'D'){
+    _state = Angry;
+  }
+  if(state == 'E'){
+    _state = Fear;
+  }
+  if(state == 'R'){
+    openRightArmFingers();
+  }
+  if(state == 'T'){
+    closeRightArmFingers();
+  }
+  if(state == 'Y'){
+    openLeftArmFingers();
+  }
+  if(state == 'U'){
+    closeLeftArmFingers();
+  }
+  if(state == 'F'){
+    raiseRightArmElbow();
+  }
+  if(state == 'G'){
+    lowerRightArmElbow();
+  }
+  if(state == 'H'){
+    raiseLeftArmElbow();
+  }
+  if(state == 'J'){
+    lowerLeftArmElbow();
+  }
 
   switch(_state){
     case Neutral:

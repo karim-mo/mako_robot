@@ -59,6 +59,9 @@ CMakeFiles/mako_nolang_interfaces: rosidl_cmake/srv/LedControl_Response.msg
 CMakeFiles/mako_nolang_interfaces: /home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces/srv/ServoControl.srv
 CMakeFiles/mako_nolang_interfaces: rosidl_cmake/srv/ServoControl_Request.msg
 CMakeFiles/mako_nolang_interfaces: rosidl_cmake/srv/ServoControl_Response.msg
+CMakeFiles/mako_nolang_interfaces: /home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces/srv/MotorControl.srv
+CMakeFiles/mako_nolang_interfaces: rosidl_cmake/srv/MotorControl_Request.msg
+CMakeFiles/mako_nolang_interfaces: rosidl_cmake/srv/MotorControl_Response.msg
 CMakeFiles/mako_nolang_interfaces: /home/karim/mako_robot/mako_ws/src/mako_nolang_interfaces/srv/ArduinoCommand.srv
 CMakeFiles/mako_nolang_interfaces: rosidl_cmake/srv/ArduinoCommand_Request.msg
 CMakeFiles/mako_nolang_interfaces: rosidl_cmake/srv/ArduinoCommand_Response.msg

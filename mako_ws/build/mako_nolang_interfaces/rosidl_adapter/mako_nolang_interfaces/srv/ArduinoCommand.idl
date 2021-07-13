@@ -27,6 +27,8 @@ module mako_nolang_interfaces {
       string led_exp_type;
 
       string servo_expression;
+
+      string motor_direction;
     };
     struct ArduinoCommand_Response {
       boolean success;

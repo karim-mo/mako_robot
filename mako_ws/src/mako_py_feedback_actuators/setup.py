@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             "ledControlNode = mako_py_feedback_actuators.LED_Control:main",
-            "servoControlNode = mako_py_feedback_actuators.Servo_Control:main"
+            "servoControlNode = mako_py_feedback_actuators.Servo_Control:main",
+            "motorControlNode = mako_py_feedback_actuators.Motor_Control:main"
         ],
     },
 )

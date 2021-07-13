@@ -2,6 +2,7 @@ import rclpy
 import serial
 from rclpy.node import Node
 from mako_nolang_interfaces.srv import ArduinoCommand
+from mako_nolang_interfaces.msg import MakoServerMessage
  
  
 class SerialInterfaceNode(Node):
@@ -13,20 +14,46 @@ class SerialInterfaceNode(Node):
             self.ser.flush()
         except Exception as e:
             self.get_logger().error(str(e))
+        self.serverMsgPublisher = self.create_publisher(
+            MakoServerMessage, "server_msg", 10)
         self.ledToArduino = self.create_service(ArduinoCommand, "arduino_control", self.arduinoControl)
     
     def arduinoControl(self, request, response):
         if(request.cmd_type == "LED"):
             self.get_logger().info(request.led_exp_type)
             try:
-                if(request.led_exp_type == "sf"):
+                if(request.led_exp_type == "nf"):
                     self.ser.write(bytes('A', 'utf-8'))
-                elif(request.led_exp_type == "nf"):
-                    self.ser.write(bytes('B', 'utf-8'))
                 elif(request.led_exp_type == "hf"):
+                    self.ser.write(bytes('B', 'utf-8'))
+                elif(request.led_exp_type == "sf"):
                     self.ser.write(bytes('C', 'utf-8'))
+                elif(request.led_exp_type == "af"):
+                    self.ser.write(bytes('D', 'utf-8'))
+                elif(request.led_exp_type == "ff"):
+                    self.ser.write(bytes('E', 'utf-8'))
+                # msg = MakoServerMessage()
+                # msg.type = "led_response"
+                # self.serverMsgPublisher.publish(msg)
             except Exception as e:
-                self.get_logger().error(e)
+                self.get_logger().error(str(e))
+        if(request.cmd_type == "Servo"):
+            self.get_logger().info(request.led_exp_type)
+            try:
+                if(request.servo_expression == "right_up"):
+                    self.ser.write(bytes('F', 'utf-8'))
+                    self.ser.write(bytes('T', 'utf-8'))
+                elif(request.servo_expression == "left_up"):
+                    self.ser.write(bytes('H', 'utf-8'))
+                    self.ser.write(bytes('U', 'utf-8'))
+                elif(request.servo_expression == "right_reset"):
+                    self.ser.write(bytes('G', 'utf-8'))
+                    self.ser.write(bytes('R', 'utf-8'))
+                elif(request.servo_expression == "left_reset"):
+                    self.ser.write(bytes('J', 'utf-8'))
+                    self.ser.write(bytes('Y', 'utf-8'))
+            except Exception as e:
+                self.get_logger().error(str(e))
 
         response.success = True
         return response

@@ -21,6 +21,7 @@ extern "C"
 // Member 'cmd_type'
 // Member 'led_exp_type'
 // Member 'servo_expression'
+// Member 'motor_direction'
 #include "rosidl_runtime_c/string.h"
 
 // Struct defined in srv/ArduinoCommand in the package mako_nolang_interfaces.
@@ -29,6 +30,7 @@ typedef struct mako_nolang_interfaces__srv__ArduinoCommand_Request
   rosidl_runtime_c__String cmd_type;
   rosidl_runtime_c__String led_exp_type;
   rosidl_runtime_c__String servo_expression;
+  rosidl_runtime_c__String motor_direction;
 } mako_nolang_interfaces__srv__ArduinoCommand_Request;
 
 // Struct for a sequence of mako_nolang_interfaces__srv__ArduinoCommand_Request.

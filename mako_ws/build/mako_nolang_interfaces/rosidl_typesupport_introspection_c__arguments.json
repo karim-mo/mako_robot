@@ -5,6 +5,7 @@
   "idl_tuples": [
     "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces:srv/LedControl.idl",
     "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces:srv/ServoControl.idl",
+    "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces:srv/MotorControl.idl",
     "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces:srv/ArduinoCommand.idl",
     "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces:srv/TTSCommand.idl",
     "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces:msg/MakoServerMessage.idl"
@@ -20,6 +21,7 @@
     "/opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em",
     "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces/srv/LedControl.idl",
     "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces/srv/ServoControl.idl",
+    "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces/srv/MotorControl.idl",
     "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces/srv/ArduinoCommand.idl",
     "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces/srv/TTSCommand.idl",
     "/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_adapter/mako_nolang_interfaces/msg/MakoServerMessage.idl"

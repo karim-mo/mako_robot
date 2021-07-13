@@ -38,6 +38,8 @@ cdr_serialize(
   cdr << ros_message.led_exp_type;
   // Member: servo_expression
   cdr << ros_message.servo_expression;
+  // Member: motor_direction
+  cdr << ros_message.motor_direction;
   return true;
 }
 
@@ -55,6 +57,9 @@ cdr_deserialize(
 
   // Member: servo_expression
   cdr >> ros_message.servo_expression;
+
+  // Member: motor_direction
+  cdr >> ros_message.motor_direction;
 
   return true;
 }
@@ -84,6 +89,10 @@ get_serialized_size(
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message.servo_expression.size() + 1);
+  // Member: motor_direction
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.motor_direction.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -128,6 +137,18 @@ max_serialized_size_ArduinoCommand_Request(
   }
 
   // Member: servo_expression
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+
+  // Member: motor_direction
   {
     size_t array_size = 1;
 

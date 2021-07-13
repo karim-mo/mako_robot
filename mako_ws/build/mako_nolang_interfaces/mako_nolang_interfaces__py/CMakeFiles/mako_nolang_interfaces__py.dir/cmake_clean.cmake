@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/mako_nolang_interfaces/srv/_arduino_command_s.c"
   "../rosidl_generator_py/mako_nolang_interfaces/srv/_led_control.py"
   "../rosidl_generator_py/mako_nolang_interfaces/srv/_led_control_s.c"
+  "../rosidl_generator_py/mako_nolang_interfaces/srv/_motor_control.py"
+  "../rosidl_generator_py/mako_nolang_interfaces/srv/_motor_control_s.c"
   "../rosidl_generator_py/mako_nolang_interfaces/srv/_servo_control.py"
   "../rosidl_generator_py/mako_nolang_interfaces/srv/_servo_control_s.c"
   "../rosidl_generator_py/mako_nolang_interfaces/srv/_tts_command.py"

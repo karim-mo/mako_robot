@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from mako_nolang_interfaces/srv/MotorControl.srv
+// generated code does not contain a copyright notice
+
+
+module mako_nolang_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      " Available directions are:" "\n"
+      " up" "\n"
+      " down" "\n"
+      " left" "\n"
+      " right" "\n"
+      " stop")
+    struct MotorControl_Request {
+      string direction;
+    };
+    struct MotorControl_Response {
+      boolean success;
+    };
+  };
+};

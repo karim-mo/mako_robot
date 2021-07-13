@@ -40,13 +40,15 @@ struct ArduinoCommand_Request_
       this->cmd_type = "";
       this->led_exp_type = "";
       this->servo_expression = "";
+      this->motor_direction = "";
     }
   }
 
   explicit ArduinoCommand_Request_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   : cmd_type(_alloc),
     led_exp_type(_alloc),
-    servo_expression(_alloc)
+    servo_expression(_alloc),
+    motor_direction(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
@@ -54,6 +56,7 @@ struct ArduinoCommand_Request_
       this->cmd_type = "";
       this->led_exp_type = "";
       this->servo_expression = "";
+      this->motor_direction = "";
     }
   }
 
@@ -67,6 +70,9 @@ struct ArduinoCommand_Request_
   using _servo_expression_type =
     std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
   _servo_expression_type servo_expression;
+  using _motor_direction_type =
+    std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
+  _motor_direction_type motor_direction;
 
   // setters for named parameter idiom
   Type & set__cmd_type(
@@ -85,6 +91,12 @@ struct ArduinoCommand_Request_
     const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other> & _arg)
   {
     this->servo_expression = _arg;
+    return *this;
+  }
+  Type & set__motor_direction(
+    const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other> & _arg)
+  {
+    this->motor_direction = _arg;
     return *this;
   }
 
@@ -137,6 +149,9 @@ struct ArduinoCommand_Request_
       return false;
     }
     if (this->servo_expression != other.servo_expression) {
+      return false;
+    }
+    if (this->motor_direction != other.motor_direction) {
       return false;
     }
     return true;

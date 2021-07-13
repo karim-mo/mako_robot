@@ -20,21 +20,23 @@ class SerialInterfaceNode(Node):
     
     def arduinoControl(self, request, response):
         if(request.cmd_type == "LED"):
-            self.get_logger().info(request.led_exp_type)
             try:
-                if(request.led_exp_type == "sf"):
+                if(request.led_exp_type == "nf"):
                     self.ser.write(bytes('A', 'utf-8'))
-                elif(request.led_exp_type == "nf"):
-                    self.ser.write(bytes('B', 'utf-8'))
                 elif(request.led_exp_type == "hf"):
+                    self.ser.write(bytes('B', 'utf-8'))
+                elif(request.led_exp_type == "sf"):
                     self.ser.write(bytes('C', 'utf-8'))
-                msg = MakoServerMessage()
-                msg.type = "led_response"
-                self.serverMsgPublisher.publish(msg)
+                elif(request.led_exp_type == "af"):
+                    self.ser.write(bytes('D', 'utf-8'))
+                elif(request.led_exp_type == "ff"):
+                    self.ser.write(bytes('E', 'utf-8'))
+                # msg = MakoServerMessage()
+                # msg.type = "led_response"
+                # self.serverMsgPublisher.publish(msg)
             except Exception as e:
                 self.get_logger().error(str(e))
         if(request.cmd_type == "Servo"):
-            self.get_logger().info(request.led_exp_type)
             try:
                 if(request.servo_expression == "right_up"):
                     self.ser.write(bytes('F', 'utf-8'))
@@ -48,6 +50,20 @@ class SerialInterfaceNode(Node):
                 elif(request.servo_expression == "left_reset"):
                     self.ser.write(bytes('J', 'utf-8'))
                     self.ser.write(bytes('Y', 'utf-8'))
+            except Exception as e:
+                self.get_logger().error(str(e))
+        if(request.cmd_type == "Motor"):
+            try:
+                if(request.motor_direction == "up"):
+                    self.ser.write(bytes('Z', 'utf-8'))
+                elif(request.motor_direction == "down"):
+                    self.ser.write(bytes('X', 'utf-8'))
+                elif(request.motor_direction == "left"):
+                    self.ser.write(bytes('V', 'utf-8'))
+                elif(request.motor_direction == "right"):
+                    self.ser.write(bytes('C', 'utf-8'))
+                elif(request.motor_direction == "stop"):
+                    self.ser.write(bytes('B', 'utf-8'))
             except Exception as e:
                 self.get_logger().error(str(e))
 

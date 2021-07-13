@@ -154,7 +154,7 @@ class ControlPanelGUI(Node):
             "MainWindow", "Spatial Prepositions"))
         self.btnRead.setText(_translate("MainWindow", "Social Stories"))
         self.btnRobotCntrl.setText(_translate(
-            "MainWindow", "MAKO Movement Game"))
+            "MainWindow", "MAKO Movement"))
         self.btnRobotQuiz.setText(_translate("MainWindow", "MAKO Turn Taking \n"
                                              "Emotion Quiz"))
         self.btnStop.setText(_translate("MainWindow", "Stop Current Module"))
@@ -168,6 +168,7 @@ class ControlPanelGUI(Node):
         self.btnFace.clicked.connect(self.btnFaceClick)
         self.btnSpatial.clicked.connect(self.btnSpatialClick)
         self.btnRead.clicked.connect(self.btnReadClick)
+        self.btnRobotCntrl.clicked.connect(self.btnMoveClick)
 
     def onModuleMessage(self, msg):
         time.sleep(0.5)
@@ -234,6 +235,19 @@ class ControlPanelGUI(Node):
         msg = MakoServerMessage()
         msg.type = "module_request"
         msg.message = "StoriesModule"
+        self.ctrl_panel_node.serverMsgPublisher.publish(msg)
+        self.lblCurrentStatus.setText("Sending signal to MAKO")
+        self.lblCurrentStatus.adjustSize()
+    
+    def btnMoveClick(self):
+        if(self.moduleOn):
+            return
+        self.moduleOn = True
+        self.ctrl_panel_node.get_logger().info(
+            "Sending Movement Module Signal to Server..")
+        msg = MakoServerMessage()
+        msg.type = "module_request"
+        msg.message = "MovementModule"
         self.ctrl_panel_node.serverMsgPublisher.publish(msg)
         self.lblCurrentStatus.setText("Sending signal to MAKO")
         self.lblCurrentStatus.adjustSize()

@@ -98,6 +98,21 @@ bool mako_nolang_interfaces__srv__arduino_command__request__convert_from_py(PyOb
     Py_DECREF(encoded_field);
     Py_DECREF(field);
   }
+  {  // motor_direction
+    PyObject * field = PyObject_GetAttrString(_pymsg, "motor_direction");
+    if (!field) {
+      return false;
+    }
+    assert(PyUnicode_Check(field));
+    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
+    if (!encoded_field) {
+      Py_DECREF(field);
+      return false;
+    }
+    rosidl_runtime_c__String__assign(&ros_message->motor_direction, PyBytes_AS_STRING(encoded_field));
+    Py_DECREF(encoded_field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -165,6 +180,23 @@ PyObject * mako_nolang_interfaces__srv__arduino_command__request__convert_to_py(
     }
     {
       int rc = PyObject_SetAttrString(_pymessage, "servo_expression", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // motor_direction
+    PyObject * field = NULL;
+    field = PyUnicode_DecodeUTF8(
+      ros_message->motor_direction.data,
+      strlen(ros_message->motor_direction.data),
+      "strict");
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "motor_direction", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

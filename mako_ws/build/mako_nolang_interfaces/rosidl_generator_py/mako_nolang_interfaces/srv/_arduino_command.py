@@ -56,15 +56,18 @@ class ArduinoCommand_Request(metaclass=Metaclass_ArduinoCommand_Request):
         '_cmd_type',
         '_led_exp_type',
         '_servo_expression',
+        '_motor_direction',
     ]
 
     _fields_and_field_types = {
         'cmd_type': 'string',
         'led_exp_type': 'string',
         'servo_expression': 'string',
+        'motor_direction': 'string',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
@@ -77,6 +80,7 @@ class ArduinoCommand_Request(metaclass=Metaclass_ArduinoCommand_Request):
         self.cmd_type = kwargs.get('cmd_type', str())
         self.led_exp_type = kwargs.get('led_exp_type', str())
         self.servo_expression = kwargs.get('servo_expression', str())
+        self.motor_direction = kwargs.get('motor_direction', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -112,6 +116,8 @@ class ArduinoCommand_Request(metaclass=Metaclass_ArduinoCommand_Request):
         if self.led_exp_type != other.led_exp_type:
             return False
         if self.servo_expression != other.servo_expression:
+            return False
+        if self.motor_direction != other.motor_direction:
             return False
         return True
 
@@ -158,6 +164,19 @@ class ArduinoCommand_Request(metaclass=Metaclass_ArduinoCommand_Request):
                 isinstance(value, str), \
                 "The 'servo_expression' field must be of type 'str'"
         self._servo_expression = value
+
+    @property
+    def motor_direction(self):
+        """Message field 'motor_direction'."""
+        return self._motor_direction
+
+    @motor_direction.setter
+    def motor_direction(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, str), \
+                "The 'motor_direction' field must be of type 'str'"
+        self._motor_direction = value
 
 
 # Import statements for member types

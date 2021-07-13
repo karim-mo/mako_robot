@@ -74,6 +74,30 @@ rosidl_runtime_c/service_type_support_struct.h
 rosidl_typesupport_c/service_type_support_dispatch.h
 /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_c/mako_nolang_interfaces/srv/rosidl_typesupport_c/service_type_support_dispatch.h
 
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_c/mako_nolang_interfaces/srv/motor_control__type_support.cpp
+cstddef
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_c/mako_nolang_interfaces/srv/cstddef
+rosidl_runtime_c/message_type_support_struct.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_c/mako_nolang_interfaces/srv/rosidl_runtime_c/message_type_support_struct.h
+mako_nolang_interfaces/msg/rosidl_typesupport_c__visibility_control.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_c/mako_nolang_interfaces/srv/mako_nolang_interfaces/msg/rosidl_typesupport_c__visibility_control.h
+mako_nolang_interfaces/srv/detail/motor_control__struct.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_c/mako_nolang_interfaces/srv/mako_nolang_interfaces/srv/detail/motor_control__struct.h
+rosidl_typesupport_c/identifier.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_c/mako_nolang_interfaces/srv/rosidl_typesupport_c/identifier.h
+rosidl_typesupport_c/message_type_support_dispatch.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_c/mako_nolang_interfaces/srv/rosidl_typesupport_c/message_type_support_dispatch.h
+rosidl_typesupport_c/type_support_map.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_c/mako_nolang_interfaces/srv/rosidl_typesupport_c/type_support_map.h
+rosidl_typesupport_c/visibility_control.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_c/mako_nolang_interfaces/srv/rosidl_typesupport_c/visibility_control.h
+rosidl_typesupport_interface/macros.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_c/mako_nolang_interfaces/srv/rosidl_typesupport_interface/macros.h
+rosidl_runtime_c/service_type_support_struct.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_c/mako_nolang_interfaces/srv/rosidl_runtime_c/service_type_support_struct.h
+rosidl_typesupport_c/service_type_support_dispatch.h
+/home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_c/mako_nolang_interfaces/srv/rosidl_typesupport_c/service_type_support_dispatch.h
+
 /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_c/mako_nolang_interfaces/srv/servo_control__type_support.cpp
 cstddef
 /home/karim/mako_robot/mako_ws/build/mako_nolang_interfaces/rosidl_typesupport_c/mako_nolang_interfaces/srv/cstddef
@@ -195,6 +219,16 @@ rosidl_runtime_c/string.h
 rosidl_generator_c/mako_nolang_interfaces/srv/detail/rosidl_runtime_c/string.h
 
 rosidl_generator_c/mako_nolang_interfaces/srv/detail/led_control__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+rosidl_runtime_c/string.h
+rosidl_generator_c/mako_nolang_interfaces/srv/detail/rosidl_runtime_c/string.h
+
+rosidl_generator_c/mako_nolang_interfaces/srv/detail/motor_control__struct.h
 stdbool.h
 -
 stddef.h

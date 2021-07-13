@@ -9,6 +9,7 @@ setup.py
 ../../build/mako_py_feedback_actuators/mako_py_feedback_actuators.egg-info/top_level.txt
 ../../build/mako_py_feedback_actuators/mako_py_feedback_actuators.egg-info/zip-safe
 mako_py_feedback_actuators/LED_Control.py
+mako_py_feedback_actuators/Motor_Control.py
 mako_py_feedback_actuators/Servo_Control.py
 mako_py_feedback_actuators/__init__.py
 mako_py_feedback_actuators.egg-info/PKG-INFO

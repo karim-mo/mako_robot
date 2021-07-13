@@ -107,6 +107,9 @@ CMakeFiles/mako_nolang_interfaces__rosidl_typesupport_introspection_c__pyext.dir
  rosidl_generator_c/mako_nolang_interfaces/srv/detail/led_control__functions.h
  rosidl_generator_c/mako_nolang_interfaces/srv/detail/led_control__struct.h
  rosidl_generator_c/mako_nolang_interfaces/srv/detail/led_control__type_support.h
+ rosidl_generator_c/mako_nolang_interfaces/srv/detail/motor_control__functions.h
+ rosidl_generator_c/mako_nolang_interfaces/srv/detail/motor_control__struct.h
+ rosidl_generator_c/mako_nolang_interfaces/srv/detail/motor_control__type_support.h
  rosidl_generator_c/mako_nolang_interfaces/srv/detail/servo_control__functions.h
  rosidl_generator_c/mako_nolang_interfaces/srv/detail/servo_control__struct.h
  rosidl_generator_c/mako_nolang_interfaces/srv/detail/servo_control__type_support.h

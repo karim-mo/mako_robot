@@ -30,6 +30,11 @@ def generate_launch_description():
         executable="servoControlNode"
     )
 
+    motor_control_node = Node(
+        package="mako_py_feedback_actuators",
+        executable="motorControlNode"
+    )
+
     serial_interface_node = Node(
         package="mako_py_serial_interface",
         executable="serialInterfaceNode"
@@ -42,6 +47,7 @@ def generate_launch_description():
     ld.add_action(ctrl_panel_node)
     ld.add_action(led_control_node)
     ld.add_action(servo_control_node)
+    ld.add_action(motor_control_node)
     ld.add_action(serial_interface_node)
 
 
