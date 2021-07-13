@@ -32,23 +32,23 @@ void setup() {
 
 void loop() {
   int x = Serial.read();
-  if(x == 'Z') # forward
+  if(x == 'Z') // forward
   {
   MakoForward();
   }
-  if(x == 'X') #backward
+  if(x == 'X') //backward
   {
   MakoBackward();
   }
-  if(x == 'C') #RotateR
+  if(x == 'C') //RotateR
   {
     MakoRotateR();
   }
-  if(x == 'V') #RotateL
+  if(x == 'V') //RotateL
   {
     MakoRotateL();
   }
-  if(x == 'B') #Stop
+  if(x == 'B') //Stop
   {
     MakoStop();
   }
