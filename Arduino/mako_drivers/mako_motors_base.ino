@@ -1,15 +1,15 @@
 //motor 1
-const int pwm1 = 3;
-const int dir1 = 2;
+const int pwm1 = 10;
+const int dir1 = 22;
 //motor 2
-const int pwm2 = 5;
-const int dir2 = 4;
+const int pwm2 = 11;
+const int dir2 = 24;
 ////motor 3
-const int pwm3 = 6;
-const int dir3 = 7;
+const int pwm3 = 12;
+const int dir3 = 26;
 //motor 4
-const int pwm4 = 9;
-const int dir4 = 8;
+const int pwm4 = 13;
+const int dir4 = 28;
 
 
 
@@ -23,20 +23,36 @@ void setup() {
   pinMode(dir3,OUTPUT);
   pinMode(pwm4,OUTPUT);
   pinMode(dir4,OUTPUT);
+
+  Serial.begin(9600);
  
   
  
 }
 
 void loop() {
-  digitalWrite(dir1,HIGH);
-  analogWrite(pwm1,80);
-  digitalWrite(dir2,HIGH);
-  analogWrite(pwm2,80);
-  
-  
-  //delay(3000);
- 
+  int x = Serial.read();
+  if(x == 'Z') # forward
+  {
+  MakoForward();
+  }
+  if(x == 'X') #backward
+  {
+  MakoBackward();
+  }
+  if(x == 'C') #RotateR
+  {
+    MakoRotateR();
+  }
+  if(x == 'V') #RotateL
+  {
+    MakoRotateL();
+  }
+  if(x == 'B') #Stop
+  {
+    MakoStop();
+  }
+
 }
 
 void MakoStop(){
@@ -45,17 +61,17 @@ void MakoStop(){
   analogWrite(pwm2,0);
   analogWrite(pwm3,0);
   analogWrite(pwm4,0);
-  
+  delay(10);
 }
 void MakoForward(){
   digitalWrite(dir1,HIGH);
-  analogWrite(pwm1,80);
+  analogWrite(pwm1,180);
   digitalWrite(dir2,HIGH);
-  analogWrite(pwm2,80);
+  analogWrite(pwm2,180);
   digitalWrite(dir3,LOW);
-  analogWrite(pwm3,80);
+  analogWrite(pwm3,180);
   digitalWrite(dir4,LOW);
-  analogWrite(pwm4,80);
+  analogWrite(pwm4,180);
   
 }
 
