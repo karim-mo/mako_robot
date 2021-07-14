@@ -61,9 +61,9 @@ class SerialInterfaceNode(Node):
                 elif(request.motor_direction == "left"):
                     self.ser.write(bytes('V', 'utf-8'))
                 elif(request.motor_direction == "right"):
-                    self.ser.write(bytes('C', 'utf-8'))
+                    self.ser.write(bytes('N', 'utf-8'))
                 elif(request.motor_direction == "stop"):
-                    self.ser.write(bytes('B', 'utf-8'))
+                    self.ser.write(bytes('M', 'utf-8'))
             except Exception as e:
                 self.get_logger().error(str(e))
 
