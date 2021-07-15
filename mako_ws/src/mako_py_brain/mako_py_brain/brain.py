@@ -116,11 +116,17 @@ class BrainNode(Node):
             self.get_logger().info(str(message))
             msg = json.loads(message)
             if(msg["type"] == "welcome"):
-                # self.engine.say('Hello, I am MAKO')
-                # self.engine.runAndWait() # might need a thread
-                # self.engine.say('Amazing!')
-                # self.engine.runAndWait() # might need a thread
-                pass
+                client = self.create_client(TTSCommand, "ttsEngine")
+                while not client.wait_for_service(1.0):
+                    self.get_logger().warn("Waiting for Server...")
+
+                request = TTSCommand.Request()
+                request.message = "intro"
+                
+
+                future = client.call_async(request)
+                future.add_done_callback(
+                    partial(self.tts_done_callback))
             
             if(msg["type"] == "led_control"):
                 self.call_led_control(msg["exp_type"])
