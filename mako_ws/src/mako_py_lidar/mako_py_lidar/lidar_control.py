@@ -3,6 +3,9 @@ from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
 import time
 import math
+from functools import partial
+from mako_nolang_interfaces.srv import MotorControl
+
 
 
 class lidar_control_node(Node):
@@ -20,6 +23,30 @@ class lidar_control_node(Node):
               str(msg.angle_max) + "  " + str(math.ceil((msg.angle_max - msg.angle_min) / msg.angle_increment)) 
               + "  " + str(len(msg.ranges)) + "  " + str(msg.angle_increment))
         time.sleep(3)
+
+    def call_motor_control_callback(self, future):
+        try:
+            response = future.result()
+            if response.success:
+                self.get_logger().info("Successfully sent motor command to Motor Control")
+            else:
+                self.get_logger().info("Failed to send motor command to Motor Control")
+        except Exception as e:
+            self.get_logger().error("Service call failed " + e)
+    
+    
+    def stopMotor(self):
+        client = self.create_client(MotorControl, "cmd_motor")
+        while not client.wait_for_service(1.0):
+            self.get_logger().warn("Waiting for Server...")
+
+        request = MotorControl.Request()
+        request.direction = "stop"
+        
+
+        future = client.call_async(request)
+        future.add_done_callback(
+            partial(self.call_motor_control_callback))
         
     def can_move(self, msg):
         #print("hello")
@@ -43,8 +70,9 @@ class lidar_control_node(Node):
         print(a)
         s = 0
         x = 0
-        if(a <= 50):
+        if(a <= 230):
             print("too close object on forward")
+            self.stopMotor()
         else:
             print("you can move forward")  
 
@@ -57,8 +85,8 @@ class lidar_control_node(Node):
         print(a)
         s = 0
         x = 0
-        if(a  <= 50):
-            print("too close object to the right")
+        if(a  <= 220):
+            self.stopMotor()
         else:
             print("you can move to the right")
 
@@ -71,8 +99,9 @@ class lidar_control_node(Node):
         print(a)
         s = 0
         x = 0
-        if(a  <= 50):
+        if(a  <= 220):
             print("too close object to the left")
+            self.stopMotor()
         else:
             print("you can move to the left")
 
@@ -85,8 +114,9 @@ class lidar_control_node(Node):
         print(a)
         s = 0
         x = 0
-        if(a  <= 50):
+        if(a  <= 230):
             print("too close object to the back")
+            self.stopMotor()
         else:
             print("you can move to the back")
         time.sleep(5)

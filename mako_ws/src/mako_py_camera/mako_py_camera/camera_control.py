@@ -31,10 +31,10 @@ class camera_control_node(Node):
 
     def rgb2gray(self,rgb):
 
-    r, g, b = rgb[:,:,0], rgb[:,:,1], rgb[:,:,2]
-    gray = 0.2989 * r + 0.5870 * g + 0.1140 * b
+        r, g, b = rgb[:,:,0], rgb[:,:,1], rgb[:,:,2]
+        gray = 0.2989 * r + 0.5870 * g + 0.1140 * b
 
-    return gray
+        return gray
 
     
 
@@ -75,7 +75,7 @@ class camera_control_node(Node):
             # output to the cv2
             return_res.append([top, right, bottom, left, emotion_preds])
 
-    return return_res
+        return return_res
 
     
     def initCam(self):

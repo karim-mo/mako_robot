@@ -25,7 +25,7 @@ class lidarTestNode(Node):
         for i in range(len(msg.ranges)):
             x[i] = msg.ranges[i]*100
 
-         r = len(msg.ranges)
+        r = len(msg.ranges)
         #printing the reading of the forward, left, right and backward in cm
         print("forward")
         print("----------------------------------")
