@@ -1,1 +1,0 @@
-/home/karim/mako_robot/mako_ws/src/dev_test_tools/setup.py

@@ -1,8 +1,0 @@
-# Available directions are:
-# up
-# down
-# left
-# right
-# stop
-
-string direction
