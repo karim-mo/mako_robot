@@ -5,10 +5,14 @@ import json
 import pyttsx3
 import time
 import os
+from mutagen.mp3 import MP3
 #from gtts import *
 from rclpy.node import Node
 from functools import partial
 from mako_nolang_interfaces.srv import LedControl
+from mako_nolang_interfaces.srv import ServoControl
+from mako_nolang_interfaces.srv import MotorControl
+from mako_nolang_interfaces.srv import TTSCommand
 from mako_nolang_interfaces.msg import MakoServerMessage
  
 class BrainNode(Node):
@@ -21,7 +25,7 @@ class BrainNode(Node):
         try:
             self.engine = pyttsx3.init(driverName="espeak")
             #self.engine.setProperty('volume', )
-            self.engine.setProperty('rate', self.engine.getProperty('rate') - 40)
+            self.engine.setProperty('rate', self.engine.getProperty('rate') - 60)
             self.engine.setProperty('voice', 'english_rp')
             websocket.enableTrace(True)
             self.ws = websocket.WebSocketApp("ws://localhost:9000",
@@ -38,6 +42,14 @@ class BrainNode(Node):
         if(msg.type == "module_request"):
             try:
                 self.ws.send('{' + '"type":"{0}","message":"{1}"'.format(str(msg.type), str(msg.message)) + '}')
+            except Exception as e:
+                self.get_logger().error(str(e))
+        if(msg.type == "led_response"):
+            _msg = MakoServerMessage()
+            _msg.type = "led_response"
+            _msg.message = "led_complete"
+            try:
+                self.ws.send('{' + '"type":"{0}","message":"{1}"'.format(str(_msg.type), str(_msg.message)) + '}')
             except Exception as e:
                 self.get_logger().error(str(e))
         
@@ -65,9 +77,43 @@ class BrainNode(Node):
         except Exception as e:
             self.get_logger().error("Service call failed " + e)
 
+    def call_servo_control_callback(self, future):
+        try:
+            response = future.result()
+            if response.success:
+                self.get_logger().info("Successfully sent servo command to Servo Control")
+            else:
+                self.get_logger().info("Failed to send servo command to Servo Control")
+        except Exception as e:
+            self.get_logger().error("Service call failed " + e)
+
+    def call_motor_control_callback(self, future):
+        try:
+            response = future.result()
+            if response.success:
+                self.get_logger().info("Successfully sent motor command to Motor Control")
+            else:
+                self.get_logger().info("Failed to send motor command to Motor Control")
+        except Exception as e:
+            self.get_logger().error("Service call failed " + e)
+    
+    def tts_done_callback(self, future):
+        try:
+            response = future.result()
+            if response.done:
+                self.get_logger().info("Placeholder success")
+                _msg = MakoServerMessage()
+                _msg.type = "tts_response"
+                _msg.message = "tts_complete"
+                self.ws.send('{' + '"type":"{0}","message":"{1}"'.format(str(_msg.type), str(_msg.message)) + '}')
+            else:
+                self.get_logger().info("Placeholder fail")
+        except Exception as e:
+            self.get_logger().error("Service failed " + e)
+
     def on_message(self, ws, message):
         try:
-            self.get_logger().info(message)
+            self.get_logger().info(str(message))
             msg = json.loads(message)
             if(msg["type"] == "welcome"):
                 # self.engine.say('Hello, I am MAKO')
@@ -75,14 +121,66 @@ class BrainNode(Node):
                 # self.engine.say('Amazing!')
                 # self.engine.runAndWait() # might need a thread
                 pass
+            
             if(msg["type"] == "led_control"):
                 self.call_led_control(msg["exp_type"])
+            if(msg["type"] == "servo_control"):
+                client = self.create_client(ServoControl, "cmd_servo")
+                while not client.wait_for_service(1.0):
+                    self.get_logger().warn("Waiting for Server...")
+
+                request = ServoControl.Request()
+                request.expression = msg["expression"]
+                
+
+                future = client.call_async(request)
+                future.add_done_callback(
+                    partial(self.call_servo_control_callback))
+            if(msg["type"] == "motor_control"):
+                client = self.create_client(MotorControl, "cmd_motor")
+                while not client.wait_for_service(1.0):
+                    self.get_logger().warn("Waiting for Server...")
+
+                request = MotorControl.Request()
+                request.direction = msg["direction"]
+                
+
+                future = client.call_async(request)
+                future.add_done_callback(
+                    partial(self.call_motor_control_callback))
             if(msg["type"] == "module_response"):
                 _msg = MakoServerMessage()
                 _msg.type = msg["type"]
                 _msg.message = msg["message"]
                 _msg.module_name = msg["module_name"]
                 self.moduleMsgPublisher.publish(_msg)
+            if(msg["type"] == "tts_request"):
+                client = self.create_client(TTSCommand, "ttsEngine")
+                while not client.wait_for_service(1.0):
+                    self.get_logger().warn("Waiting for Server...")
+
+                request = TTSCommand.Request()
+                request.message = msg["message"]
+                
+
+                future = client.call_async(request)
+                future.add_done_callback(
+                    partial(self.tts_done_callback))
+            # legacy TTS
+            # if(msg["type"] == "tts_request"):
+            #     self.engine.say(msg["message"])
+            #     self.engine.runAndWait()
+            #     # Implement run and wait with a timer = file length when all files are recorded 
+            #     _msg = MakoServerMessage()
+            #     _msg.type = "tts_response"
+            #     _msg.message = "tts_complete"
+            #     try:
+            #         self.ws.send('{' + '"type":"{0}","message":"{1}"'.format(str(_msg.type), str(_msg.message)) + '}')
+            #     except Exception as e:
+            #         self.get_logger().error(str(e))
+
+                
+                
         except Exception as e:
             self.get_logger().error("An Error Occurred While Parsing Server Message, Error: " + str(e))
 

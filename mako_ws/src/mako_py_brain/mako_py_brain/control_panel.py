@@ -82,87 +82,56 @@ class ControlPanelGUI(Node):
         self.grpBox.setMaximumSize(QtCore.QSize(1300, 900))
         self.grpBox.setStyleSheet("color: rgba(0,36,61,255);")
         self.grpBox.setObjectName("grpBox")
+
         self.btnEmotion = QtWidgets.QPushButton(self.grpBox)
         self.btnEmotion.setGeometry(QtCore.QRect(30, 30, 291, 141))
-        font = QtGui.QFont()
-        font.setPointSize(-1)
-        font.setBold(False)
-        font.setWeight(50)
-        self.btnEmotion.setFont(font)
         self.btnEmotion.setStyleSheet("background-color: \'white\';\n"
                                       "font-size:20px;")
         self.btnEmotion.setObjectName("btnEmotion")
+
         self.btnFace = QtWidgets.QPushButton(self.grpBox)
         self.btnFace.setGeometry(QtCore.QRect(480, 30, 291, 141))
-        font = QtGui.QFont()
-        font.setPointSize(-1)
-        font.setBold(False)
-        font.setUnderline(False)
-        font.setWeight(50)
-        font.setStrikeOut(False)
-        self.btnFace.setFont(font)
         self.btnFace.setStyleSheet("background-color: \'white\';\n"
                                    "font-size:20px;")
         self.btnFace.setObjectName("btnFace")
+
         self.btnSpatial = QtWidgets.QPushButton(self.grpBox)
         self.btnSpatial.setGeometry(QtCore.QRect(920, 30, 291, 141))
-        font = QtGui.QFont()
-        font.setPointSize(-1)
-        font.setBold(False)
-        font.setUnderline(False)
-        font.setWeight(50)
-        font.setStrikeOut(False)
-        self.btnSpatial.setFont(font)
         self.btnSpatial.setStyleSheet("background-color: \'white\';\n"
                                       "font-size:20px;")
         self.btnSpatial.setObjectName("btnSpatial")
-        self.btnGreeting = QtWidgets.QPushButton(self.grpBox)
-        self.btnGreeting.setGeometry(QtCore.QRect(30, 210, 291, 141))
-        self.btnGreeting.setStyleSheet("background-color: \'white\';\n"
-                                       "font-size:20px;")
-        self.btnGreeting.setObjectName("btnGreeting")
+
         self.btnRead = QtWidgets.QPushButton(self.grpBox)
-        self.btnRead.setGeometry(QtCore.QRect(480, 210, 291, 141))
+        self.btnRead.setGeometry(QtCore.QRect(30, 210, 291, 141))
         self.btnRead.setStyleSheet("background-color: \'white\';\n"
                                    "font-size:20px;")
         self.btnRead.setObjectName("btnRead")
-        self.btnLang = QtWidgets.QPushButton(self.grpBox)
-        self.btnLang.setGeometry(QtCore.QRect(920, 210, 291, 141))
-        self.btnLang.setStyleSheet("background-color: \'white\';\n"
-                                   "font-size:20px;")
-        self.btnLang.setObjectName("btnLang")
-        self.btnGames = QtWidgets.QPushButton(self.grpBox)
-        self.btnGames.setGeometry(QtCore.QRect(30, 390, 291, 141))
-        self.btnGames.setStyleSheet("background-color: \'white\';\n"
-                                    "font-size:20px;")
-        self.btnGames.setObjectName("btnGames")
+
         self.btnRobotCntrl = QtWidgets.QPushButton(self.grpBox)
-        self.btnRobotCntrl.setGeometry(QtCore.QRect(480, 390, 291, 141))
+        self.btnRobotCntrl.setGeometry(QtCore.QRect(480, 210, 291, 141))
         self.btnRobotCntrl.setStyleSheet("background-color: \'white\';\n"
                                          "font-size:20px;")
         self.btnRobotCntrl.setObjectName("btnRobotCntrl")
-        self.btnRobotFaces = QtWidgets.QPushButton(self.grpBox)
-        self.btnRobotFaces.setGeometry(QtCore.QRect(920, 390, 291, 141))
-        self.btnRobotFaces.setStyleSheet("background-color: \'white\';\n"
-                                         "font-size:20px;")
-        self.btnRobotFaces.setObjectName("btnRobotFaces")
+
         self.btnRobotQuiz = QtWidgets.QPushButton(self.grpBox)
-        self.btnRobotQuiz.setGeometry(QtCore.QRect(30, 570, 291, 141))
+        self.btnRobotQuiz.setGeometry(QtCore.QRect(920, 210, 291, 141))
         self.btnRobotQuiz.setStyleSheet("background-color: \'white\';\n"
                                         "font-size:20px;")
         self.btnRobotQuiz.setObjectName("btnRobotQuiz")
+
         self.btnStop = QtWidgets.QPushButton(self.grpBox)
-        self.btnStop.setGeometry(QtCore.QRect(920, 570, 291, 141))
+        self.btnStop.setGeometry(QtCore.QRect(920, 390, 291, 141))
         self.btnStop.setStyleSheet("background-color: rgb(150, 0, 0);\n"
                                    "font-size:20px;")
         self.btnStop.setObjectName("btnStop")
+
         self.lblStatus = QtWidgets.QLabel(self.grpBox)
-        self.lblStatus.setGeometry(QtCore.QRect(480, 640, 111, 17))
+        self.lblStatus.setGeometry(QtCore.QRect(480, 460, 111, 17))
         self.lblStatus.setStyleSheet("background-color: rgba(255, 255, 255, 0);\n"
                                      "color: rgba(0,36,61,255);")
         self.lblStatus.setObjectName("lblStatus")
         self.lblCurrentStatus = QtWidgets.QLabel(self.grpBox)
-        self.lblCurrentStatus.setGeometry(QtCore.QRect(590, 640, 321, 17))
+        self.lblCurrentStatus.setGeometry(QtCore.QRect(590, 460, 321, 17))
         self.lblCurrentStatus.setStyleSheet("background-color: rgba(255, 255, 255, 0);\n"
                                             "color: rgba(0,36,61,255);")
         self.lblCurrentStatus.setObjectName("lblCurrentStatus")
@@ -183,13 +152,9 @@ class ControlPanelGUI(Node):
         self.btnFace.setText(_translate("MainWindow", "Faces Recognition"))
         self.btnSpatial.setText(_translate(
             "MainWindow", "Spatial Prepositions"))
-        self.btnGreeting.setText(_translate("MainWindow", "Greetings"))
         self.btnRead.setText(_translate("MainWindow", "Social Stories"))
-        self.btnLang.setText(_translate("MainWindow", "WH Questions"))
-        self.btnGames.setText(_translate("MainWindow", "Puzzle Games"))
         self.btnRobotCntrl.setText(_translate(
-            "MainWindow", "MAKO Movement Game"))
-        self.btnRobotFaces.setText(_translate("MainWindow", "MAKO Faces Quiz"))
+            "MainWindow", "MAKO Movement"))
         self.btnRobotQuiz.setText(_translate("MainWindow", "MAKO Turn Taking \n"
                                              "Emotion Quiz"))
         self.btnStop.setText(_translate("MainWindow", "Stop Current Module"))
@@ -198,8 +163,12 @@ class ControlPanelGUI(Node):
             "MainWindow", "No Module Currently Running"))
 
     def initUI(self):
-        self.btnEmotion.clicked.connect(self.btnEmotionClick)
         self.btnStop.clicked.connect(self.btnStopClick)
+        self.btnEmotion.clicked.connect(self.btnEmotionClick)
+        self.btnFace.clicked.connect(self.btnFaceClick)
+        self.btnSpatial.clicked.connect(self.btnSpatialClick)
+        self.btnRead.clicked.connect(self.btnReadClick)
+        self.btnRobotCntrl.clicked.connect(self.btnMoveClick)
 
     def onModuleMessage(self, msg):
         time.sleep(0.5)
@@ -227,6 +196,58 @@ class ControlPanelGUI(Node):
         msg = MakoServerMessage()
         msg.type = "module_request"
         msg.message = "EmotionModule"
+        self.ctrl_panel_node.serverMsgPublisher.publish(msg)
+        self.lblCurrentStatus.setText("Sending signal to MAKO")
+        self.lblCurrentStatus.adjustSize()
+    
+    def btnFaceClick(self):
+        if(self.moduleOn):
+            return
+        self.moduleOn = True
+        self.ctrl_panel_node.get_logger().info(
+            "Sending Faces Recognition Module Signal to Server..")
+        msg = MakoServerMessage()
+        msg.type = "module_request"
+        msg.message = "FacesModule"
+        self.ctrl_panel_node.serverMsgPublisher.publish(msg)
+        self.lblCurrentStatus.setText("Sending signal to MAKO")
+        self.lblCurrentStatus.adjustSize()
+
+    def btnSpatialClick(self):
+        if(self.moduleOn):
+            return
+        self.moduleOn = True
+        self.ctrl_panel_node.get_logger().info(
+            "Sending Emotion Module Signal to Server..")
+        msg = MakoServerMessage()
+        msg.type = "module_request"
+        msg.message = "SpatialModule"
+        self.ctrl_panel_node.serverMsgPublisher.publish(msg)
+        self.lblCurrentStatus.setText("Sending signal to MAKO")
+        self.lblCurrentStatus.adjustSize()
+
+    def btnReadClick(self):
+        if(self.moduleOn):
+            return
+        self.moduleOn = True
+        self.ctrl_panel_node.get_logger().info(
+            "Sending Emotion Module Signal to Server..")
+        msg = MakoServerMessage()
+        msg.type = "module_request"
+        msg.message = "StoriesModule"
+        self.ctrl_panel_node.serverMsgPublisher.publish(msg)
+        self.lblCurrentStatus.setText("Sending signal to MAKO")
+        self.lblCurrentStatus.adjustSize()
+    
+    def btnMoveClick(self):
+        if(self.moduleOn):
+            return
+        self.moduleOn = True
+        self.ctrl_panel_node.get_logger().info(
+            "Sending Movement Module Signal to Server..")
+        msg = MakoServerMessage()
+        msg.type = "module_request"
+        msg.message = "MovementModule"
         self.ctrl_panel_node.serverMsgPublisher.publish(msg)
         self.lblCurrentStatus.setText("Sending signal to MAKO")
         self.lblCurrentStatus.adjustSize()

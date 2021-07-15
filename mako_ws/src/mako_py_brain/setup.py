@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             "BrainNode = mako_py_brain.brain:main",
-            "ctrl_panel_node = mako_py_brain.control_panel:main"
+            "ctrl_panel_node = mako_py_brain.control_panel:main",
+            "TTSNode = mako_py_brain.tts:main"
         ],
     },
 )
