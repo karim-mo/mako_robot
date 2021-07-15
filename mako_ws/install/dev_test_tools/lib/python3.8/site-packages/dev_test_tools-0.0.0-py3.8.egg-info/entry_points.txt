@@ -1,4 +1,0 @@
-[console_scripts]
-camTestNode = dev_test_tools.cam_test:main
-lidarTestNode = dev_test_tools.lidar_test:main
-

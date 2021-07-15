@@ -1,9 +1,0 @@
-/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_nolang_launch/CMakeFiles/install/strip.dir
-/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_nolang_launch/CMakeFiles/install/local.dir
-/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_nolang_launch/CMakeFiles/install.dir
-/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_nolang_launch/CMakeFiles/list_install_components.dir
-/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_nolang_launch/CMakeFiles/rebuild_cache.dir
-/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_nolang_launch/CMakeFiles/edit_cache.dir
-/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_nolang_launch/CMakeFiles/test.dir
-/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_nolang_launch/CMakeFiles/mako_nolang_launch_uninstall.dir
-/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/build/mako_nolang_launch/CMakeFiles/uninstall.dir

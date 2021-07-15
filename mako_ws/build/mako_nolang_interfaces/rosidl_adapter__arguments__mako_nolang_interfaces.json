@@ -1,8 +1,0 @@
-{
-  "package_name": "mako_nolang_interfaces",
-  "non_idl_tuples": [
-    "/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/src/mako_nolang_interfaces:srv/LedControl.srv",
-    "/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/src/mako_nolang_interfaces:srv/ArduinoCommand.srv",
-    "/home/abdelrahman/Documents/GitHub/mako_robot/mako_ws/src/mako_nolang_interfaces:msg/MakoServerMessage.msg"
-  ]
-}
