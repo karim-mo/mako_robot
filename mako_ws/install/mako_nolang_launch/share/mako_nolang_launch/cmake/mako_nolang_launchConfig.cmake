@@ -1,1 +1,0 @@
-/home/karim/mako_robot/mako_ws/build/mako_nolang_launch/ament_cmake_core/mako_nolang_launchConfig.cmake
