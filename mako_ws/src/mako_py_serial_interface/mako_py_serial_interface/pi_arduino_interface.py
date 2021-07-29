@@ -11,6 +11,8 @@ class SerialInterfaceNode(Node):
         self.get_logger().info("Serial Interface Node started")
         try:
             self.ser = serial.Serial('/dev/MEGAMAKO', 9600)
+            self.uno_ser = serial.Serial('/dev/UNOMAKO', 19200)
+            self.uno_ser.flush()
             self.ser.flush()
         except Exception as e:
             self.get_logger().error(str(e))
@@ -22,15 +24,15 @@ class SerialInterfaceNode(Node):
         if(request.cmd_type == "LED"):
             try:
                 if(request.led_exp_type == "nf"):
-                    self.ser.write(bytes('A', 'utf-8'))
+                    self.uno_ser.write(bytes('A', 'utf-8'))
                 elif(request.led_exp_type == "hf"):
-                    self.ser.write(bytes('B', 'utf-8'))
+                    self.uno_ser.write(bytes('B', 'utf-8'))
                 elif(request.led_exp_type == "sf"):
-                    self.ser.write(bytes('C', 'utf-8'))
+                    self.uno_ser.write(bytes('C', 'utf-8'))
                 elif(request.led_exp_type == "af"):
-                    self.ser.write(bytes('D', 'utf-8'))
+                    self.uno_ser.write(bytes('D', 'utf-8'))
                 elif(request.led_exp_type == "ff"):
-                    self.ser.write(bytes('E', 'utf-8'))
+                    self.uno_ser.write(bytes('E', 'utf-8'))
                 # msg = MakoServerMessage()
                 # msg.type = "led_response"
                 # self.serverMsgPublisher.publish(msg)
