@@ -1,5 +1,5 @@
 #include <LedControl.h>
-
+#include "binary.h"
 
 LedControl lc = LedControl(8,9,10,1);
 
