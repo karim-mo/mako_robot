@@ -10,6 +10,16 @@ def generate_launch_description():
         executable="BrainNode"
     )
 
+    rplidar_node = Node(
+        package="rplidar_ros",
+        executable="rplidarNode"
+    )
+
+    lidar_node = Node(
+        package="mako_py_lidar",
+        executable="lidar_control_node"
+    )
+
     tts_node = Node(
         package="mako_py_brain",
         executable="TTSNode"
@@ -25,6 +35,16 @@ def generate_launch_description():
         executable="ledControlNode"
     )
 
+    servo_control_node = Node(
+        package="mako_py_feedback_actuators",
+        executable="servoControlNode"
+    )
+
+    motor_control_node = Node(
+        package="mako_py_feedback_actuators",
+        executable="motorControlNode"
+    )
+
     serial_interface_node = Node(
         package="mako_py_serial_interface",
         executable="serialInterfaceNode"
@@ -36,6 +56,10 @@ def generate_launch_description():
     ld.add_action(tts_node)
     ld.add_action(ctrl_panel_node)
     ld.add_action(led_control_node)
+    ld.add_action(servo_control_node)
+    ld.add_action(rplidar_node)
+    ld.add_action(lidar_node)
+    ld.add_action(motor_control_node)
     ld.add_action(serial_interface_node)
 
 

@@ -10,6 +10,8 @@ from mutagen.mp3 import MP3
 from rclpy.node import Node
 from functools import partial
 from mako_nolang_interfaces.srv import LedControl
+from mako_nolang_interfaces.srv import ServoControl
+from mako_nolang_interfaces.srv import MotorControl
 from mako_nolang_interfaces.srv import TTSCommand
 from mako_nolang_interfaces.msg import MakoServerMessage
  
@@ -74,6 +76,26 @@ class BrainNode(Node):
                 self.get_logger().info("Failed to send led command to LED Control")
         except Exception as e:
             self.get_logger().error("Service call failed " + e)
+
+    def call_servo_control_callback(self, future):
+        try:
+            response = future.result()
+            if response.success:
+                self.get_logger().info("Successfully sent servo command to Servo Control")
+            else:
+                self.get_logger().info("Failed to send servo command to Servo Control")
+        except Exception as e:
+            self.get_logger().error("Service call failed " + e)
+
+    def call_motor_control_callback(self, future):
+        try:
+            response = future.result()
+            if response.success:
+                self.get_logger().info("Successfully sent motor command to Motor Control")
+            else:
+                self.get_logger().info("Failed to send motor command to Motor Control")
+        except Exception as e:
+            self.get_logger().error("Service call failed " + e)
     
     def tts_done_callback(self, future):
         try:
@@ -94,14 +116,44 @@ class BrainNode(Node):
             self.get_logger().info(str(message))
             msg = json.loads(message)
             if(msg["type"] == "welcome"):
-                # self.engine.say('Hello, I am MAKO')
-                # self.engine.runAndWait() # might need a thread
-                # self.engine.say('Amazing!')
-                # self.engine.runAndWait() # might need a thread
-                pass
+                client = self.create_client(TTSCommand, "ttsEngine")
+                while not client.wait_for_service(1.0):
+                    self.get_logger().warn("Waiting for Server...")
+
+                request = TTSCommand.Request()
+                request.message = "intro"
+                
+
+                future = client.call_async(request)
+                future.add_done_callback(
+                    partial(self.tts_done_callback))
             
             if(msg["type"] == "led_control"):
                 self.call_led_control(msg["exp_type"])
+            if(msg["type"] == "servo_control"):
+                client = self.create_client(ServoControl, "cmd_servo")
+                while not client.wait_for_service(1.0):
+                    self.get_logger().warn("Waiting for Server...")
+
+                request = ServoControl.Request()
+                request.expression = msg["expression"]
+                
+
+                future = client.call_async(request)
+                future.add_done_callback(
+                    partial(self.call_servo_control_callback))
+            if(msg["type"] == "motor_control"):
+                client = self.create_client(MotorControl, "cmd_motor")
+                while not client.wait_for_service(1.0):
+                    self.get_logger().warn("Waiting for Server...")
+
+                request = MotorControl.Request()
+                request.direction = msg["direction"]
+                
+
+                future = client.call_async(request)
+                future.add_done_callback(
+                    partial(self.call_motor_control_callback))
             if(msg["type"] == "module_response"):
                 _msg = MakoServerMessage()
                 _msg.type = msg["type"]
