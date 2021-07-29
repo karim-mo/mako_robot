@@ -1,1 +1,0 @@
-/home/karim/mako_robot/mako_ws/src/lidar_ros2/launch/test_rplidar.launch.py
