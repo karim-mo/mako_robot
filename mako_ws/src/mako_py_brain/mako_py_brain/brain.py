@@ -52,6 +52,18 @@ class BrainNode(Node):
                 self.ws.send('{' + '"type":"{0}","message":"{1}"'.format(str(_msg.type), str(_msg.message)) + '}')
             except Exception as e:
                 self.get_logger().error(str(e))
+        if(msg.type == "intro_request"):
+            client = self.create_client(TTSCommand, "ttsEngine")
+            while not client.wait_for_service(1.0):
+                self.get_logger().warn("Waiting for Server...")
+
+            request = TTSCommand.Request()
+            request.message = msg.message
+            
+
+            future = client.call_async(request)
+            future.add_done_callback(
+                partial(self.tts_done_callback))
         
 
     def call_led_control(self, exp_type):

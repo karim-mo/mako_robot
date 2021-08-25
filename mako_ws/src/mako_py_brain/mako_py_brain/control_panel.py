@@ -107,17 +107,23 @@ class ControlPanelGUI(Node):
                                    "font-size:20px;")
         self.btnRead.setObjectName("btnRead")
 
+        self.btnIntroTwo = QtWidgets.QPushButton(self.grpBox)
+        self.btnIntroTwo.setGeometry(QtCore.QRect(30, 390, 291, 141))
+        self.btnIntroTwo.setStyleSheet("background-color: \'white\';\n"
+                                   "font-size:20px;")
+        self.btnIntroTwo.setObjectName("btnIntroTwo")
+
         self.btnRobotCntrl = QtWidgets.QPushButton(self.grpBox)
         self.btnRobotCntrl.setGeometry(QtCore.QRect(480, 210, 291, 141))
         self.btnRobotCntrl.setStyleSheet("background-color: \'white\';\n"
                                          "font-size:20px;")
         self.btnRobotCntrl.setObjectName("btnRobotCntrl")
 
-        self.btnRobotQuiz = QtWidgets.QPushButton(self.grpBox)
-        self.btnRobotQuiz.setGeometry(QtCore.QRect(920, 210, 291, 141))
-        self.btnRobotQuiz.setStyleSheet("background-color: \'white\';\n"
+        self.btnIntroOne = QtWidgets.QPushButton(self.grpBox)
+        self.btnIntroOne.setGeometry(QtCore.QRect(920, 210, 291, 141))
+        self.btnIntroOne.setStyleSheet("background-color: \'white\';\n"
                                         "font-size:20px;")
-        self.btnRobotQuiz.setObjectName("btnRobotQuiz")
+        self.btnIntroOne.setObjectName("btnIntroOne")
 
         self.btnStop = QtWidgets.QPushButton(self.grpBox)
         self.btnStop.setGeometry(QtCore.QRect(920, 390, 291, 141))
@@ -155,8 +161,8 @@ class ControlPanelGUI(Node):
         self.btnRead.setText(_translate("MainWindow", "Social Stories"))
         self.btnRobotCntrl.setText(_translate(
             "MainWindow", "MAKO Movement"))
-        self.btnRobotQuiz.setText(_translate("MainWindow", "MAKO Turn Taking \n"
-                                             "Emotion Quiz"))
+        self.btnIntroTwo.setText(_translate("MainWindow", "Arabic Intro"))
+        self.btnIntroOne.setText(_translate("MainWindow", "English Intro"))
         self.btnStop.setText(_translate("MainWindow", "Stop Current Module"))
         self.lblStatus.setText(_translate("MainWindow", "Current Status:"))
         self.lblCurrentStatus.setText(_translate(
@@ -169,6 +175,8 @@ class ControlPanelGUI(Node):
         self.btnSpatial.clicked.connect(self.btnSpatialClick)
         self.btnRead.clicked.connect(self.btnReadClick)
         self.btnRobotCntrl.clicked.connect(self.btnMoveClick)
+        self.btnIntroOne.clicked.connect(self.btnEnglishClick)
+        self.btnIntroTwo.clicked.connect(self.btnArabicClick)
 
     def onModuleMessage(self, msg):
         time.sleep(0.5)
@@ -251,7 +259,22 @@ class ControlPanelGUI(Node):
         self.ctrl_panel_node.serverMsgPublisher.publish(msg)
         self.lblCurrentStatus.setText("Sending signal to MAKO")
         self.lblCurrentStatus.adjustSize()
+    
+    def btnEnglishClick(self):
+        if(self.moduleOn):
+            return
+        msg = MakoServerMessage()
+        msg.type = "intro_request"
+        msg.message = "intro"
+        self.ctrl_panel_node.serverMsgPublisher.publish(msg)
 
+    def btnArabicClick(self):
+        if(self.moduleOn):
+            return
+        msg = MakoServerMessage()
+        msg.type = "intro_request"
+        msg.message = "intro2"
+        self.ctrl_panel_node.serverMsgPublisher.publish(msg)
 
 def main(args=None):
     node = ControlPanelGUI()
